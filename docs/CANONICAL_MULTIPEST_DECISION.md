@@ -96,7 +96,7 @@ The gate method agrees in 24/24 rows; tau agrees in 16/24. The 8 rows below are
 WBPH has no mismatch. The selection CSVs are not edited. Stage-2 results remain valid because they
 were computed from the actual dispatch. The cause of the mismatch is not established from the files,
 and the Stage-1 `selected_run` cannot be verified from the dispatch CSV.
-(The planning note of 2026-09-27 stated "9 cells"; the verified count is 8.)
+The authoritative mismatch count is 8 (24-row check in `STAGE1_OPERATING_POINTS.csv`).
 
 ## 7. BPH geometry caveat
 
