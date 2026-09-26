@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.venv
+# raw data (shared storage; see DATA.md)
+data
+# release assets and generated outputs (see DATA.md)
+rice/outputs/
+rice/outputs_*/
+reference/grids/
+audit/selround1_20260818/runs/
+outputs/
+logs/
+wandb/
+*.pt
+*.parquet

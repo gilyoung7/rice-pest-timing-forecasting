@@ -1,0 +1,53 @@
+{
+  "schema_version": 3,
+  "canonical_baseline": "B + selector_v2",
+  "official_dir": "rice/outputs_allpests_e5d_expB_20260817",
+  "stage2": {
+    "official_dir": "rice/outputs_allpests_e5d_expB_20260817",
+    "architecture": "D28 encoder + history branch (d_model=48, n_heads=4, n_layers=1) + zero-init soft gate",
+    "initialization": "scratch",
+    "norm": "paired_D28_frozen",
+    "checkpoint_status": "unchanged"
+  },
+  "selector": {
+    "version": "selector_v2",
+    "features": "official_v1 + mu_position",
+    "protocol": "LightGBM 5-seed, y-1 fit",
+    "definition_document": "audit/SELROUND1_PREREG_20260818.md",
+    "definition_sha256": "88ca6af2839b03ae4cf58c6570091b208d745d48082f57d5363c4100a76a3535"
+  },
+  "headline_metric": "IoU80_overall_tol0",
+  "headline_macro": 0.5437853333333333,
+  "paired_control": {
+    "name": "D90",
+    "official_dir": "rice/outputs_allpests_e5d_d90_20260814",
+    "headline_macro": 0.3789493333333333,
+    "status": "SUPERSEDED_PAIRED_CONTROL"
+  },
+  "selector_control": {
+    "name": "B (selector v1)",
+    "official_dir": "rice/outputs_allpests_e5d_expB_20260817",
+    "headline_macro": 0.4496573333333333,
+    "status": "SUPERSEDED_SELECTOR_CONTROL"
+  },
+  "frozen_reference": {
+    "name": "D28",
+    "official_dir": "rice/outputs_allpests_e5d_asym5_max140_20260804",
+    "headline_macro": 0.3233106666666667,
+    "status": "FROZEN"
+  },
+  "decision_doc": "audit/SELROUND1_VERDICT_20260818.md",
+  "anchor": "audit/canonical_anchor.json",
+  "valid_from": "2026-08-18",
+  "history": [
+    {"baseline": "D28", "until": "2026-08-17", "superseded_by": "D90"},
+    {"baseline": "D90", "until": "2026-08-17", "superseded_by": "B"},
+    {"baseline": "B (selector v1)", "until": "2026-08-18", "superseded_by": "B + selector_v2"}
+  ],
+  "governance": {
+    "reference_only": true,
+    "pipeline_auto_read": false,
+    "change_rule": "A future decision document must accompany every new history entry.",
+    "holdout_status": "no future-year holdout exists; see HOLDOUT LOCK AMENDMENT 1"
+  }
+}

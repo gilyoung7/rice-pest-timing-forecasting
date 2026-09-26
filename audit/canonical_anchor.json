@@ -1,0 +1,15 @@
+{
+  "schema_version": 3,
+  "baseline": "B + selector_v2",
+  "stage2_official_dir": "rice/outputs_allpests_e5d_expB_20260817",
+  "selector_result_dir": "audit/selround1_20260818/runs/T",
+  "metric": "IoU80_overall_tol0",
+  "aggregation": "15-cell macro mean over year x Stage-2 seed; selector 5-seed mean within each cell",
+  "cells": [
+    {"year":2022,"seed":0,"value":0.48268},{"year":2022,"seed":1,"value":0.46694},{"year":2022,"seed":2,"value":0.54902},{"year":2022,"seed":3,"value":0.48812},{"year":2022,"seed":4,"value":0.64868},
+    {"year":2023,"seed":0,"value":0.56396},{"year":2023,"seed":1,"value":0.55458},{"year":2023,"seed":2,"value":0.52552},{"year":2023,"seed":3,"value":0.58674},{"year":2023,"seed":4,"value":0.56368},
+    {"year":2024,"seed":0,"value":0.48834},{"year":2024,"seed":1,"value":0.47284},{"year":2024,"seed":2,"value":0.56268},{"year":2024,"seed":3,"value":0.55952},{"year":2024,"seed":4,"value":0.64348}
+  ],
+  "macro": 0.5437853333333333,
+  "source": "audit/selround1_20260818/cells.csv; arm=T"
+}
