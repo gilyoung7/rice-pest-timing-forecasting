@@ -77,6 +77,11 @@ reference-grid paths in `RELEASE_ASSETS.sha256`) failed before G1; both defects 
 `f393878` and `91da3f7`. With this result the handoff environment (ENVIRONMENT.md) is the
 authoritative installation environment of this repository.
 
+Commits after `91da3f7` change documentation and manifests only (no executable code, no
+checkpoint/asset content); the full acceptance above therefore applies to them without re-running
+G1–G3. Verify with `git diff --stat 91da3f7 HEAD -- '*.py' '*.sh' rice/experiments/allpests_e5d/pests.tsv requirements.lock`
+(expected: empty).
+
 ## 5. Manifests
 
 | file | meaning |

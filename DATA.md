@@ -36,6 +36,11 @@ Deterministic tarballs with repo-relative paths; extract at the repo root. Per-f
 | `reference_grids.tar` (21 MB) | 15 | `reference/grids/<y>/seed<s>/WBPH_E5d_clean_grid_1to75.csv` | reference only (G1 uses `manifests/B_GRID_SHA256.txt`) |
 
 Notes:
+- Extract at the repo root; the launchers then find everything by default. Optional overrides:
+  `B_ROOT` (`scripts/run_b_grid.sh`), `D90_ROOT` / `D28_ROOT` / `EXPB_OUT_ROOT`
+  (`scripts/run_expb_cell.sh`), `REPO_ROOT` (all launchers). `run_selector_cell.py` always reads
+  the B assets from `rice/outputs_allpests_e5d_expB_20260817/`. Full table:
+  `manifests/EXTERNAL_DEPENDENCIES.csv`.
 - The B checkpoint directories intentionally contain **no grid**: `scripts/run_b_grid.sh`
   regenerates it there, and `run_selector_cell.py` reads it from there.
 - `rice/outputs_stage2_batch_*` are tracked symlinks to `outputs/stage2/<batch>`; checkpoint
