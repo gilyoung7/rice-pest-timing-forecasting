@@ -1,0 +1,184 @@
+{
+ "schema_version": 1,
+ "decision_doc": "docs/CANONICAL_MULTIPEST_DECISION.md",
+ "decision_date": "2026-09-27",
+ "status_vocabulary": {
+  "ACCEPTED_HANDOFF_CANONICAL": "adopted and G0-G3 passed in a fresh clean clone",
+  "ADOPTED_PENDING_ACCEPTANCE": "explicitly adopted by the handoff decision; clean-repo acceptance not yet run",
+  "ACCEPTANCE_FAILED": "adopted, but a G0-G3 gate failed; recorded explicitly, never silently dropped"
+ },
+ "headline_metric": "IoU80_overall_tol0",
+ "pests": {
+  "WBPH": {
+   "status": "ACCEPTED_HANDOFF_CANONICAL",
+   "canonical_since": "2026-08-18",
+   "record": "audit/CANONICAL.json",
+   "anchor": "audit/canonical_anchor.json",
+   "grid_sha": "manifests/B_GRID_SHA256.txt",
+   "macro": 0.5437853333333333,
+   "stage2_dir": "rice/outputs_allpests_e5d_expB_20260817",
+   "acceptance": "clean-repo r3 on 91da3f7 (PROVENANCE.md section 4)",
+   "doy": [
+    60,
+    300
+   ]
+  },
+  "sheath_blight": {
+   "status": "ADOPTED_PENDING_ACCEPTANCE",
+   "canonical_since": null,
+   "record": "docs/CANONICAL_MULTIPEST_DECISION.md",
+   "anchor": "audit/multipest/sheath_blight/canonical_anchor.json",
+   "grid_sha": "manifests/multipest/B_GRID_SHA256_sheath_blight.txt",
+   "macro": 0.5841413333333333,
+   "stage2_dir": "rice/outputs_crosspest_frozen_replication_20260818/B",
+   "d28_norm_source_dir": "rice/outputs_crosspest_frozen_replication_20260818/D28",
+   "d90_args_dir": "rice/outputs_crosspest_frozen_replication_20260818/D90",
+   "acceptance": null,
+   "doy": [
+    60,
+    300
+   ]
+  },
+  "bacterial_blight": {
+   "status": "ADOPTED_PENDING_ACCEPTANCE",
+   "canonical_since": null,
+   "record": "docs/CANONICAL_MULTIPEST_DECISION.md",
+   "anchor": "audit/multipest/bacterial_blight/canonical_anchor.json",
+   "grid_sha": "manifests/multipest/B_GRID_SHA256_bacterial_blight.txt",
+   "macro": 0.4770853333333333,
+   "stage2_dir": "rice/outputs_crosspest_frozen_replication_20260818/B",
+   "d28_norm_source_dir": "rice/outputs_crosspest_frozen_replication_20260818/D28",
+   "d90_args_dir": "rice/outputs_crosspest_frozen_replication_20260818/D90",
+   "acceptance": null,
+   "doy": [
+    60,
+    300
+   ]
+  },
+  "brown_spot": {
+   "status": "ADOPTED_PENDING_ACCEPTANCE",
+   "canonical_since": null,
+   "record": "docs/CANONICAL_MULTIPEST_DECISION.md",
+   "anchor": "audit/multipest/brown_spot/canonical_anchor.json",
+   "grid_sha": "manifests/multipest/B_GRID_SHA256_brown_spot.txt",
+   "macro": 0.4953613333333333,
+   "stage2_dir": "rice/outputs_crosspest_frozen_replication_20260818/B",
+   "d28_norm_source_dir": "rice/outputs_crosspest_frozen_replication_20260818/D28",
+   "d90_args_dir": "rice/outputs_crosspest_frozen_replication_20260818/D90",
+   "acceptance": null,
+   "doy": [
+    60,
+    300
+   ]
+  },
+  "rice_stem_borer_1": {
+   "status": "ADOPTED_PENDING_ACCEPTANCE",
+   "canonical_since": null,
+   "record": "docs/CANONICAL_MULTIPEST_DECISION.md",
+   "anchor": "audit/multipest/rice_stem_borer_1/canonical_anchor.json",
+   "grid_sha": "manifests/multipest/B_GRID_SHA256_rice_stem_borer_1.txt",
+   "macro": 0.350724,
+   "stage2_dir": "rice/outputs_crosspest_frozen_replication_20260818/B",
+   "d28_norm_source_dir": "rice/outputs_crosspest_frozen_replication_20260818/D28",
+   "d90_args_dir": "rice/outputs_crosspest_frozen_replication_20260818/D90",
+   "acceptance": null,
+   "doy": [
+    60,
+    300
+   ]
+  },
+  "rice_stem_borer_2": {
+   "status": "ADOPTED_PENDING_ACCEPTANCE",
+   "canonical_since": null,
+   "record": "docs/CANONICAL_MULTIPEST_DECISION.md",
+   "anchor": "audit/multipest/rice_stem_borer_2/canonical_anchor.json",
+   "grid_sha": "manifests/multipest/B_GRID_SHA256_rice_stem_borer_2.txt",
+   "macro": 0.36444,
+   "stage2_dir": "rice/outputs_crosspest_frozen_replication_20260818/B",
+   "d28_norm_source_dir": "rice/outputs_crosspest_frozen_replication_20260818/D28",
+   "d90_args_dir": "rice/outputs_crosspest_frozen_replication_20260818/D90",
+   "acceptance": null,
+   "doy": [
+    60,
+    300
+   ]
+  },
+  "BPH": {
+   "status": "ADOPTED_PENDING_ACCEPTANCE",
+   "canonical_since": null,
+   "record": "docs/CANONICAL_MULTIPEST_DECISION.md",
+   "anchor": "audit/multipest/BPH/canonical_anchor.json",
+   "grid_sha": "manifests/multipest/B_GRID_SHA256_BPH.txt",
+   "macro": 0.37666266666666665,
+   "stage2_dir": "rice/outputs_crosspest_frozen_replication_20260818/B",
+   "d28_norm_source_dir": "rice/outputs_crosspest_frozen_replication_20260818/D28",
+   "d90_args_dir": "rice/outputs_crosspest_frozen_replication_20260818/D90",
+   "acceptance": null,
+   "doy": [
+    140,
+    270
+   ]
+  },
+  "blast": {
+   "status": "ADOPTED_PENDING_ACCEPTANCE",
+   "canonical_since": null,
+   "record": "docs/CANONICAL_MULTIPEST_DECISION.md",
+   "anchor": "audit/multipest/blast/canonical_anchor.json",
+   "grid_sha": "manifests/multipest/B_GRID_SHA256_blast.txt",
+   "macro": 0.5420426666666667,
+   "stage2_dir": "rice/outputs_crosspest_frozen_replication_20260818/B",
+   "d28_norm_source_dir": "rice/outputs_crosspest_frozen_replication_20260818/D28",
+   "d90_args_dir": "rice/outputs_crosspest_frozen_replication_20260818/D90",
+   "acceptance": null,
+   "doy": [
+    60,
+    300
+   ]
+  }
+ },
+ "stage1": {
+  "policy": "frozen dispatch actually passed to Stage 2 is authoritative; Stage 1 not retrained",
+  "operating_points": "manifests/multipest/STAGE1_OPERATING_POINTS.csv",
+  "historical_metadata_mismatch_cells": [
+   "bacterial_blight/2022",
+   "brown_spot/2022",
+   "rice_stem_borer_1/2022",
+   "blast/2022",
+   "bacterial_blight/2023",
+   "brown_spot/2023",
+   "bacterial_blight/2024",
+   "rice_stem_borer_1/2024"
+  ]
+ },
+ "caveats": {
+  "BPH": "DOY 140-270 (T=131) preserved; not directly comparable with the DOY 60-300 pests"
+ },
+ "not_canonical": [
+  "weather augmentation",
+  "no-occurrence-history",
+  "warm-start / multipest pretrain",
+  "gate regularization",
+  "early-context / pre60",
+  "temporal importance",
+  "mechanism battery / PH",
+  "RSB1 winter",
+  "sheath_blight do-no-harm",
+  "arch calibration",
+  "other ablations / diagnostics",
+  "crosspest arms D28, D90, B (selector v1)"
+ ],
+ "history": [
+  {
+   "date": "2026-09-27",
+   "event": "7 crosspest pests explicitly adopted as handoff canonical candidates",
+   "status": "ADOPTED_PENDING_ACCEPTANCE",
+   "decision_doc": "docs/CANONICAL_MULTIPEST_DECISION.md"
+  }
+ ],
+ "governance": {
+  "reference_only": true,
+  "pipeline_auto_read": false,
+  "change_rule": "Every status change needs a new history entry and an acceptance record; audit/CANONICAL.json (WBPH) is not modified.",
+  "holdout_status": "no future-year holdout exists; see audit/HOLDOUT_LOCK_AMENDMENT1_20260818.md"
+ }
+}

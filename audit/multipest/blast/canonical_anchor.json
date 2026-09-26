@@ -1,0 +1,111 @@
+{
+ "schema_version": 3,
+ "pest": "blast",
+ "status": "ADOPTED_PENDING_ACCEPTANCE",
+ "baseline": "B + selector_v2 (crosspest frozen protocol)",
+ "stage2_official_dir": "rice/outputs_crosspest_frozen_replication_20260818/B",
+ "selector_result_dir": "rice/outputs_crosspest_frozen_replication_20260818/selector",
+ "metric": "IoU80_overall_tol0",
+ "aggregation": "15-cell macro mean over year x Stage-2 seed (math.fsum/15); selector 5-seed mean within each cell",
+ "cells": [
+  {
+   "year": 2022,
+   "seed": 0,
+   "value": 0.4846
+  },
+  {
+   "year": 2022,
+   "seed": 1,
+   "value": 0.5368999999999999
+  },
+  {
+   "year": 2022,
+   "seed": 2,
+   "value": 0.57282
+  },
+  {
+   "year": 2022,
+   "seed": 3,
+   "value": 0.5315000000000001
+  },
+  {
+   "year": 2022,
+   "seed": 4,
+   "value": 0.48552
+  },
+  {
+   "year": 2023,
+   "seed": 0,
+   "value": 0.50304
+  },
+  {
+   "year": 2023,
+   "seed": 1,
+   "value": 0.61476
+  },
+  {
+   "year": 2023,
+   "seed": 2,
+   "value": 0.4467
+  },
+  {
+   "year": 2023,
+   "seed": 3,
+   "value": 0.60198
+  },
+  {
+   "year": 2023,
+   "seed": 4,
+   "value": 0.45366
+  },
+  {
+   "year": 2024,
+   "seed": 0,
+   "value": 0.6790800000000001
+  },
+  {
+   "year": 2024,
+   "seed": 1,
+   "value": 0.68032
+  },
+  {
+   "year": 2024,
+   "seed": 2,
+   "value": 0.4664400000000001
+  },
+  {
+   "year": 2024,
+   "seed": 3,
+   "value": 0.5079800000000001
+  },
+  {
+   "year": 2024,
+   "seed": 4,
+   "value": 0.56534
+  }
+ ],
+ "macro": 0.5420426666666667,
+ "source": "rice/outputs_crosspest_frozen_replication_20260818/selector/<year>/seed<seed>/blast/eval/clean_pooled_metrics.csv (IoU80_overall_tol0, pandas parse)",
+ "source_sha256": {
+  "2022/seed0": "cca3443b090f9421613ea72feb58707c0d54d875260015eec9b815c2e7e5e580",
+  "2022/seed1": "87ffce1ab38c98f3cdb4f80bfdf86fb177f0a71b73d253e3e345d895cdafd983",
+  "2022/seed2": "5586fda0fbc6fef5caefdf71897b5033da543894359b3b10f8f1bea5b72465c2",
+  "2022/seed3": "a0d9b25fbce94b5007d5a6fb7cb18ae6c06c264b5b08290927fd83d0517b3a50",
+  "2022/seed4": "248df9253dcb2022161a6d580541cfef5c1c42084b939f5e49b739f84b7e3e54",
+  "2023/seed0": "91ccf6e3c64df0cf97fed5361294509937e1c3cc39ab1e3e754ecc9698349942",
+  "2023/seed1": "4bf2a74ae480f101c018b342a74bc90d114b8046405d49da3d0c25590ad5ed2e",
+  "2023/seed2": "65a9eac9fe64966c4d07d89ecf68cc019ef236a6b6a33acaff10ea20223e26f8",
+  "2023/seed3": "c3251785f4bdfc2e73e54c10a686f60e6490065716a629fe2e50b5044d35585b",
+  "2023/seed4": "0ecfe04dd9e910c0e8c9da2721dc7aec7e694792970a078159462b9404710d6f",
+  "2024/seed0": "9db164f8ee0cc9dfc103710677915b823005b2a6bedc963537b8631809c47bee",
+  "2024/seed1": "7146a5248bd39fef9b3af5bd2a8ec22dfca6b4e8a39975a752543be44f273544",
+  "2024/seed2": "a3d6106c6b5593922f1f9eb45d25fcb8d6e1cfa851cd50faccab2ed6b3695f92",
+  "2024/seed3": "10dbf147f78cc386e849161fc07d3180ede1918bd21774700de700a117f82b44",
+  "2024/seed4": "3de375f46e7768f4d9e3b806d901de588a73fb975029aa938eb09de72abf6382"
+ },
+ "cross_check": {
+  "CROSSPEST_FROZEN_CELL_VALUES.csv arm=selector": "15/15 abs delta <= 1e-12",
+  "CROSSPEST_FROZEN_MACRO.csv selector": "np.float64(0.5420426666666667) (abs delta 0.0e+00)"
+ },
+ "decision_doc": "docs/CANONICAL_MULTIPEST_DECISION.md"
+}

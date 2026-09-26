@@ -1,0 +1,111 @@
+{
+ "schema_version": 3,
+ "pest": "rice_stem_borer_1",
+ "status": "ADOPTED_PENDING_ACCEPTANCE",
+ "baseline": "B + selector_v2 (crosspest frozen protocol)",
+ "stage2_official_dir": "rice/outputs_crosspest_frozen_replication_20260818/B",
+ "selector_result_dir": "rice/outputs_crosspest_frozen_replication_20260818/selector",
+ "metric": "IoU80_overall_tol0",
+ "aggregation": "15-cell macro mean over year x Stage-2 seed (math.fsum/15); selector 5-seed mean within each cell",
+ "cells": [
+  {
+   "year": 2022,
+   "seed": 0,
+   "value": 0.3169
+  },
+  {
+   "year": 2022,
+   "seed": 1,
+   "value": 0.30122
+  },
+  {
+   "year": 2022,
+   "seed": 2,
+   "value": 0.1466
+  },
+  {
+   "year": 2022,
+   "seed": 3,
+   "value": 0.4125
+  },
+  {
+   "year": 2022,
+   "seed": 4,
+   "value": 0.19834
+  },
+  {
+   "year": 2023,
+   "seed": 0,
+   "value": 0.4286999999999999
+  },
+  {
+   "year": 2023,
+   "seed": 1,
+   "value": 0.35256
+  },
+  {
+   "year": 2023,
+   "seed": 2,
+   "value": 0.2928
+  },
+  {
+   "year": 2023,
+   "seed": 3,
+   "value": 0.3292
+  },
+  {
+   "year": 2023,
+   "seed": 4,
+   "value": 0.5395
+  },
+  {
+   "year": 2024,
+   "seed": 0,
+   "value": 0.3553
+  },
+  {
+   "year": 2024,
+   "seed": 1,
+   "value": 0.46554
+  },
+  {
+   "year": 2024,
+   "seed": 2,
+   "value": 0.3762
+  },
+  {
+   "year": 2024,
+   "seed": 3,
+   "value": 0.28588
+  },
+  {
+   "year": 2024,
+   "seed": 4,
+   "value": 0.45962
+  }
+ ],
+ "macro": 0.350724,
+ "source": "rice/outputs_crosspest_frozen_replication_20260818/selector/<year>/seed<seed>/rice_stem_borer_1/eval/clean_pooled_metrics.csv (IoU80_overall_tol0, pandas parse)",
+ "source_sha256": {
+  "2022/seed0": "f27260de8c04f4900e18025e869d8d37bbd1d305ce39dfedabca7a02909458e5",
+  "2022/seed1": "c513f561e05169f97b2a5cd6cd646dc280cd2d0cd6144b1d77e56f9673017d93",
+  "2022/seed2": "762b296c2460981f6d43e92221bf76e8e1511c2aec3e5392dba78d2a968d62a5",
+  "2022/seed3": "eb68b860c95a954a3dffb6ad62fb94b7dad280cb8348ca76533490f00491dc2d",
+  "2022/seed4": "d1449441237a2e1244117651b293aa2883b65f9639afa6ba0b099d2de7ba6933",
+  "2023/seed0": "da7738760d04dff951250a44789e323c52d2a0ec85c3286be2e004721d36ccbc",
+  "2023/seed1": "03c22b7cd4166b5753c8f32fe602fb94a1392fa157cddfeda93c4430b8c710a3",
+  "2023/seed2": "a21698da389539c5e8900766398b81b6458a8b7d50862ae8af520eca532e505d",
+  "2023/seed3": "2d51dd94b5066d8d2cbf4b3e5eecb9b85c419fe9c28cd27c5da9c8ed92e579da",
+  "2023/seed4": "b5907ba950f3178ea330b337c2c8a817ce8c8674c6cbf7e7405756be0a51b402",
+  "2024/seed0": "ad8d50fdcfb1878632391c2ea9422a722413110d8c51b752fdedfb37138bcffa",
+  "2024/seed1": "970632c36d2b1d0c1f6bb7d883ae235c0bc482ce8e89a11f23a79c94b1c78cb6",
+  "2024/seed2": "d276559ab068883d03fa2f98926161546f018a06fbc4da616c9cb42fec33abe6",
+  "2024/seed3": "7f0eb2e06b79a0c71bef51c9c0330a6b38edc4339e4573c9a6cf5f30be38c559",
+  "2024/seed4": "51374866a26b85a9be02b0af056e59bbd5e38f0b64d8e4cf36a5b7e9956995d9"
+ },
+ "cross_check": {
+  "CROSSPEST_FROZEN_CELL_VALUES.csv arm=selector": "15/15 abs delta <= 1e-12",
+  "CROSSPEST_FROZEN_MACRO.csv selector": "np.float64(0.3507239999999999) (abs delta 5.6e-17)"
+ },
+ "decision_doc": "docs/CANONICAL_MULTIPEST_DECISION.md"
+}
