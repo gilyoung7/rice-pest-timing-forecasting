@@ -116,8 +116,8 @@ do-no-harm; arch calibration; all other ablations and diagnostics; crosspest D28
 - No run-time grid sha256 was recorded for the crosspest run. The expected grid hashes were derived
   on 2026-09-27 from the persisted 2026-08-18 grids; each equals its independent selector-arm copy (105/105).
 - The crosspest output directory is not in any git commit. The six decision-relevant records are
-  copied verbatim to `audit/crosspest_frozen_replication_20260818/`; the full directory is to be
-  preserved as a separate provenance asset in the private archive repository.
+  copied verbatim to `audit/crosspest_frozen_replication_20260818/`; the full directory is preserved
+  in the private archive repository (Release `provenance-crosspest-frozen-20260818`, see §10).
 - The executed `pest_eval.py` (archive `7029760`) differs from the handoff blob (`fec1409`) only by a
   W&B entity import/default; equivalence is established by G2, not assumed.
 - Crosspest trained every pest with `--batch_train_override 16`; the `b16_cells` column of
@@ -128,6 +128,8 @@ do-no-harm; arch calibration; all other ablations and diagnostics; crosspest D28
 | item | reference |
 |---|---|
 | crosspest outputs | `/home/gpu4080/research/cropscience_multipest/rice/outputs_crosspest_frozen_replication_20260818` (local, not in git) |
+| crosspest outputs, archived | `gilyoung7/cropscience-research-archive` Release `provenance-crosspest-frozen-20260818` (tag → `fec1409`): `cropscience_crosspest_frozen_replication_20260818.tar` 1,359,431,680 B, sha256 `6518679a956245893af7f62b93c17c91abeafdaddd048a208e05915614b10a1d`, 16,111 files + 5,967 dirs; per-file list `…FILES.sha256` (sha256 `a4cb25d3fd4527df253d2ca4990bfea0fc4e69fdf08fcac42bf61e2348e656fe`) |
+| handoff subset | `docs/MULTIPEST_DATA.md` (14 release tars; `manifests/multipest/RELEASE_*.sha256`) |
 | crosspest drivers | archive commit `7029760` (first commit of the executed blobs; sha256 match `inputs_manifest.txt`), also in snapshot `83dc4a3` |
 | training code | `fec1409` (`canonical-B-train`); checkpoint `code_provenance` 105/105 |
 | file-level provenance | `manifests/multipest/CODE_MANIFEST.csv`, `manifests/multipest/PROVENANCE_MULTIPEST.csv` |

@@ -25,4 +25,14 @@ manifests/multipest/RAW_DATA.sha256,derived,/home/gpu4080/ygdata/rice/,,daily ta
 manifests/multipest/CODE_MANIFEST.csv,derived,/home/gpu4080/research/cropscience_multipest git,,
 audit/CANONICAL_MULTIPEST.json,new_handoff,,,machine-readable status
 docs/CANONICAL_MULTIPEST_DECISION.md,new_handoff,,,governance decision
+manifests/multipest/RELEASE_ASSETS_sheath_blight.sha256,derived,/home/gpu4080/research/handoff_staging/release_assets_multipest/stage (copies of research sources),,216 files of <pest>_core.tar + <pest>_retrain.tar; staged == source sha256 1512/1512
+manifests/multipest/RELEASE_ASSETS_bacterial_blight.sha256,derived,/home/gpu4080/research/handoff_staging/release_assets_multipest/stage (copies of research sources),,216 files of <pest>_core.tar + <pest>_retrain.tar; staged == source sha256 1512/1512
+manifests/multipest/RELEASE_ASSETS_brown_spot.sha256,derived,/home/gpu4080/research/handoff_staging/release_assets_multipest/stage (copies of research sources),,216 files of <pest>_core.tar + <pest>_retrain.tar; staged == source sha256 1512/1512
+manifests/multipest/RELEASE_ASSETS_rice_stem_borer_1.sha256,derived,/home/gpu4080/research/handoff_staging/release_assets_multipest/stage (copies of research sources),,216 files of <pest>_core.tar + <pest>_retrain.tar; staged == source sha256 1512/1512
+manifests/multipest/RELEASE_ASSETS_rice_stem_borer_2.sha256,derived,/home/gpu4080/research/handoff_staging/release_assets_multipest/stage (copies of research sources),,216 files of <pest>_core.tar + <pest>_retrain.tar; staged == source sha256 1512/1512
+manifests/multipest/RELEASE_ASSETS_BPH.sha256,derived,/home/gpu4080/research/handoff_staging/release_assets_multipest/stage (copies of research sources),,216 files of <pest>_core.tar + <pest>_retrain.tar; staged == source sha256 1512/1512
+manifests/multipest/RELEASE_ASSETS_blast.sha256,derived,/home/gpu4080/research/handoff_staging/release_assets_multipest/stage (copies of research sources),,216 files of <pest>_core.tar + <pest>_retrain.tar; staged == source sha256 1512/1512
+manifests/multipest/RELEASE_ARCHIVES.sha256,derived,/home/gpu4080/research/handoff_staging/release_assets_multipest,,"14 deterministic tars (built twice, byte-identical)"
+docs/MULTIPEST_DATA.md,new_handoff,,,asset/verify guide
+archive:provenance-crosspest-frozen-20260818,archive_release,gilyoung7/cropscience-research-archive,6518679a956245893af7f62b93c17c91abeafdaddd048a208e05915614b10a1d,full crosspest output dir tar; 16111 files; not in handoff release
 manifests/multipest/PROVENANCE_MULTIPEST.csv,new_handoff,,,this file
