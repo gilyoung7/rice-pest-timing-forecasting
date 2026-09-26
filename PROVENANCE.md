@@ -54,8 +54,28 @@ current blob; `verbatim` rows must hash to the source blob.
 Supplementary: the 75 LightGBM selector models were byte-identical to the originals; selector
 parquet artifacts differed only in the `output_root` column (absolute run location).
 
-**Clean-repo acceptance**: to be run on a fresh clone with the same gates before this repository
-is published (see the acceptance plan in the handoff report). Record the outcome here.
+**Clean-repo acceptance (2026-09-26, r3, `/home/gpu4080/research/handoff_acceptance_20260926_r3`)**:
+fresh clone of commit `91da3f749280903c1b967165d65b82eb405f96c1`; new `.venv` from `requirements.lock`
+(sha256 `ef54b83a4195b1f59dcf661d73a65028c05f99ee999a197609c15de7adc9b650`) with the normal pip resolver;
+release assets and raw data verified by sha256; preprocessing cache regenerated from raw data inside the
+clone; everything outside the clone and the acceptance directory stayed read-only (0 writes).
+
+| step | result |
+|---|---|
+| environment | `pip check` clean; 150 packages == lock; Python 3.12.3, torch 2.5.1+cu121, CUDA 12.1, cuDNN 90100, RTX 4080, driver 580.173.02 |
+| inputs | release archives 5/5, release assets 216/216, reference grids 15/15, raw data 2/2 |
+| cache | regenerated from raw data (key `0dcb950c71a6e151`, 5,286,866,957 B) |
+| G1 | 15/15 grid SHA256 bitwise identical; cache diagnostic 30 hits / 0 misses |
+| G2 | 15/15 cells, max abs delta 1.1e-16 (gate 1e-12) |
+| G3 | macro 0.5437853333333333 (expected 0.5437853333333333, delta 0.0) |
+
+The G1 stage first reported FAILED: an auxiliary cache-hit assertion expected 15 lines instead of
+the actual 30 (each grid run loads the cache twice). The authoritative SHA gate had passed 15/15 in
+that run; the assertion was corrected and re-evaluated from the original logs without recomputing
+any grid. Earlier acceptance attempts r1 (unresolvable nccl pin in the lock) and r2 (wrong
+reference-grid paths in `RELEASE_ASSETS.sha256`) failed before G1; both defects were fixed in
+`f393878` and `91da3f7`. With this result the handoff environment (ENVIRONMENT.md) is the
+authoritative installation environment of this repository.
 
 ## 5. Manifests
 

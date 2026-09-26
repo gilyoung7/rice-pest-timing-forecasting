@@ -11,7 +11,7 @@
 | xgboost / lightgbm / numpy / pandas / scikit-learn / scipy / pyarrow | 3.0.5 / 3.3.5 / 2.4.4 / 2.2.3 / 1.7.2 / 1.17.1 / 25.0.1 | same |
 | all other packages (150 total) | — | same versions as the original `pip freeze --all` |
 | `pip check` | **fails**: torch requires nccl 2.21.5 but 2.30.4 is installed (xgboost 3.0.5 had pulled it) | clean |
-| canonical reproduction | G1/G2/G3 PASS in the archive verification tree | acceptance status: see PROVENANCE.md §4 |
+| canonical reproduction | G1/G2/G3 PASS in the archive verification tree (2026-09-26) | G1/G2/G3 PASS in clean-repo acceptance r3 (2026-09-26); **authoritative** for this repository |
 
 The original environment is not reproducible with a normal resolver and is intentionally not
 recreated. Use the handoff environment:
@@ -52,7 +52,7 @@ versions in its code manifests; the driver version at that time was not recorded
 - Code manifests record `deterministic_algorithms=False`, `cudnn_deterministic=False`:
   training is not bitwise reproducible.
 - Grid generation and selector T were bitwise / ≤1e-12 reproducible in the archive verification
-  (original research environment); for the handoff environment see PROVENANCE.md §4.
+  (original research environment) and in clean-repo acceptance r3 (handoff environment); see PROVENANCE.md §4.
   A different GPU, driver or library version may change grid bytes; re-run the G1–G3 gates
   (PROVENANCE.md §4) after any environment change.
 - Recommended variables for the canonical scripts are set inside them
