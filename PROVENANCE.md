@@ -7,10 +7,10 @@ authoritative record of the research process.
 
 | item | value |
 |---|---|
-| archive remote | `git@github.com:gilyoung7/cropscience.git` |
+| provenance archive | PRIVATE repository `gilyoung7/cropscience-research-archive` |
+| B training code tag | `canonical-B-train` in that repository (annotated tag object `3c57771e85faa84f00b1cf9798228b591fa81f4a` → commit `fec1409829e877da923b8e7de37cc659d2ef45b0`) |
+| experiment-hook snapshot | history `snapshot/sept-experiment-hooks` @ `83dc4a392ca854c4838340e76d37f8df89d37777` (uncommitted Aug–Sep hooks + untracked sources/docs, INVALID markers, provenance manifests). Not a GitHub branch: preserved as the git bundle `cropscience_snapshot-sept-experiment-hooks_83dc4a3.bundle` (sha256 `c84879f8be3a9bdeb43056331e4e07cefe13fcee307e735659ee99e35adf86bd`) in the archive repository's Release `canonical-B-train`, with restore instructions in its `ARCHIVE_README.md` |
 | original checkout | `/home/gpu4080/research/cropscience_multipest` (branch `exp/clean2024-D-wbph-only`, HEAD `98f45dbc597f81ca8b5a3721540b53355467883e`) |
-| experiment-hook snapshot | branch `snapshot/sept-experiment-hooks` @ `83dc4a392ca854c4838340e76d37f8df89d37777` (uncommitted Aug–Sep hooks + untracked sources/docs, INVALID markers, provenance manifests) |
-| B training code tag | `canonical-B-train` (annotated tag object `3c57771e85faa84f00b1cf9798228b591fa81f4a` → commit `fec1409829e877da923b8e7de37cc659d2ef45b0`) |
 | canonical outputs (archive) | `rice/outputs_allpests_e5d_expB_20260817` (B), `audit/selround1_20260818/runs/T` (selector T) |
 
 ## 2. Source recipe (authoritative)
