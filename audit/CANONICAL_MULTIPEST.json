@@ -21,11 +21,12 @@
    "doy": [
     60,
     300
-   ]
+   ],
+   "multipest_regression": "PASS 2026-09-27 via scripts/run_pest_*.sh WBPH (audit/multipest/ACCEPTANCE_20260927.json)"
   },
   "sheath_blight": {
-   "status": "ADOPTED_PENDING_ACCEPTANCE",
-   "canonical_since": null,
+   "status": "ACCEPTED_HANDOFF_CANONICAL",
+   "canonical_since": "2026-09-27",
    "record": "docs/CANONICAL_MULTIPEST_DECISION.md",
    "anchor": "audit/multipest/sheath_blight/canonical_anchor.json",
    "grid_sha": "manifests/multipest/B_GRID_SHA256_sheath_blight.txt",
@@ -33,15 +34,22 @@
    "stage2_dir": "rice/outputs_crosspest_frozen_replication_20260818/B",
    "d28_norm_source_dir": "rice/outputs_crosspest_frozen_replication_20260818/D28",
    "d90_args_dir": "rice/outputs_crosspest_frozen_replication_20260818/D90",
-   "acceptance": null,
+   "acceptance": {
+    "record": "audit/multipest/ACCEPTANCE_20260927.json",
+    "tested_commit": "0006136",
+    "G0": "PASS",
+    "G1": "15/15 bitwise",
+    "G2": "15/15",
+    "G3_macro_delta": 0.0
+   },
    "doy": [
     60,
     300
    ]
   },
   "bacterial_blight": {
-   "status": "ADOPTED_PENDING_ACCEPTANCE",
-   "canonical_since": null,
+   "status": "ACCEPTED_HANDOFF_CANONICAL",
+   "canonical_since": "2026-09-27",
    "record": "docs/CANONICAL_MULTIPEST_DECISION.md",
    "anchor": "audit/multipest/bacterial_blight/canonical_anchor.json",
    "grid_sha": "manifests/multipest/B_GRID_SHA256_bacterial_blight.txt",
@@ -49,15 +57,22 @@
    "stage2_dir": "rice/outputs_crosspest_frozen_replication_20260818/B",
    "d28_norm_source_dir": "rice/outputs_crosspest_frozen_replication_20260818/D28",
    "d90_args_dir": "rice/outputs_crosspest_frozen_replication_20260818/D90",
-   "acceptance": null,
+   "acceptance": {
+    "record": "audit/multipest/ACCEPTANCE_20260927.json",
+    "tested_commit": "0006136",
+    "G0": "PASS",
+    "G1": "15/15 bitwise",
+    "G2": "15/15",
+    "G3_macro_delta": 0.0
+   },
    "doy": [
     60,
     300
    ]
   },
   "brown_spot": {
-   "status": "ADOPTED_PENDING_ACCEPTANCE",
-   "canonical_since": null,
+   "status": "ACCEPTED_HANDOFF_CANONICAL",
+   "canonical_since": "2026-09-27",
    "record": "docs/CANONICAL_MULTIPEST_DECISION.md",
    "anchor": "audit/multipest/brown_spot/canonical_anchor.json",
    "grid_sha": "manifests/multipest/B_GRID_SHA256_brown_spot.txt",
@@ -65,15 +80,22 @@
    "stage2_dir": "rice/outputs_crosspest_frozen_replication_20260818/B",
    "d28_norm_source_dir": "rice/outputs_crosspest_frozen_replication_20260818/D28",
    "d90_args_dir": "rice/outputs_crosspest_frozen_replication_20260818/D90",
-   "acceptance": null,
+   "acceptance": {
+    "record": "audit/multipest/ACCEPTANCE_20260927.json",
+    "tested_commit": "0006136",
+    "G0": "PASS",
+    "G1": "15/15 bitwise",
+    "G2": "15/15",
+    "G3_macro_delta": 0.0
+   },
    "doy": [
     60,
     300
    ]
   },
   "rice_stem_borer_1": {
-   "status": "ADOPTED_PENDING_ACCEPTANCE",
-   "canonical_since": null,
+   "status": "ACCEPTED_HANDOFF_CANONICAL",
+   "canonical_since": "2026-09-27",
    "record": "docs/CANONICAL_MULTIPEST_DECISION.md",
    "anchor": "audit/multipest/rice_stem_borer_1/canonical_anchor.json",
    "grid_sha": "manifests/multipest/B_GRID_SHA256_rice_stem_borer_1.txt",
@@ -81,15 +103,22 @@
    "stage2_dir": "rice/outputs_crosspest_frozen_replication_20260818/B",
    "d28_norm_source_dir": "rice/outputs_crosspest_frozen_replication_20260818/D28",
    "d90_args_dir": "rice/outputs_crosspest_frozen_replication_20260818/D90",
-   "acceptance": null,
+   "acceptance": {
+    "record": "audit/multipest/ACCEPTANCE_20260927.json",
+    "tested_commit": "0006136",
+    "G0": "PASS",
+    "G1": "15/15 bitwise",
+    "G2": "15/15",
+    "G3_macro_delta": 0.0
+   },
    "doy": [
     60,
     300
    ]
   },
   "rice_stem_borer_2": {
-   "status": "ADOPTED_PENDING_ACCEPTANCE",
-   "canonical_since": null,
+   "status": "ACCEPTED_HANDOFF_CANONICAL",
+   "canonical_since": "2026-09-27",
    "record": "docs/CANONICAL_MULTIPEST_DECISION.md",
    "anchor": "audit/multipest/rice_stem_borer_2/canonical_anchor.json",
    "grid_sha": "manifests/multipest/B_GRID_SHA256_rice_stem_borer_2.txt",
@@ -97,15 +126,22 @@
    "stage2_dir": "rice/outputs_crosspest_frozen_replication_20260818/B",
    "d28_norm_source_dir": "rice/outputs_crosspest_frozen_replication_20260818/D28",
    "d90_args_dir": "rice/outputs_crosspest_frozen_replication_20260818/D90",
-   "acceptance": null,
+   "acceptance": {
+    "record": "audit/multipest/ACCEPTANCE_20260927.json",
+    "tested_commit": "0006136",
+    "G0": "PASS",
+    "G1": "15/15 bitwise",
+    "G2": "15/15",
+    "G3_macro_delta": 0.0
+   },
    "doy": [
     60,
     300
    ]
   },
   "BPH": {
-   "status": "ADOPTED_PENDING_ACCEPTANCE",
-   "canonical_since": null,
+   "status": "ACCEPTED_HANDOFF_CANONICAL",
+   "canonical_since": "2026-09-27",
    "record": "docs/CANONICAL_MULTIPEST_DECISION.md",
    "anchor": "audit/multipest/BPH/canonical_anchor.json",
    "grid_sha": "manifests/multipest/B_GRID_SHA256_BPH.txt",
@@ -113,15 +149,22 @@
    "stage2_dir": "rice/outputs_crosspest_frozen_replication_20260818/B",
    "d28_norm_source_dir": "rice/outputs_crosspest_frozen_replication_20260818/D28",
    "d90_args_dir": "rice/outputs_crosspest_frozen_replication_20260818/D90",
-   "acceptance": null,
+   "acceptance": {
+    "record": "audit/multipest/ACCEPTANCE_20260927.json",
+    "tested_commit": "0006136",
+    "G0": "PASS",
+    "G1": "15/15 bitwise",
+    "G2": "15/15",
+    "G3_macro_delta": 0.0
+   },
    "doy": [
     140,
     270
    ]
   },
   "blast": {
-   "status": "ADOPTED_PENDING_ACCEPTANCE",
-   "canonical_since": null,
+   "status": "ACCEPTED_HANDOFF_CANONICAL",
+   "canonical_since": "2026-09-27",
    "record": "docs/CANONICAL_MULTIPEST_DECISION.md",
    "anchor": "audit/multipest/blast/canonical_anchor.json",
    "grid_sha": "manifests/multipest/B_GRID_SHA256_blast.txt",
@@ -129,7 +172,14 @@
    "stage2_dir": "rice/outputs_crosspest_frozen_replication_20260818/B",
    "d28_norm_source_dir": "rice/outputs_crosspest_frozen_replication_20260818/D28",
    "d90_args_dir": "rice/outputs_crosspest_frozen_replication_20260818/D90",
-   "acceptance": null,
+   "acceptance": {
+    "record": "audit/multipest/ACCEPTANCE_20260927.json",
+    "tested_commit": "0006136",
+    "G0": "PASS",
+    "G1": "15/15 bitwise",
+    "G2": "15/15",
+    "G3_macro_delta": 0.0
+   },
    "doy": [
     60,
     300
@@ -173,6 +223,12 @@
    "event": "7 crosspest pests explicitly adopted as handoff canonical candidates",
    "status": "ADOPTED_PENDING_ACCEPTANCE",
    "decision_doc": "docs/CANONICAL_MULTIPEST_DECISION.md"
+  },
+  {
+   "date": "2026-09-27",
+   "event": "fresh clean-repo acceptance of commit 0006136: 8/8 pests G0-G3 PASS (G1 120/120 bitwise, macro delta 0 for all), WBPH regression PASS",
+   "status": "ACCEPTED_HANDOFF_CANONICAL (7 crosspest pests; WBPH unchanged)",
+   "record": "audit/multipest/ACCEPTANCE_20260927.json"
   }
  ],
  "governance": {
@@ -180,5 +236,6 @@
   "pipeline_auto_read": false,
   "change_rule": "Every status change needs a new history entry and an acceptance record; audit/CANONICAL.json (WBPH) is not modified.",
   "holdout_status": "no future-year holdout exists; see audit/HOLDOUT_LOCK_AMENDMENT1_20260818.md"
- }
+ },
+ "anchor_status_note": "audit/multipest/<pest>/canonical_anchor.json are frozen expectation records (350bf64) and keep status ADOPTED_PENDING_ACCEPTANCE as written at freeze time; this file is the authoritative status"
 }

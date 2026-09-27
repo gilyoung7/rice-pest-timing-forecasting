@@ -1,0 +1,195 @@
+{
+ "acceptance": "fresh multi-pest clean-repo acceptance",
+ "date": "2026-09-27",
+ "tested_commit": "000613685cd848a502732fc3786c2822f229dd37",
+ "branch": "multipest-handoff",
+ "result": "PASS",
+ "location": "/home/gpu4080/research/handoff_acceptance_multipest_20260927 (not in git; ~14 GB)",
+ "procedure": "fresh local clone of the tested commit (origin removed); new .venv from requirements.lock (normal resolver, --no-cache-dir); 19 release tars sha-checked before extraction; raw data read-only via data/ symlink; preprocessing cache regenerated inside the clone; per pest G0 -> G1 -> G2/G3 via scripts/run_multipest_acceptance.sh inside tmux + tmux_terminal_wrapper.sh, each phase under strace (file syscalls)",
+ "phases": {
+  "pilot": [
+   "sheath_blight",
+   "BPH"
+  ],
+  "remaining": [
+   "bacterial_blight",
+   "brown_spot",
+   "rice_stem_borer_1",
+   "rice_stem_borer_2",
+   "blast"
+  ],
+  "wbph_regression": [
+   "WBPH"
+  ]
+ },
+ "environment": {
+  "pip_check": "clean",
+  "packages": "150 == requirements.lock (sha256 ef54b83a4195b1f59dcf661d73a65028c05f99ee999a197609c15de7adc9b650)",
+  "details": [
+   "python 3.12.3 | executable /home/gpu4080/research/handoff_acceptance_multipest_20260927/repo/.venv/bin/python",
+   "torch 2.5.1+cu121 | cuda 12.1 | cudnn 90100 | gpu NVIDIA GeForce RTX 4080",
+   "numpy 2.4.4 pandas 2.2.3 sklearn 1.7.2 scipy 1.17.1 lightgbm 3.3.5 pyarrow 25.0.1 xgboost 3.0.5",
+   "platform Linux-7.0.0-28-generic-x86_64-with-glibc2.39 | user site enabled: False",
+   "580.173.02"
+  ]
+ },
+ "inputs": {
+  "release_archives": "19/19 sha256 before extraction (14 multi-pest + 5 WBPH)",
+  "release_assets": "8 x 216/216; extracted file set == manifests (1728, no extra)",
+  "raw_data": "daily table + 8 labels sha256 OK (manifests/multipest/RAW_DATA.sha256)",
+  "cache": "regenerated from raw inside the clone: daily_preprocessed_0dcb950c71a6e151.pkl, 5,286,866,957 B; only this cache opened in every phase"
+ },
+ "totals": {
+  "G0": "8/8",
+  "G1_grids_bitwise": "120/120",
+  "G2_cells": "120/120",
+  "G3": "8/8",
+  "macro_delta_zero": "8/8"
+ },
+ "pests": {
+  "sheath_blight": {
+   "G0": "PASS",
+   "G1": "PASS",
+   "G2": "PASS",
+   "G3": "PASS",
+   "g0_checks": 23,
+   "release_assets_ok": 216,
+   "grid_sha_bitwise": "15/15",
+   "g2_cells_pass": "15/15",
+   "expected_macro": 0.5841413333333333,
+   "reproduced_macro": 0.5841413333333333,
+   "macro_delta": 0.0,
+   "max_abs_cell_delta": 0.0,
+   "phase": "pilot",
+   "result": "PASS"
+  },
+  "BPH": {
+   "G0": "PASS",
+   "G1": "PASS",
+   "G2": "PASS",
+   "G3": "PASS",
+   "g0_checks": 23,
+   "release_assets_ok": 216,
+   "grid_sha_bitwise": "15/15",
+   "g2_cells_pass": "15/15",
+   "expected_macro": 0.37666266666666665,
+   "reproduced_macro": 0.37666266666666665,
+   "macro_delta": 0.0,
+   "max_abs_cell_delta": 0.0,
+   "phase": "pilot",
+   "result": "PASS"
+  },
+  "bacterial_blight": {
+   "G0": "PASS",
+   "G1": "PASS",
+   "G2": "PASS",
+   "G3": "PASS",
+   "g0_checks": 23,
+   "release_assets_ok": 216,
+   "grid_sha_bitwise": "15/15",
+   "g2_cells_pass": "15/15",
+   "expected_macro": 0.4770853333333333,
+   "reproduced_macro": 0.4770853333333333,
+   "macro_delta": 0.0,
+   "max_abs_cell_delta": 0.0,
+   "phase": "remaining",
+   "result": "PASS"
+  },
+  "brown_spot": {
+   "G0": "PASS",
+   "G1": "PASS",
+   "G2": "PASS",
+   "G3": "PASS",
+   "g0_checks": 23,
+   "release_assets_ok": 216,
+   "grid_sha_bitwise": "15/15",
+   "g2_cells_pass": "15/15",
+   "expected_macro": 0.4953613333333333,
+   "reproduced_macro": 0.4953613333333333,
+   "macro_delta": 0.0,
+   "max_abs_cell_delta": 0.0,
+   "phase": "remaining",
+   "result": "PASS"
+  },
+  "rice_stem_borer_1": {
+   "G0": "PASS",
+   "G1": "PASS",
+   "G2": "PASS",
+   "G3": "PASS",
+   "g0_checks": 23,
+   "release_assets_ok": 216,
+   "grid_sha_bitwise": "15/15",
+   "g2_cells_pass": "15/15",
+   "expected_macro": 0.350724,
+   "reproduced_macro": 0.350724,
+   "macro_delta": 0.0,
+   "max_abs_cell_delta": 0.0,
+   "phase": "remaining",
+   "result": "PASS"
+  },
+  "rice_stem_borer_2": {
+   "G0": "PASS",
+   "G1": "PASS",
+   "G2": "PASS",
+   "G3": "PASS",
+   "g0_checks": 23,
+   "release_assets_ok": 216,
+   "grid_sha_bitwise": "15/15",
+   "g2_cells_pass": "15/15",
+   "expected_macro": 0.36444,
+   "reproduced_macro": 0.36444,
+   "macro_delta": 0.0,
+   "max_abs_cell_delta": 0.0,
+   "phase": "remaining",
+   "result": "PASS"
+  },
+  "blast": {
+   "G0": "PASS",
+   "G1": "PASS",
+   "G2": "PASS",
+   "G3": "PASS",
+   "g0_checks": 23,
+   "release_assets_ok": 216,
+   "grid_sha_bitwise": "15/15",
+   "g2_cells_pass": "15/15",
+   "expected_macro": 0.5420426666666667,
+   "reproduced_macro": 0.5420426666666667,
+   "macro_delta": 0.0,
+   "max_abs_cell_delta": 0.0,
+   "phase": "remaining",
+   "result": "PASS"
+  },
+  "WBPH": {
+   "G0": "PASS",
+   "G1": "PASS",
+   "G2": "PASS",
+   "G3": "PASS",
+   "g0_checks": null,
+   "release_assets_ok": 216,
+   "grid_sha_bitwise": "15/15",
+   "g2_cells_pass": "15/15",
+   "expected_macro": 0.5437853333333333,
+   "reproduced_macro": 0.5437853333333333,
+   "macro_delta": 0.0,
+   "max_abs_cell_delta": 1.1102230246251565e-16,
+   "phase": "wbph",
+   "result": "PASS (WBPH regression via dispatcher)"
+  }
+ },
+ "external_dependency_audit": {
+  "forbidden_reads": "0 opens of the research trees (cropscience, cropscience_multipest), repro_verify, r1/r2/r3 acceptance, staging, or old caches (strace, ~8.55M file-syscall lines)",
+  "forbidden_writes": "0 files changed since T0 in cropscience_multipest, cropscience, handoff_staging, repro_verify_B_T_20260926, handoff_acceptance_20260926 (r1), _r2, _r3, /home/gpu4080/ygdata; 0 write-mode opens of raw data",
+  "archive_repo": "releases, assets and refs identical before/after",
+  "reroot": "all 105 crosspest checkpoint dispatch paths mapped to clone-local files only"
+ },
+ "warnings": [
+  {
+   "phase": "pilot",
+   "event": "1 newfstatat on the directory /home/gpu4080/research/cropscience_multipest",
+   "cause": "tmux session started in the operator's cwd; bash stats the inherited OLDPWD at startup",
+   "impact": "none: no open/read of any file there; results unaffected",
+   "action": "audit harness only (tmux -c <clone>, unset OLDPWD); 0 occurrences in later phases; no repo code changed"
+  }
+ ],
+ "failures": []
+}

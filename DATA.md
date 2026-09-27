@@ -2,9 +2,19 @@
 
 Nothing below is stored in git. The repo only carries the sha256 lists in `manifests/`.
 
+**Scope.** This file documents the WBPH inputs (sections 1–3). The seven other pests
+(sheath_blight, bacterial_blight, brown_spot, rice_stem_borer_1, rice_stem_borer_2, BPH, blast) are
+documented in [docs/MULTIPEST_DATA.md](docs/MULTIPEST_DATA.md): two release tars per pest
+(`<pest>_core.tar`, `<pest>_retrain.tar`), per-pest sha256 lists in `manifests/multipest/`, and one
+additional label file per pest under the same data root. Raw data for all 8 pests:
+`manifests/multipest/RAW_DATA.sha256` (daily table + 8 label files).
+
+Release: **v2.0.0-multipest-handoff** carries all 19 tars (the 5 WBPH tars below, byte-identical to
+v1.0.0-handoff, plus the 14 multi-pest tars). v1.0.0-handoff remains the WBPH-only baseline.
+
 ## 1. Raw data (shared storage; not redistributed)
 
-Canonical B + T reads exactly two raw files. Place (or symlink) the data root at `data/`,
+Canonical WBPH B + T reads exactly two raw files. Place (or symlink) the data root at `data/`,
 or set `RICE_DATA_ROOT` to it. The layout under the root is the original server's
 `ygdata/` layout.
 

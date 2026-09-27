@@ -17,13 +17,13 @@ are not canonical; D28 checkpoints and D90 arguments/splits are kept only as B r
 | pest | status | frozen T macro (`IoU80_overall_tol0`, 15 cells) | anchor |
 |---|---|---:|---|
 | WBPH | ACCEPTED_HANDOFF_CANONICAL (unchanged, canonical since 2026-08-18) | 0.5437853333333333 | `audit/canonical_anchor.json` |
-| sheath_blight | ADOPTED_PENDING_ACCEPTANCE | 0.5841413333333333 | `audit/multipest/sheath_blight/canonical_anchor.json` |
-| bacterial_blight | ADOPTED_PENDING_ACCEPTANCE | 0.4770853333333333 | `audit/multipest/bacterial_blight/canonical_anchor.json` |
-| brown_spot | ADOPTED_PENDING_ACCEPTANCE | 0.4953613333333333 | `audit/multipest/brown_spot/canonical_anchor.json` |
-| rice_stem_borer_1 | ADOPTED_PENDING_ACCEPTANCE | 0.350724 | `audit/multipest/rice_stem_borer_1/canonical_anchor.json` |
-| rice_stem_borer_2 | ADOPTED_PENDING_ACCEPTANCE | 0.36444 | `audit/multipest/rice_stem_borer_2/canonical_anchor.json` |
-| BPH | ADOPTED_PENDING_ACCEPTANCE | 0.37666266666666665 | `audit/multipest/BPH/canonical_anchor.json` |
-| blast | ADOPTED_PENDING_ACCEPTANCE | 0.5420426666666667 | `audit/multipest/blast/canonical_anchor.json` |
+| sheath_blight | ACCEPTED_HANDOFF_CANONICAL (adopted 2026-09-27, accepted 2026-09-27) | 0.5841413333333333 | `audit/multipest/sheath_blight/canonical_anchor.json` |
+| bacterial_blight | ACCEPTED_HANDOFF_CANONICAL (adopted 2026-09-27, accepted 2026-09-27) | 0.4770853333333333 | `audit/multipest/bacterial_blight/canonical_anchor.json` |
+| brown_spot | ACCEPTED_HANDOFF_CANONICAL (adopted 2026-09-27, accepted 2026-09-27) | 0.4953613333333333 | `audit/multipest/brown_spot/canonical_anchor.json` |
+| rice_stem_borer_1 | ACCEPTED_HANDOFF_CANONICAL (adopted 2026-09-27, accepted 2026-09-27) | 0.350724 | `audit/multipest/rice_stem_borer_1/canonical_anchor.json` |
+| rice_stem_borer_2 | ACCEPTED_HANDOFF_CANONICAL (adopted 2026-09-27, accepted 2026-09-27) | 0.36444 | `audit/multipest/rice_stem_borer_2/canonical_anchor.json` |
+| BPH | ACCEPTED_HANDOFF_CANONICAL (adopted 2026-09-27, accepted 2026-09-27) | 0.37666266666666665 | `audit/multipest/BPH/canonical_anchor.json` |
+| blast | ACCEPTED_HANDOFF_CANONICAL (adopted 2026-09-27, accepted 2026-09-27) | 0.5420426666666667 | `audit/multipest/blast/canonical_anchor.json` |
 
 Macros are `math.fsum` of the 15 cell values / 15 (same rule as `tools/aggregate_selector_cells.py`);
 they agree with `CROSSPEST_FROZEN_MACRO.csv` within 1e-12.
@@ -134,3 +134,32 @@ do-no-harm; arch calibration; all other ablations and diagnostics; crosspest D28
 | training code | `fec1409` (`canonical-B-train`); checkpoint `code_provenance` 105/105 |
 | file-level provenance | `manifests/multipest/CODE_MANIFEST.csv`, `manifests/multipest/PROVENANCE_MULTIPEST.csv` |
 | WBPH record | `audit/CANONICAL.json`, PROVENANCE.md §4 (acceptance r3 on `91da3f7`) |
+
+## 11. Acceptance result (2026-09-27)
+
+Fresh clean-repo acceptance of commit `000613685cd848a502732fc3786c2822f229dd37` (branch
+`multipest-handoff`): **PASS**. Record: `audit/multipest/ACCEPTANCE_20260927.json`. The seven pests
+moved from `ADOPTED_PENDING_ACCEPTANCE` to `ACCEPTED_HANDOFF_CANONICAL`; WBPH stays
+`ACCEPTED_HANDOFF_CANONICAL` (regression PASS). The per-pest `canonical_anchor.json` files are frozen
+expectation records and keep the status written at freeze time; `audit/CANONICAL_MULTIPEST.json` is
+the authoritative status.
+
+| pest | G0 | G1 (grids bitwise) | G2 (cells ≤1e-12) | G3 expected = reproduced macro | max cell Δ |
+|---|---|---|---|---:|---:|
+| sheath_blight | PASS | 15/15 | 15/15 | 0.5841413333333333 | 0.0 |
+| bacterial_blight | PASS | 15/15 | 15/15 | 0.4770853333333333 | 0.0 |
+| brown_spot | PASS | 15/15 | 15/15 | 0.4953613333333333 | 0.0 |
+| rice_stem_borer_1 | PASS | 15/15 | 15/15 | 0.350724 | 0.0 |
+| rice_stem_borer_2 | PASS | 15/15 | 15/15 | 0.36444 | 0.0 |
+| BPH (DOY 140–270, §7) | PASS | 15/15 | 15/15 | 0.37666266666666665 | 0.0 |
+| blast | PASS | 15/15 | 15/15 | 0.5420426666666667 | 0.0 |
+| WBPH (regression, via dispatcher) | PASS | 15/15 | 15/15 | 0.5437853333333333 | 1.1e-16 |
+
+Totals: G0 8/8, G1 120/120 bitwise, G2 120/120, G3 8/8 with macro delta 0.0 for every pest.
+Environment identical to acceptance r3 (Python 3.12.3, torch 2.5.1+cu121, CUDA 12.1, cuDNN 90100,
+RTX 4080, driver 580.173.02; 150 packages == `requirements.lock`). No read of the research trees,
+earlier verification/acceptance trees, staging area or old caches, and no write outside the
+acceptance directory (strace + mtime audit). One warning: in the pilot phase bash stat'ed the
+research-repo directory named by an inherited `OLDPWD` (no file opened or read; no effect on
+results); the audit harness was corrected and the event did not recur. The Stage-1 policy (§5) and
+the 8 tau metadata mismatches (§6) are unchanged by the acceptance.

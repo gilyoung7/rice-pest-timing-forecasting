@@ -4,10 +4,20 @@ Audience: the researcher/engineer taking over this project. Read README.md first
 
 ## 1. What the system predicts
 
-Rice pest occurrence timing, pest WBPH. For each (site, year) the system issues an alert and
-predicts the interval in which the pest occurrence falls. Evaluation is the 15-cell grid
-**eval year ∈ {2022, 2023, 2024} × Stage-2 seed ∈ {0..4}**; the headline metric is
+Rice pest occurrence timing for eight pests: WBPH, sheath_blight, bacterial_blight, brown_spot,
+rice_stem_borer_1, rice_stem_borer_2, BPH, blast. For each (pest, site, year) the system issues an
+alert and predicts the interval in which the pest occurrence falls. Evaluation is the 15-cell grid
+**eval year ∈ {2022, 2023, 2024} × Stage-2 seed ∈ {0..4}** per pest; the headline metric is
 `IoU80_overall_tol0` (15-cell macro; within a cell, the mean over 5 selector seeds).
+
+All eight pests use the same canonical configuration, B + selector T, each with its own checkpoints
+and Stage-1 dispatch. Canonical macros and status: README.md and `audit/CANONICAL_MULTIPEST.json`.
+WBPH was canonical during the research; the other seven come from the preregistered cross-pest
+frozen replication (2026-08-18) and were adopted as handoff canonical on 2026-09-27
+(`docs/CANONICAL_MULTIPEST_DECISION.md`). BPH keeps its historical season window DOY 140–270 and is
+not directly comparable with the DOY 60–300 pests.
+
+WBPH progression (the other pests have the analogous D28 → D90 → B → T lineage in the crosspest report):
 
 | model | 15-cell macro | status |
 |---|---:|---|
@@ -39,6 +49,16 @@ Selector T (scripts/run_selector_t.sh → audit/selround1_20260818/run_selector_
 Aggregate (tools/aggregate_selector_cells.py) → outputs/selector_T_aggregate/{cells.csv, aggregate.json}
 ```
 
+The seven other pests run the same stages with the pest as an argument:
+`scripts/run_pest_b_grid.sh <pest>` (grid via `tools/pest_grid_reroot.py`, which maps the original
+server's absolute dispatch path stored in the checkpoint into this repo and aborts on anything else),
+`scripts/run_pest_selector_t.sh <pest>` (`tools/run_pest_selector_cell.py` with the frozen T env,
+`tools/aggregate_pest_cells.py`). Their B checkpoints live under
+`rice/outputs_crosspest_frozen_replication_20260818/B/<y>/seed<s>/<pest>/`, selector outputs under
+`outputs/multipest/<pest>/`. For `WBPH` both launchers exec the original WBPH scripts unchanged.
+Stage-1 dispatch is frozen for all pests; the tau actually used (`dispatch_tau_used`) is authoritative,
+and 8 pest-years differ from the Stage-1 selection CSV (`manifests/multipest/STAGE1_OPERATING_POINTS.csv`).
+
 Terminology traps:
 - "T" is the treatment arm of selector round 1, i.e. selector v2 — not a model.
 - `selector_artifacts_v2/` is an artifact *schema* version; it exists for both selector versions.
@@ -49,9 +69,11 @@ Terminology traps:
 
 | task | command | notes |
 |---|---|---|
-| reproduce headline from shipped checkpoints | `scripts/run_b_grid.sh --check && scripts/run_selector_t.sh --anchor` | ~25 min on one RTX 4080; deterministic |
-| retrain one B cell | `EXPB_DRY_RUN=1 scripts/run_expb_cell.sh 2022 0` then without `EXPB_DRY_RUN` | writes to `rice/outputs_expB_retrain/`; needs D90 args/splits + D28 checkpoints (release assets) |
-| check assets / data | `sha256sum -c manifests/RELEASE_ASSETS.sha256`; see DATA.md | |
+| reproduce one pest's headline from shipped checkpoints | `scripts/run_pest_b_grid.sh <pest> --check && scripts/run_pest_selector_t.sh <pest> --anchor` | ~20–40 min per pest on one RTX 4080; deterministic. WBPH: same as `scripts/run_b_grid.sh --check && scripts/run_selector_t.sh --anchor` |
+| full gate run (G0–G3) for several pests | `scripts/run_multipest_acceptance.sh OUT_DIR [pest ...]` inside tmux | per-pest failure isolation; writes `OUT_DIR/summary.json` |
+| input gate only | `PYTHONPATH=. .venv/bin/python tools/multipest_g0.py <pest>` | dispatch/climatology/raw sha, checkpoint metadata, D28 frozen-norm sha |
+| retrain one WBPH B cell | `EXPB_DRY_RUN=1 scripts/run_expb_cell.sh 2022 0` then without `EXPB_DRY_RUN` | writes to `rice/outputs_expB_retrain/`; needs D90 args/splits + D28 checkpoints (release assets). No launcher is shipped for retraining the other pests; their D28/D90 inputs are in `<pest>_retrain.tar` and the executed driver is in the archive (`scripts/run_crosspest_frozen_cell.sh`) |
+| check assets / data | `sha256sum -c manifests/RELEASE_ASSETS.sha256`, `manifests/multipest/RELEASE_ASSETS_<pest>.sha256`; see DATA.md | |
 
 Long runs: use tmux with `scripts/tmux_terminal_wrapper.sh` (writes a terminal-state JSON and
 signals `tmux wait-for`), and judge success only from exit code + required artifacts.
@@ -62,13 +84,17 @@ signals `tmux wait-for`), and judge success only from exit code + required artif
 - **Training is not bitwise reproducible** (cuDNN non-deterministic algorithms; recorded in the
   code manifests). A retrained B will differ from the shipped checkpoints.
 - Training-code provenance is proven only for `model.py`, `run_train.py`, `train_eval.py`
-  (sha256 recorded in all 15 checkpoints). Other training-path files are inferred unchanged.
-  See PROVENANCE.md.
-- Training was not re-executed during the handoff verification.
+  (sha256 recorded in all 15 WBPH and all 105 crosspest checkpoints). Other training-path files are
+  inferred unchanged. See PROVENANCE.md.
+- Training was not re-executed during the handoff verification; Stage 1 was not re-run for any pest.
+- The crosspest run recorded no grid sha256 at run time; the expected grid hashes were derived from
+  the persisted grids at handoff (each equal to its independent selector-arm copy) and then
+  reproduced bitwise in the acceptance.
 
 ## 5. Rules inherited from the project
 
-- Do not modify the shipped canonical checkpoints, grids, anchor or decision records.
+- Do not modify the shipped canonical checkpoints, grids, anchors (WBPH and `audit/multipest/`) or
+  decision records; record status changes as new history entries in `audit/CANONICAL_MULTIPEST.json`.
 - `vendor/_patched_train.py` aborts canonical training when `RICE_DAILY_CSV` or
   `RICE_LONG_BY_PEST_DIR` is set; relocate data with `RICE_DATA_ROOT` (or the `data/` symlink).
 - The holdout-lock list (architecture, loss, metric, selector, seed ensemble, checkpoint
@@ -79,4 +105,6 @@ signals `tmux wait-for`), and judge success only from exit code + required artif
 
 Everything not needed for B + T (Stage-1 training, D28/D90 training launchers, ablations,
 mechanism battery, augmentation, deployment/LiteRT lineage) stays in the archive repository;
-see PROVENANCE.md §1 and docs/EXPERIMENT_SUMMARY.md.
+see PROVENANCE.md §1 and docs/EXPERIMENT_SUMMARY.md. The complete crosspest output directory
+(all arms, selector outputs, logs) is the archive Release `provenance-crosspest-frozen-20260818`
+(docs/MULTIPEST_DATA.md §4).

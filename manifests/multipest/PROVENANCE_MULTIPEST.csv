@@ -35,4 +35,5 @@ manifests/multipest/RELEASE_ASSETS_blast.sha256,derived,/home/gpu4080/research/h
 manifests/multipest/RELEASE_ARCHIVES.sha256,derived,/home/gpu4080/research/handoff_staging/release_assets_multipest,,"14 deterministic tars (built twice, byte-identical)"
 docs/MULTIPEST_DATA.md,new_handoff,,,asset/verify guide
 archive:provenance-crosspest-frozen-20260818,archive_release,gilyoung7/cropscience-research-archive,6518679a956245893af7f62b93c17c91abeafdaddd048a208e05915614b10a1d,full crosspest output dir tar; 16111 files; not in handoff release
+audit/multipest/ACCEPTANCE_20260927.json,derived,/home/gpu4080/research/handoff_acceptance_multipest_20260927/acceptance_multipest (not in git),,compact record of the fresh 8-pest acceptance of 0006136
 manifests/multipest/PROVENANCE_MULTIPEST.csv,new_handoff,,,this file

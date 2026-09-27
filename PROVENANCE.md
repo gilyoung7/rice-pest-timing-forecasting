@@ -11,7 +11,9 @@ authoritative record of the research process.
 | B training code tag | `canonical-B-train` in that repository (annotated tag object `3c57771e85faa84f00b1cf9798228b591fa81f4a` → commit `fec1409829e877da923b8e7de37cc659d2ef45b0`) |
 | experiment-hook snapshot | history `snapshot/sept-experiment-hooks` @ `83dc4a392ca854c4838340e76d37f8df89d37777` (uncommitted Aug–Sep hooks + untracked sources/docs, INVALID markers, provenance manifests). Not a GitHub branch: preserved as the git bundle `cropscience_snapshot-sept-experiment-hooks_83dc4a3.bundle` (sha256 `c84879f8be3a9bdeb43056331e4e07cefe13fcee307e735659ee99e35adf86bd`) in the archive repository's Release `canonical-B-train`, with restore instructions in its `ARCHIVE_README.md` |
 | original checkout | `/home/gpu4080/research/cropscience_multipest` (branch `exp/clean2024-D-wbph-only`, HEAD `98f45dbc597f81ca8b5a3721540b53355467883e`) |
-| canonical outputs (archive) | `rice/outputs_allpests_e5d_expB_20260817` (B), `audit/selround1_20260818/runs/T` (selector T) |
+| canonical outputs (archive) | WBPH: `rice/outputs_allpests_e5d_expB_20260817` (B), `audit/selround1_20260818/runs/T` (selector T); other 7 pests: `rice/outputs_crosspest_frozen_replication_20260818/{B,selector}` |
+| crosspest outputs (archive) | never in git; complete directory preserved as Release `provenance-crosspest-frozen-20260818` of the archive repository (tag → `fec1409`): `cropscience_crosspest_frozen_replication_20260818.tar`, sha256 `6518679a956245893af7f62b93c17c91abeafdaddd048a208e05915614b10a1d`, 16,111 files |
+| multi-pest code/record provenance | `manifests/multipest/CODE_MANIFEST.csv`, `manifests/multipest/PROVENANCE_MULTIPEST.csv`, `docs/CANONICAL_MULTIPEST_DECISION.md` §10 |
 
 ## 2. Source recipe (authoritative)
 
@@ -77,10 +79,36 @@ reference-grid paths in `RELEASE_ASSETS.sha256`) failed before G1; both defects 
 `f393878` and `91da3f7`. With this result the handoff environment (ENVIRONMENT.md) is the
 authoritative installation environment of this repository.
 
-Commits after `91da3f7` change documentation and manifests only (no executable code, no
-checkpoint/asset content); the full acceptance above therefore applies to them without re-running
-G1–G3. Verify with `git diff --stat 91da3f7 HEAD -- '*.py' '*.sh' rice/experiments/allpests_e5d/pests.tsv requirements.lock`
+Commits `f393878`..`90d7fa0` after `91da3f7` changed documentation and manifests only. The
+multi-pest commits (`350bf64`..) added new files only and left every WBPH executable, record and asset
+unchanged; the WBPH path was re-accepted in the multi-pest acceptance below (regression PASS).
+Verify the WBPH executables with
+`git diff --stat 91da3f7 HEAD -- audit/selround1_20260818/run_selector_cell.py scripts/run_b_grid.sh scripts/run_selector_t.sh scripts/run_expb_cell.sh tools/aggregate_selector_cells.py rice/pests/WBPH rice/experiments rice/src rice/scripts rice/configs requirements.lock`
 (expected: empty).
+
+**Multi-pest acceptance (2026-09-27, `/home/gpu4080/research/handoff_acceptance_multipest_20260927`)**:
+fresh clone of commit `000613685cd848a502732fc3786c2822f229dd37` (branch `multipest-handoff`); new `.venv`
+from `requirements.lock` (normal resolver, `--no-cache-dir`); 19 release tars sha-checked before
+extraction; raw data read-only; preprocessing cache regenerated inside the clone; every phase ran in
+tmux under `strace`. Record: `audit/multipest/ACCEPTANCE_20260927.json`.
+
+| step | result |
+|---|---|
+| environment | identical to r3: `pip check` clean, 150 packages == lock, Python 3.12.3, torch 2.5.1+cu121, CUDA 12.1, cuDNN 90100, RTX 4080, driver 580.173.02 |
+| inputs | release archives 19/19; release assets 8 × 216/216, extracted set == manifests (1,728 files, no extra); raw data daily + 8 labels |
+| cache | regenerated from raw data (key `0dcb950c71a6e151`, 5,286,866,957 B); the only cache opened |
+| pilot | sheath_blight (DOY 60–300) and BPH (DOY 140–270, T = 131): G0–G3 PASS |
+| G0 | 8/8 (7 pests: 23 checks each — dispatch/climatology sha, raw sha, 15 checkpoints: pest, DOY, window 90, history gate, re-rooted dispatch, D28 sha == `frozen_norm_source`, splits) |
+| G1 | 120/120 grids bitwise identical (8 × 15) |
+| G2 | 120/120 cells within 1e-12 (max abs delta 0.0 for the 7 pests, 1.1e-16 for WBPH) |
+| G3 | 8/8, macro delta 0.0 for every pest (values: README.md) |
+| WBPH regression | via `scripts/run_pest_*.sh WBPH`, which exec'd the unchanged WBPH scripts: G1 15/15, G2 15/15, G3 0.5437853333333333 |
+| isolation | 0 reads of the research trees, earlier verification/acceptance trees, staging area or old caches; 0 writes outside the acceptance directory; archive repo unchanged; all 105 crosspest dispatch paths re-rooted to clone-local files |
+
+Warning (no effect on results): in the pilot phase bash stat'ed the research-repo directory named by
+an inherited `OLDPWD` (tmux started in the operator's working directory); no file there was opened or
+read. The audit harness was corrected (tmux started in the clone, `OLDPWD` unset); the event did not
+recur. No gate failed, and no code, manifest or expected value was changed during the acceptance.
 
 ## 5. Manifests
 
@@ -92,7 +120,8 @@ G1–G3. Verify with `git diff --stat 91da3f7 HEAD -- '*.py' '*.sh' rice/experim
 | `manifests/B_GRID_SHA256.txt` | expected sha256 of the 15 canonical grids (from `inputs_manifest.txt`) |
 | `manifests/RELEASE_ASSETS.sha256`, `RELEASE_ARCHIVES.sha256` | release-asset files and tarballs |
 | `manifests/RAW_DATA.sha256` | the two raw data files |
-| `manifests/EXTERNAL_DEPENDENCIES.csv` | everything outside git that the canonical path needs |
+| `manifests/EXTERNAL_DEPENDENCIES.csv` | everything outside git that the canonical WBPH path needs (other pests: docs/MULTIPEST_DATA.md) |
+| `manifests/multipest/` | the seven other pests: `B_GRID_SHA256_<pest>.txt`, `RELEASE_ASSETS_<pest>.sha256`, `RELEASE_ARCHIVES.sha256`, `RAW_DATA.sha256`, `STAGE1_DISPATCH.sha256`, `STAGE1_OPERATING_POINTS.csv`, `CODE_MANIFEST.csv`, `PROVENANCE_MULTIPEST.csv` (origin of every multi-pest file; `manifests/PROVENANCE.csv` covers the WBPH-era files only) |
 
 ## 6. Known provenance limits
 
