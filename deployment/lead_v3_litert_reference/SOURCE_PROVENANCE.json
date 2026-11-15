@@ -1,0 +1,532 @@
+{
+  "source_repository": "gilyoung7/cropscience",
+  "source_directory": "/home/gpu4080/research/cropscience_multipest",
+  "source_commit": "98f45dbc597f81ca8b5a3721540b53355467883e",
+  "selection": "committed lead_v3 source snapshot; excludes uncommitted experimental edits and generated assets",
+  "target_repository": "gilyoung7/rice-pest-timing-forecasting",
+  "target_base_commit": "72d9a7a634039c759d4abf2b4cee1c729586806a",
+  "files": [
+    {
+      "path": "api_handoff_litert_portable/README.md",
+      "sha256": "963f413fd7400b30090e09de26eab01bf44e463f15ae1fdae5a882ceb0999540",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/build_package.py",
+      "sha256": "5d13632096bde8a3207928866f1b64d7c92287db2d37a31db11e9391d47ccc67",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/docs/API_INPUT_OUTPUT.md",
+      "sha256": "557f0372d8ba17d0f7bd67cdffcced0c397314ce8ad2f67a73c309e91a99883b",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/docs/examples/01_learned_request.json",
+      "sha256": "429f6d7e133260592dc07879ee2199b4984203af40b9a12f0664fc6768ac7c8e",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/docs/examples/04a_missingrun_request.json",
+      "sha256": "f3042e8f7d828eeff3746f0fcf7f3af61de92d89610af6f93b93644717b8d950",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/docs/examples/04b_pending_request.json",
+      "sha256": "9522ac54137686d6b17fa471da7a8c97d5529cab529d43c799320012f0b46373",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/docs/examples/04c_noalert_request.json",
+      "sha256": "278be7be5348772b3fba406ea39bdb4434d57b5b8c9305cdbea93fe94c6d1ad5",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/docs/examples/04d_nonlearned_request.json",
+      "sha256": "ff9d7d2c5526a4a5e7fe6940dc8a6b462f3e9427ce17fa4baa7e39f5880d2c07",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/examples/batch_rows.csv",
+      "sha256": "f672a0acee92ba0467ea4b7bb16c39341a98b61d10a388af15de686d2162eeaa",
+      "source": "committed HEAD blob; original working file was not changed",
+      "original_sha256": "dc20b72a851875a7f6e4c5b3bc33db993169c633d12ab67ba29cead5c2591946",
+      "adaptation": "Replaced example site IDs with EXAMPLE_SITE_ID; request input only, no observations."
+    },
+    {
+      "path": "api_handoff_litert_portable/examples/request_batch_generic.json",
+      "sha256": "4395bc6ed266e9fd0d366a23f2440f1f9ed47542ba75e215b327a6cd35a5da95",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/examples/request_batch_representative.json",
+      "sha256": "b89aecae69ac4ed2dd19d852c59daec093df698b3d3687d0af1a3cb79444dff4",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/examples/request_single.json",
+      "sha256": "7cd307065287bf7a5908d2343fab8b9500e37763f3d71ee3e1a965653110d285",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/infer/__init__.py",
+      "sha256": "137bae175751aee922b532bcd21ca2bef43d1b721f1a7dd95fee738859fb4f9d",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/infer/_stage2_preprocessing.py",
+      "sha256": "533f14840cd92fcee38dbc495aa10d4924b160b8834099a01b1b6bb616f2720d",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/infer/_stage2_schema.py",
+      "sha256": "6deb7d7f9385600626bced9904d5b3cc17caa494eda717ff5150f6b0d4cd5ff2",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/infer/batch.py",
+      "sha256": "af991df39153468b6893cf006037069c8a8111b37605e6eb29781a0ec8a505c9",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/infer/cohort.py",
+      "sha256": "985bd386f97f65787c768ac0e7f62440b7196e7d53754acb9811446772d60fb8",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/infer/fallback.py",
+      "sha256": "cd7b48a2ea514dc260a91cab7b00be9f0dd1d2706360b53ddca18e08e04cac52",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/infer/inputs.py",
+      "sha256": "87fa12987a1976b8fb763b1d839e7aae73ebca1fdd17feda03e6982d3e2f5d4f",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/infer/paths.py",
+      "sha256": "6ccd7ce844350c9bdbc21754ea413308cf012d29fb009eff6d27e47132e513c0",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/infer/preprocessing.py",
+      "sha256": "7bab508b2c04bdee5d2d7a7529e5a89ced6c3c164a69329bbd84b7884a59fd62",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/infer/providers.py",
+      "sha256": "dfd30a1dbacacea90e6657b7eb8855be66790b6c9c63653303a431c3711de327",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/infer/schemas.py",
+      "sha256": "2e4e78e69324bb38827058b7f0f41ac69c298493aa542290f8b4e46e5c7519ac",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/infer/stage1_features.py",
+      "sha256": "24594f0d251e80c1c07cae20b2be5b4596cd27d3980857fc0bcf8b95114b0cea",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/infer/stage1_portable.py",
+      "sha256": "94c783cbcf9839afdcf42980e41f8aac6a612f45da0e2fddb8a5c3b1305c3253",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/infer/stage2_litert.py",
+      "sha256": "6d258fdfbeb6866a399fdc9757e337458090b1e780598717f6be535a91cc7442",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/pytest.ini",
+      "sha256": "f3c461927e7f54c8a90e00416cfa4ab14560ae60ab2e55dd1b3a19120652a9fb",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/requirements-runtime.txt",
+      "sha256": "c9b2a661794116cdd6e176d8717459211d0dc240b709632453fae5595642b5cd",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/requirements-test.txt",
+      "sha256": "0cd5a1971b1e5855ccb303bb911bf0920365f9882e962021a2234134b784134c",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/run_predict.py",
+      "sha256": "beaca0a937a532b9cdf6d7b7b99637fd412d0482fe1f3d96055820cffe04be1f",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/tests/test_batch.py",
+      "sha256": "8a473e3f1e12f28aaeb35a9bd418bdf4119067f7dab654423c2492f1ba0546b3",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/tests/test_generic_batch.py",
+      "sha256": "b9455a07349fc50bd6f9d3d3f33db601bda8a1005a83ea5aa145c21d2f74d59a",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/tests/test_no_heavy_dependencies.py",
+      "sha256": "bf8caa5226a4431a49e3bc1f8f31340772c3799b6cb5cdfec2c0f2cc7706dd9f",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/tests/test_output_contract.py",
+      "sha256": "bb6e01a64d46590f6ce341464544d273d760fb7c1d9b0c241f54f2795831ffe9",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/tests/test_smoke_cases.py",
+      "sha256": "3ddc62d7009611495b9d37641721ece0c4a1545e5ff6a6875dd9c3918184809c",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/tests/test_stage1_portable.py",
+      "sha256": "68435366471a64f8d263cecabd1a896e164105da9d2bf7ce6a45fa3de42caacd",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "stage1_xgboost_migration/.gitignore",
+      "sha256": "cbf4b457d47c641dae31f7e502c0a65b918d7acdca8cc49aa984752af6fb3083",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "stage1_xgboost_migration/README.md",
+      "sha256": "e97cf141bdb3f6a0ac25116379729f431d782e070a2ab273c520a7eb7fa61bd2",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "stage1_xgboost_migration/common.py",
+      "sha256": "c146b4e36499c6ca671104e2980673cc85d1bf34b631f85f4947e4e857a1abba",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "stage1_xgboost_migration/export_calibration_assets.py",
+      "sha256": "6a6e9fee4661ba5e6833714350ddcbee5a59fa867cfe13bbb27ae23992987962",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "stage1_xgboost_migration/export_portable_models.py",
+      "sha256": "b5033c58bb3d3656c222119785ef61e266bf222a9b118582b63659c1a2e8d09b",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "stage1_xgboost_migration/portable_stage1.py",
+      "sha256": "4f30ef01f900957dd88fc71b277d303f2c46c859ff5e19bd3a0617b49bb24a97",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "stage1_xgboost_migration/render_alert_report.py",
+      "sha256": "76adea5f255a627bf943f65a612e85a8cfe20538b478785e408256490ddf82d8",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "stage1_xgboost_migration/reports/alert_parity_report.md",
+      "sha256": "a419e23c77f95a94a6013193d3a26e96c3fc8e272d953ad5da16579e91394240",
+      "source": "committed HEAD blob; original working file was not changed",
+      "original_sha256": "5b513b36972356bb5c437b844321bac897bac66f8988df6424310fbb11499ab6",
+      "adaptation": "Whitespace only: stripped trailing spaces and extra EOF blank line for git diff --check."
+    },
+    {
+      "path": "stage1_xgboost_migration/requirements-modern.txt",
+      "sha256": "df3cb44afcb81b0161ce71233e82a34f2cf806ae79ada80e2d1b8072b2bf0379",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "stage1_xgboost_migration/requirements-source-env.txt",
+      "sha256": "c608b96ee5ca075c16b34bb7a4c435ca217fa33507520ff03c87e94185a3752e",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "stage1_xgboost_migration/validate_alert_parity.py",
+      "sha256": "6ee7d07985cbf600a167fea6e6af63aa1bbcd8c4ae00564685315d99103ff26e",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "stage1_xgboost_migration/validate_modern_xgboost.py",
+      "sha256": "e1287ba436caa67a0ae2e35535407aaa23828eedd385cc4ba21c301b256d3c7c",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "stage1_xgboost_migration/validate_portable_pipeline.py",
+      "sha256": "cf15438b94612f23cdaec9413c6bd8d6e3144ef82f8e17ce6bce2c6eb91fcd8b",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "stage1_xgboost_migration/validate_server_parity.py",
+      "sha256": "58e399d9840743bf39a377c579a0fde271e0804adfec650a855b3a9f209921d7",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/bph_stage2/README.md",
+      "sha256": "657eb770fad1bec2f866ae553a4ab3b31d7ee5dab5d1f20377f444c13e5a5fdd",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/stage2/README.md",
+      "sha256": "f49bdd86cf22fcb4a18a3b16ecd6ddaaffd16476aea636ff0525054d1379aec0",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/stage2/benchmark_all.py",
+      "sha256": "c38d78703730e9460e3edaecc31a8c4f491d34edd4686670f168147bd106201c",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/stage2/checkpoint.py",
+      "sha256": "e06d52ea96c102ae3a2b967c70efece124c6116b0f9fa338fda5097bb85e599f",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/stage2/export_all.py",
+      "sha256": "647770dc48b9e5fd9df29519d2a6d1c08fcc609171c79e4ab5e16615d269d989",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/stage2/inference_model.py",
+      "sha256": "d89bf4c879d07db76f79e8b57b853c46d1744a62b6f11e1a2a7b3670655a979c",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/stage2/pest_configs.py",
+      "sha256": "ef650051206c9d5a3462299b63a34dd9a277b231f7a1444397668478a753864d",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/stage2/requirements-tflite.txt",
+      "sha256": "530fe99fddf41cb2fc3166ffc58b0d9ed52078705847258af056eb63cc5fe4cc",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/stage2/summarize.py",
+      "sha256": "b7e97a6938b2d6939a050fb46bf746d952ba9b491aac4bb30b0b47f0f3e86efc",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/stage2/validate_all.py",
+      "sha256": "56b5f03bd191e747f059dc9f9facedd30325d19b8f074e376b5896422c66e07b",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/stage2/validate_real.py",
+      "sha256": "02719783729737d5d61183bc59ee540c8c7d62484a6eb697413b212113649a0a",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/standalone_stage2/README.md",
+      "sha256": "ac6dac6cf7715c42ccda8575f60bcefd76962c59124443054c3456186e510a2e",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/standalone_stage2/build_package.py",
+      "sha256": "a0d2b9cc6aca97328c743e53f76be4820ace81b62b473b8fcfc94506ef4249a7",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/standalone_stage2/requirements-build.txt",
+      "sha256": "dfe3a2e73871014f5d6d91be13a8b58ea560944617c5c7e2841700840f6365bf",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/standalone_stage2/requirements-runtime.txt",
+      "sha256": "5b8c46c04f13e567d249092ed43bbf837eeaa6dec3ceb5414087696cce8acb4a",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/standalone_stage2/runtime/__init__.py",
+      "sha256": "f624450dc6fa915d1e0c6048939e4fca13d0c04524a76c600896c7ad9574e537",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/standalone_stage2/runtime/cli.py",
+      "sha256": "64d0bd1e5f0e94e507a94151bd9066da8109a3527aca2a2eaa149ed14d437a38",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/standalone_stage2/runtime/interpreter.py",
+      "sha256": "8956c3f7c2240f7612cad3e59d5765aa202aa9fc140a0313b0eeed8a7a3ebcc1",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/standalone_stage2/runtime/preprocessing.py",
+      "sha256": "a30433dbdfd5e4b6c8d58fbeb6ac5f35cded8db7a035d4b9717223a068c9ca99",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/standalone_stage2/runtime/schema.py",
+      "sha256": "6deb7d7f9385600626bced9904d5b3cc17caa494eda717ff5150f6b0d4cd5ff2",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/standalone_stage2/tests/test_metadata.py",
+      "sha256": "315fa8269fc301ea892003b7834ca80b805561c10b9fe16fa155217c597a44a9",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/standalone_stage2/tests/test_no_torch_dependency.py",
+      "sha256": "3368afd32046625271b4a8d202aee67c1436d48fee37063d9496b47f867a63f5",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/standalone_stage2/tests/test_output_parity.py",
+      "sha256": "b0d7b712612944caef0d465f6e61a9c7f710c42f89a183982daa59a6cf1f54d7",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/standalone_stage2/tests/test_preprocessing_parity.py",
+      "sha256": "32ab3b467380c727eabc611890fc3b58422518210ff0947ad94fa03ba4aef8c1",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/standalone_stage2/tests/test_runtime_synthetic.py",
+      "sha256": "897b5d119bf20256a22a4a947d451866b98903f33b7007bb0248faf366926544",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "docs/all_pests_stage2_tflite_conversion_report.md",
+      "sha256": "1669ef627217ddc15ce21b48ac1dea6d07f36b163ec50338111902a31b7d1ca7",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "docs/bph_stage2_tflite_conversion_report.md",
+      "sha256": "20dd03b7ef39f98b1e29d411bb64da60c6cd3ffd50f5516ba2c0c97f4c5f408e",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "docs/lightweight_api_integration_plan.md",
+      "sha256": "a85ab5565603fb98b9692f8d72cc9c489fa964f3d22978cb78300c04728e457d",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "docs/lightweight_api_integration_report.md",
+      "sha256": "317179c3e6ee1d2ae3481fa8cb53b131883bcb66c83350ad917bf9cfd8186c4a",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "docs/standalone_stage2_litert_package_report.md",
+      "sha256": "8cdb9f9a45a0d4ccdd377c94d2533852983e98effa4b5a73f0b4e7f242bb6032",
+      "source": "committed HEAD blob; original working file was not changed"
+    }
+  ],
+  "excluded_tracked_files": [
+    "api_handoff_litert_portable/docs/examples/01_learned_predictions.csv",
+    "api_handoff_litert_portable/docs/examples/01_learned_response.json",
+    "api_handoff_litert_portable/docs/examples/04a_missingrun_predictions.csv",
+    "api_handoff_litert_portable/docs/examples/04a_missingrun_response.json",
+    "api_handoff_litert_portable/docs/examples/04b_pending_predictions.csv",
+    "api_handoff_litert_portable/docs/examples/04b_pending_response.json",
+    "api_handoff_litert_portable/docs/examples/04c_noalert_response.json",
+    "api_handoff_litert_portable/docs/examples/04d_nonlearned_response.json",
+    "api_handoff_litert_portable/examples/sample_batch_predictions.csv",
+    "api_handoff_litert_portable/examples/sample_batch_response.json",
+    "api_handoff_litert_portable/examples/sample_batch_run_log.txt",
+    "api_handoff_litert_portable/manifest.json",
+    "stage1_xgboost_migration/artifacts/BPH/A/calibration.json",
+    "stage1_xgboost_migration/artifacts/BPH/A/metadata.json",
+    "stage1_xgboost_migration/artifacts/BPH/A/model.json",
+    "stage1_xgboost_migration/artifacts/BPH/D/calibration.json",
+    "stage1_xgboost_migration/artifacts/BPH/D/metadata.json",
+    "stage1_xgboost_migration/artifacts/BPH/D/model.json",
+    "stage1_xgboost_migration/artifacts/BPH/gate.json",
+    "stage1_xgboost_migration/artifacts/WBPH/A/calibration.json",
+    "stage1_xgboost_migration/artifacts/WBPH/A/metadata.json",
+    "stage1_xgboost_migration/artifacts/WBPH/A/model.json",
+    "stage1_xgboost_migration/artifacts/WBPH/D/calibration.json",
+    "stage1_xgboost_migration/artifacts/WBPH/D/metadata.json",
+    "stage1_xgboost_migration/artifacts/WBPH/D/model.json",
+    "stage1_xgboost_migration/artifacts/WBPH/gate.json",
+    "stage1_xgboost_migration/artifacts/bacterial_blight/A/calibration.json",
+    "stage1_xgboost_migration/artifacts/bacterial_blight/A/metadata.json",
+    "stage1_xgboost_migration/artifacts/bacterial_blight/A/model.json",
+    "stage1_xgboost_migration/artifacts/bacterial_blight/D/calibration.json",
+    "stage1_xgboost_migration/artifacts/bacterial_blight/D/metadata.json",
+    "stage1_xgboost_migration/artifacts/bacterial_blight/D/model.json",
+    "stage1_xgboost_migration/artifacts/bacterial_blight/gate.json",
+    "stage1_xgboost_migration/artifacts/blast/A/calibration.json",
+    "stage1_xgboost_migration/artifacts/blast/A/metadata.json",
+    "stage1_xgboost_migration/artifacts/blast/A/model.json",
+    "stage1_xgboost_migration/artifacts/blast/D/calibration.json",
+    "stage1_xgboost_migration/artifacts/blast/D/metadata.json",
+    "stage1_xgboost_migration/artifacts/blast/D/model.json",
+    "stage1_xgboost_migration/artifacts/blast/gate.json",
+    "stage1_xgboost_migration/artifacts/brown_spot/A/calibration.json",
+    "stage1_xgboost_migration/artifacts/brown_spot/A/metadata.json",
+    "stage1_xgboost_migration/artifacts/brown_spot/A/model.json",
+    "stage1_xgboost_migration/artifacts/brown_spot/D/calibration.json",
+    "stage1_xgboost_migration/artifacts/brown_spot/D/metadata.json",
+    "stage1_xgboost_migration/artifacts/brown_spot/D/model.json",
+    "stage1_xgboost_migration/artifacts/brown_spot/gate.json",
+    "stage1_xgboost_migration/artifacts/rice_stem_borer_1/A/calibration.json",
+    "stage1_xgboost_migration/artifacts/rice_stem_borer_1/A/metadata.json",
+    "stage1_xgboost_migration/artifacts/rice_stem_borer_1/A/model.json",
+    "stage1_xgboost_migration/artifacts/rice_stem_borer_1/D/calibration.json",
+    "stage1_xgboost_migration/artifacts/rice_stem_borer_1/D/metadata.json",
+    "stage1_xgboost_migration/artifacts/rice_stem_borer_1/D/model.json",
+    "stage1_xgboost_migration/artifacts/rice_stem_borer_1/gate.json",
+    "stage1_xgboost_migration/artifacts/rice_stem_borer_2/A/calibration.json",
+    "stage1_xgboost_migration/artifacts/rice_stem_borer_2/A/metadata.json",
+    "stage1_xgboost_migration/artifacts/rice_stem_borer_2/A/model.json",
+    "stage1_xgboost_migration/artifacts/rice_stem_borer_2/D/calibration.json",
+    "stage1_xgboost_migration/artifacts/rice_stem_borer_2/D/metadata.json",
+    "stage1_xgboost_migration/artifacts/rice_stem_borer_2/D/model.json",
+    "stage1_xgboost_migration/artifacts/rice_stem_borer_2/gate.json",
+    "stage1_xgboost_migration/artifacts/sheath_blight/A/calibration.json",
+    "stage1_xgboost_migration/artifacts/sheath_blight/A/metadata.json",
+    "stage1_xgboost_migration/artifacts/sheath_blight/A/model.json",
+    "stage1_xgboost_migration/artifacts/sheath_blight/D/calibration.json",
+    "stage1_xgboost_migration/artifacts/sheath_blight/D/metadata.json",
+    "stage1_xgboost_migration/artifacts/sheath_blight/D/model.json",
+    "stage1_xgboost_migration/artifacts/sheath_blight/gate.json",
+    "stage1_xgboost_migration/migration_manifest.json",
+    "stage1_xgboost_migration/portable_manifest.json"
+  ],
+  "local_uncommitted_changes_preserved_and_not_copied": [
+    {
+      "path": "api_handoff_litert_portable/infer/_stage2_preprocessing.py",
+      "reference_committed_sha256": "533f14840cd92fcee38dbc495aa10d4924b160b8834099a01b1b6bb616f2720d",
+      "local_uncommitted_sha256": "8587ed0607a92953bcd4dc702e9fd317ea44f0465b002587afb79a46c1da80f1",
+      "included_uncommitted_version": false
+    },
+    {
+      "path": "api_handoff_litert_portable/infer/_stage2_schema.py",
+      "reference_committed_sha256": "6deb7d7f9385600626bced9904d5b3cc17caa494eda717ff5150f6b0d4cd5ff2",
+      "local_uncommitted_sha256": "fac72043b0aa72ac6652e46753b8b71e1cd18c55148333580e5a1794d059e5a9",
+      "included_uncommitted_version": false
+    },
+    {
+      "path": "api_handoff_litert_portable/infer/stage1_portable.py",
+      "reference_committed_sha256": "94c783cbcf9839afdcf42980e41f8aac6a612f45da0e2fddb8a5c3b1305c3253",
+      "local_uncommitted_sha256": "9ccba9a38b7b8503fd2065bd03c2f0363e2a28c5fbdae068d965308ecfe0f3b3",
+      "included_uncommitted_version": false
+    },
+    {
+      "path": "api_handoff_litert_portable/run_predict.py",
+      "reference_committed_sha256": "beaca0a937a532b9cdf6d7b7b99637fd412d0482fe1f3d96055820cffe04be1f",
+      "local_uncommitted_sha256": "5f8a08629f9adb5b765c5851b3d0804fe10ed6e8872703e4bea9f4be4c9d224e",
+      "included_uncommitted_version": false
+    }
+  ],
+  "patched_directory": "/home/gpu4080/research/cropscience/api_handoff_litert_portable_patched",
+  "patched_code_copied": false,
+  "patched_comparison_differences": [
+    {
+      "path": "api_handoff_litert_portable/README.md",
+      "reference_sha256": "963f413fd7400b30090e09de26eab01bf44e463f15ae1fdae5a882ceb0999540",
+      "patched_copy_sha256": "1e281fb3d30ef63556a8feabfeee248fffbd5748f2fbeb3580d42d1c2106a0e3"
+    },
+    {
+      "path": "api_handoff_litert_portable/docs/API_INPUT_OUTPUT.md",
+      "reference_sha256": "557f0372d8ba17d0f7bd67cdffcced0c397314ce8ad2f67a73c309e91a99883b",
+      "patched_copy_sha256": "58ed5b2e09ab4ae2f52a71f66ab64e62f151b57074547e84567cecc0c6e91eba"
+    },
+    {
+      "path": "api_handoff_litert_portable/infer/batch.py",
+      "reference_sha256": "af991df39153468b6893cf006037069c8a8111b37605e6eb29781a0ec8a505c9",
+      "patched_copy_sha256": "266775088543f4e1d5142aa7775a6f4bb0a94a140a4e0cd2d9b47c6190671fa5"
+    }
+  ],
+  "source_worktree_status_sha256_before": "43c191b9a42b04f458756390623fced40b45fed079b484cbd3b625e7ccbd41c6"
+}
