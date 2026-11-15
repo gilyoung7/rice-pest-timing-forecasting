@@ -15,7 +15,6 @@ Canonical 평가에 자동 적용하면 안 됩니다.
 | `api_handoff_litert_portable/` | 통합 CLI, XGBoost/LiteRT 추론, 단일·배치 요청, 전처리, fallback, I/O 문서와 테스트 |
 | `tflite_conversion/stage2/` | 공통 Stage-2 wrapper, export, synthetic/real parity 검증, benchmark, 요약 코드 |
 | `tflite_conversion/standalone_stage2/` | metadata/normalization 분리 패키징, 독립 LiteRT runtime와 테스트 |
-| `tflite_conversion/bph_stage2/` | BPH 초기 prototype의 대체 경로 안내문 |
 | `stage1_xgboost_migration/` | Stage-1 JSON export, calibration/gate 이관, 확률·경보 동등성 검증 코드 |
 | `docs/` | 당시 변환·통합 방법과 검증 결과 보고서 |
 
@@ -25,10 +24,13 @@ Canonical 평가에 자동 적용하면 안 됩니다.
 기록했습니다. 이전 README의 절대경로·크기·검증 수치는 당시 기록이며,
 이 참고본의 현재 실행 가능성이나 재검증 결과를 뜻하지 않습니다.
 
-요청 JSON과 작은 배치 입력 예시는 I/O 설명을 위해 포함했습니다. 배치 입력의
-site ID는 `EXAMPLE_SITE_ID`로 바꿨습니다. 예시 응답·예측 CSV·실행 로그·생성된
-manifest는 제외했으며, 출력 계약은
-[API_INPUT_OUTPUT.md](api_handoff_litert_portable/docs/API_INPUT_OUTPUT.md)에 있습니다.
+단일 요청 예시 `examples/request_single.json`과
+[API_INPUT_OUTPUT.md](api_handoff_litert_portable/docs/API_INPUT_OUTPUT.md)의
+인라인 단일·배치 계약을 보존했습니다. 중복 요청 예시와 과거 벤치마크/보고서
+렌더러는 정리했고, 최초 84개 파일별 분류·유지/제외 사유 및 정적 import/호출
+관계는 `SOURCE_PROVENANCE.json`의 `minimal_reference_review`에 기록했습니다.
+제외된 파일은 최초 업로드 커밋 `b6a7cd1687e649dbf108267974db25574b9b9f5f`에
+그대로 남아 있습니다.
 
 ## Stage-1: XGBoost JSON 이관
 
@@ -135,3 +137,47 @@ normalization 산출물, site_history, 캐시, fixtures, venv, archive 및 인�
 모델 공급과 최신 Canonical 변환은 후속 별도 작업입니다.
 
 기존 저장소의 루트 README, Canonical 코드 및 Release는 변경하지 않습니다.
+
+## 후임 연구원이 확인할 순서와 핵심 파일
+
+아래는 실행 순서가 아닌 **소스를 읽는 순서**입니다. 자산 없이 변환·추론을
+실행하라는 명령이 아닙니다.
+
+| 순서 | 핵심 파일 | 확인할 내용/직접 의존성 |
+|---|---|---|
+| 1 | 이 README → `LOCAL_VARIANTS.md` → `SOURCE_PROVENANCE.json` | 모델 계보, 최초 84개 분류, 외부 의존성, 제외 사유와 hash |
+| 2 | `stage1_xgboost_migration/common.py` | 원본 checkpoint 위치, feature 순서·history 채널 정의, export 공통 도우미 |
+| 3 | `export_portable_models.py`, `export_calibration_assets.py` | `.pt` → JSON/metadata, 기존 temperature/gate 이관; 둘 다 `common.py` 의존 |
+| 4 | `validate_server_parity.py`, `validate_modern_xgboost.py`, `validate_alert_parity.py`, `validate_portable_pipeline.py` | 확률과 최종 경보·dispatch 동등성; `portable_stage1.py`와 외부 API/fixtures 필요 |
+| 5 | `api_handoff_litert_portable/infer/stage1_features.py`, `stage1_portable.py` | pandas 배열 순서 → tabular → Booster → calibration/gate/경보 |
+| 6 | `tflite_conversion/stage2/pest_configs.py`, `checkpoint.py`, `inference_model.py` | 기존 geometry, 외부 모델 로더·검사, mu-only export wrapper |
+| 7 | `stage2/export_all.py` → `validate_all.py` → `validate_real.py` | FP16 변환과 synthetic/실자료 parity; real validator가 validate_all 도우미를 import |
+| 8 | `standalone_stage2/build_package.py`, `runtime/schema.py`, `runtime/preprocessing.py` | metadata/정규화 패키징과 정확한 tensor 생성; build가 stage2 export를 subprocess로 호출 가능 |
+| 9 | `standalone_stage2/runtime/interpreter.py`, `cli.py`, `__init__.py` | LiteRT tensor bind/invoke, mu→DOY·구간 변환, public API |
+| 10 | `api_handoff_litert_portable/infer/_stage2_schema.py`, `_stage2_preprocessing.py`, `stage2_litert.py` | 통합 API가 사용하는 독립적인 schema/전처리 사본 → Stage2Model.predict → Interpreter |
+| 11 | `api_handoff_litert_portable/run_predict.py`, `infer/preprocessing.py`, `providers.py`, `cohort.py`, `batch.py` | 단일/배치 조립, 입력 공급 및 경보 사전 계산; inputs/paths/schemas/fallback도 직접 의존 |
+| 12 | 양쪽 tests/, `requirements-*.txt`, `pytest.ini`, 기존 docs/검증 보고서 | 전처리·출력 parity, dependency 제거 및 회귀 검사 범위/외부 assets 확인 |
+
+`portable_stage1.py`는 최종 Booster API와 중복돼 보여도 Stage-1 검증 코드가
+직접 import하므로 보존했습니다. 마찬가지로 standalone과 통합 API의 전처리·
+schema 사본은 각 실행 경로와 parity 검사에서 사용하므로 합치거나 삭제하지
+않았습니다. batch/cohort도 CLI에서 실제 호출되고, 관련 회귀 테스트를 보존합니다.
+`test_no_torch_dependency.py`가 `test_runtime_synthetic.py`를, `test_output_parity.py`가
+`test_preprocessing_parity.py`를 import하므로 이 테스트 의존성도 유지했습니다.
+
+### 최소 참고본 분류
+
+- **필수 구현:** 변환, 입력 전처리, LiteRT/Booster 추론, CLI·패키징과 API 호출 경로.
+- **필수 의존성:** import되는 schema/common/config/initializer, 설치·테스트 설정,
+  모델·데이터가 섞이지 않도록 하는 ignore 규칙.
+- **참고 문서·검증:** 읽는 순서·출처·I/O, 실제 동등성/회귀 검사, 과거 검증 증거.
+- **불필요(제외):** 핵심/검증에서 참조되지 않는 중복 요청 8개,
+  초기 BPH 안내·보고서 2개, latency benchmark·요약·Markdown renderer 3개.
+
+정적 검사에서 제공하지 않는 `infer.ckpt`, `infer.preprocess`, `infer.stage1`은
+**원본 API의 외부 모듈**로 구분했습니다. 같은 `infer` 이름을 쓰는 이 패키지의
+portable 모듈로 대체해 import가 해결됐다고 판단하지 않습니다. `dist/predict.py`
+같은 빌드 생성 파일도 외부/생성 의존성으로 구분합니다. 실제 inference나
+전체 pytest를 실행해 누락 자산을 우회하지 않았습니다.
+
+분류 수: 필수 구현 18개, 필수 의존성 22개, 참고 문서·검증 31개, 제외 13개. **기존 84개 중 71개 유지 / 13개 제외**입니다.

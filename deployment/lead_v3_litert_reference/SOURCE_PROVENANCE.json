@@ -5,7 +5,125 @@
   "selection": "committed lead_v3 source snapshot; excludes uncommitted experimental edits and generated assets",
   "target_repository": "gilyoung7/rice-pest-timing-forecasting",
   "target_base_commit": "72d9a7a634039c759d4abf2b4cee1c729586806a",
-  "files": [
+  "excluded_tracked_files": [
+    "api_handoff_litert_portable/docs/examples/01_learned_predictions.csv",
+    "api_handoff_litert_portable/docs/examples/01_learned_response.json",
+    "api_handoff_litert_portable/docs/examples/04a_missingrun_predictions.csv",
+    "api_handoff_litert_portable/docs/examples/04a_missingrun_response.json",
+    "api_handoff_litert_portable/docs/examples/04b_pending_predictions.csv",
+    "api_handoff_litert_portable/docs/examples/04b_pending_response.json",
+    "api_handoff_litert_portable/docs/examples/04c_noalert_response.json",
+    "api_handoff_litert_portable/docs/examples/04d_nonlearned_response.json",
+    "api_handoff_litert_portable/examples/sample_batch_predictions.csv",
+    "api_handoff_litert_portable/examples/sample_batch_response.json",
+    "api_handoff_litert_portable/examples/sample_batch_run_log.txt",
+    "api_handoff_litert_portable/manifest.json",
+    "stage1_xgboost_migration/artifacts/BPH/A/calibration.json",
+    "stage1_xgboost_migration/artifacts/BPH/A/metadata.json",
+    "stage1_xgboost_migration/artifacts/BPH/A/model.json",
+    "stage1_xgboost_migration/artifacts/BPH/D/calibration.json",
+    "stage1_xgboost_migration/artifacts/BPH/D/metadata.json",
+    "stage1_xgboost_migration/artifacts/BPH/D/model.json",
+    "stage1_xgboost_migration/artifacts/BPH/gate.json",
+    "stage1_xgboost_migration/artifacts/WBPH/A/calibration.json",
+    "stage1_xgboost_migration/artifacts/WBPH/A/metadata.json",
+    "stage1_xgboost_migration/artifacts/WBPH/A/model.json",
+    "stage1_xgboost_migration/artifacts/WBPH/D/calibration.json",
+    "stage1_xgboost_migration/artifacts/WBPH/D/metadata.json",
+    "stage1_xgboost_migration/artifacts/WBPH/D/model.json",
+    "stage1_xgboost_migration/artifacts/WBPH/gate.json",
+    "stage1_xgboost_migration/artifacts/bacterial_blight/A/calibration.json",
+    "stage1_xgboost_migration/artifacts/bacterial_blight/A/metadata.json",
+    "stage1_xgboost_migration/artifacts/bacterial_blight/A/model.json",
+    "stage1_xgboost_migration/artifacts/bacterial_blight/D/calibration.json",
+    "stage1_xgboost_migration/artifacts/bacterial_blight/D/metadata.json",
+    "stage1_xgboost_migration/artifacts/bacterial_blight/D/model.json",
+    "stage1_xgboost_migration/artifacts/bacterial_blight/gate.json",
+    "stage1_xgboost_migration/artifacts/blast/A/calibration.json",
+    "stage1_xgboost_migration/artifacts/blast/A/metadata.json",
+    "stage1_xgboost_migration/artifacts/blast/A/model.json",
+    "stage1_xgboost_migration/artifacts/blast/D/calibration.json",
+    "stage1_xgboost_migration/artifacts/blast/D/metadata.json",
+    "stage1_xgboost_migration/artifacts/blast/D/model.json",
+    "stage1_xgboost_migration/artifacts/blast/gate.json",
+    "stage1_xgboost_migration/artifacts/brown_spot/A/calibration.json",
+    "stage1_xgboost_migration/artifacts/brown_spot/A/metadata.json",
+    "stage1_xgboost_migration/artifacts/brown_spot/A/model.json",
+    "stage1_xgboost_migration/artifacts/brown_spot/D/calibration.json",
+    "stage1_xgboost_migration/artifacts/brown_spot/D/metadata.json",
+    "stage1_xgboost_migration/artifacts/brown_spot/D/model.json",
+    "stage1_xgboost_migration/artifacts/brown_spot/gate.json",
+    "stage1_xgboost_migration/artifacts/rice_stem_borer_1/A/calibration.json",
+    "stage1_xgboost_migration/artifacts/rice_stem_borer_1/A/metadata.json",
+    "stage1_xgboost_migration/artifacts/rice_stem_borer_1/A/model.json",
+    "stage1_xgboost_migration/artifacts/rice_stem_borer_1/D/calibration.json",
+    "stage1_xgboost_migration/artifacts/rice_stem_borer_1/D/metadata.json",
+    "stage1_xgboost_migration/artifacts/rice_stem_borer_1/D/model.json",
+    "stage1_xgboost_migration/artifacts/rice_stem_borer_1/gate.json",
+    "stage1_xgboost_migration/artifacts/rice_stem_borer_2/A/calibration.json",
+    "stage1_xgboost_migration/artifacts/rice_stem_borer_2/A/metadata.json",
+    "stage1_xgboost_migration/artifacts/rice_stem_borer_2/A/model.json",
+    "stage1_xgboost_migration/artifacts/rice_stem_borer_2/D/calibration.json",
+    "stage1_xgboost_migration/artifacts/rice_stem_borer_2/D/metadata.json",
+    "stage1_xgboost_migration/artifacts/rice_stem_borer_2/D/model.json",
+    "stage1_xgboost_migration/artifacts/rice_stem_borer_2/gate.json",
+    "stage1_xgboost_migration/artifacts/sheath_blight/A/calibration.json",
+    "stage1_xgboost_migration/artifacts/sheath_blight/A/metadata.json",
+    "stage1_xgboost_migration/artifacts/sheath_blight/A/model.json",
+    "stage1_xgboost_migration/artifacts/sheath_blight/D/calibration.json",
+    "stage1_xgboost_migration/artifacts/sheath_blight/D/metadata.json",
+    "stage1_xgboost_migration/artifacts/sheath_blight/D/model.json",
+    "stage1_xgboost_migration/artifacts/sheath_blight/gate.json",
+    "stage1_xgboost_migration/migration_manifest.json",
+    "stage1_xgboost_migration/portable_manifest.json"
+  ],
+  "local_uncommitted_changes_preserved_and_not_copied": [
+    {
+      "path": "api_handoff_litert_portable/infer/_stage2_preprocessing.py",
+      "reference_committed_sha256": "533f14840cd92fcee38dbc495aa10d4924b160b8834099a01b1b6bb616f2720d",
+      "local_uncommitted_sha256": "8587ed0607a92953bcd4dc702e9fd317ea44f0465b002587afb79a46c1da80f1",
+      "included_uncommitted_version": false
+    },
+    {
+      "path": "api_handoff_litert_portable/infer/_stage2_schema.py",
+      "reference_committed_sha256": "6deb7d7f9385600626bced9904d5b3cc17caa494eda717ff5150f6b0d4cd5ff2",
+      "local_uncommitted_sha256": "fac72043b0aa72ac6652e46753b8b71e1cd18c55148333580e5a1794d059e5a9",
+      "included_uncommitted_version": false
+    },
+    {
+      "path": "api_handoff_litert_portable/infer/stage1_portable.py",
+      "reference_committed_sha256": "94c783cbcf9839afdcf42980e41f8aac6a612f45da0e2fddb8a5c3b1305c3253",
+      "local_uncommitted_sha256": "9ccba9a38b7b8503fd2065bd03c2f0363e2a28c5fbdae068d965308ecfe0f3b3",
+      "included_uncommitted_version": false
+    },
+    {
+      "path": "api_handoff_litert_portable/run_predict.py",
+      "reference_committed_sha256": "beaca0a937a532b9cdf6d7b7b99637fd412d0482fe1f3d96055820cffe04be1f",
+      "local_uncommitted_sha256": "5f8a08629f9adb5b765c5851b3d0804fe10ed6e8872703e4bea9f4be4c9d224e",
+      "included_uncommitted_version": false
+    }
+  ],
+  "patched_directory": "/home/gpu4080/research/cropscience/api_handoff_litert_portable_patched",
+  "patched_code_copied": false,
+  "patched_comparison_differences": [
+    {
+      "path": "api_handoff_litert_portable/README.md",
+      "reference_sha256": "963f413fd7400b30090e09de26eab01bf44e463f15ae1fdae5a882ceb0999540",
+      "patched_copy_sha256": "1e281fb3d30ef63556a8feabfeee248fffbd5748f2fbeb3580d42d1c2106a0e3"
+    },
+    {
+      "path": "api_handoff_litert_portable/docs/API_INPUT_OUTPUT.md",
+      "reference_sha256": "557f0372d8ba17d0f7bd67cdffcced0c397314ce8ad2f67a73c309e91a99883b",
+      "patched_copy_sha256": "58ed5b2e09ab4ae2f52a71f66ab64e62f151b57074547e84567cecc0c6e91eba"
+    },
+    {
+      "path": "api_handoff_litert_portable/infer/batch.py",
+      "reference_sha256": "af991df39153468b6893cf006037069c8a8111b37605e6eb29781a0ec8a505c9",
+      "patched_copy_sha256": "266775088543f4e1d5142aa7775a6f4bb0a94a140a4e0cd2d9b47c6190671fa5"
+    }
+  ],
+  "source_worktree_status_sha256_before": "43c191b9a42b04f458756390623fced40b45fed079b484cbd3b625e7ccbd41c6",
+  "initial_source_files": [
     {
       "path": "api_handoff_litert_portable/README.md",
       "sha256": "963f413fd7400b30090e09de26eab01bf44e463f15ae1fdae5a882ceb0999540",
@@ -411,122 +529,1480 @@
       "source": "committed HEAD blob; original working file was not changed"
     }
   ],
-  "excluded_tracked_files": [
-    "api_handoff_litert_portable/docs/examples/01_learned_predictions.csv",
-    "api_handoff_litert_portable/docs/examples/01_learned_response.json",
-    "api_handoff_litert_portable/docs/examples/04a_missingrun_predictions.csv",
-    "api_handoff_litert_portable/docs/examples/04a_missingrun_response.json",
-    "api_handoff_litert_portable/docs/examples/04b_pending_predictions.csv",
-    "api_handoff_litert_portable/docs/examples/04b_pending_response.json",
-    "api_handoff_litert_portable/docs/examples/04c_noalert_response.json",
-    "api_handoff_litert_portable/docs/examples/04d_nonlearned_response.json",
-    "api_handoff_litert_portable/examples/sample_batch_predictions.csv",
-    "api_handoff_litert_portable/examples/sample_batch_response.json",
-    "api_handoff_litert_portable/examples/sample_batch_run_log.txt",
-    "api_handoff_litert_portable/manifest.json",
-    "stage1_xgboost_migration/artifacts/BPH/A/calibration.json",
-    "stage1_xgboost_migration/artifacts/BPH/A/metadata.json",
-    "stage1_xgboost_migration/artifacts/BPH/A/model.json",
-    "stage1_xgboost_migration/artifacts/BPH/D/calibration.json",
-    "stage1_xgboost_migration/artifacts/BPH/D/metadata.json",
-    "stage1_xgboost_migration/artifacts/BPH/D/model.json",
-    "stage1_xgboost_migration/artifacts/BPH/gate.json",
-    "stage1_xgboost_migration/artifacts/WBPH/A/calibration.json",
-    "stage1_xgboost_migration/artifacts/WBPH/A/metadata.json",
-    "stage1_xgboost_migration/artifacts/WBPH/A/model.json",
-    "stage1_xgboost_migration/artifacts/WBPH/D/calibration.json",
-    "stage1_xgboost_migration/artifacts/WBPH/D/metadata.json",
-    "stage1_xgboost_migration/artifacts/WBPH/D/model.json",
-    "stage1_xgboost_migration/artifacts/WBPH/gate.json",
-    "stage1_xgboost_migration/artifacts/bacterial_blight/A/calibration.json",
-    "stage1_xgboost_migration/artifacts/bacterial_blight/A/metadata.json",
-    "stage1_xgboost_migration/artifacts/bacterial_blight/A/model.json",
-    "stage1_xgboost_migration/artifacts/bacterial_blight/D/calibration.json",
-    "stage1_xgboost_migration/artifacts/bacterial_blight/D/metadata.json",
-    "stage1_xgboost_migration/artifacts/bacterial_blight/D/model.json",
-    "stage1_xgboost_migration/artifacts/bacterial_blight/gate.json",
-    "stage1_xgboost_migration/artifacts/blast/A/calibration.json",
-    "stage1_xgboost_migration/artifacts/blast/A/metadata.json",
-    "stage1_xgboost_migration/artifacts/blast/A/model.json",
-    "stage1_xgboost_migration/artifacts/blast/D/calibration.json",
-    "stage1_xgboost_migration/artifacts/blast/D/metadata.json",
-    "stage1_xgboost_migration/artifacts/blast/D/model.json",
-    "stage1_xgboost_migration/artifacts/blast/gate.json",
-    "stage1_xgboost_migration/artifacts/brown_spot/A/calibration.json",
-    "stage1_xgboost_migration/artifacts/brown_spot/A/metadata.json",
-    "stage1_xgboost_migration/artifacts/brown_spot/A/model.json",
-    "stage1_xgboost_migration/artifacts/brown_spot/D/calibration.json",
-    "stage1_xgboost_migration/artifacts/brown_spot/D/metadata.json",
-    "stage1_xgboost_migration/artifacts/brown_spot/D/model.json",
-    "stage1_xgboost_migration/artifacts/brown_spot/gate.json",
-    "stage1_xgboost_migration/artifacts/rice_stem_borer_1/A/calibration.json",
-    "stage1_xgboost_migration/artifacts/rice_stem_borer_1/A/metadata.json",
-    "stage1_xgboost_migration/artifacts/rice_stem_borer_1/A/model.json",
-    "stage1_xgboost_migration/artifacts/rice_stem_borer_1/D/calibration.json",
-    "stage1_xgboost_migration/artifacts/rice_stem_borer_1/D/metadata.json",
-    "stage1_xgboost_migration/artifacts/rice_stem_borer_1/D/model.json",
-    "stage1_xgboost_migration/artifacts/rice_stem_borer_1/gate.json",
-    "stage1_xgboost_migration/artifacts/rice_stem_borer_2/A/calibration.json",
-    "stage1_xgboost_migration/artifacts/rice_stem_borer_2/A/metadata.json",
-    "stage1_xgboost_migration/artifacts/rice_stem_borer_2/A/model.json",
-    "stage1_xgboost_migration/artifacts/rice_stem_borer_2/D/calibration.json",
-    "stage1_xgboost_migration/artifacts/rice_stem_borer_2/D/metadata.json",
-    "stage1_xgboost_migration/artifacts/rice_stem_borer_2/D/model.json",
-    "stage1_xgboost_migration/artifacts/rice_stem_borer_2/gate.json",
-    "stage1_xgboost_migration/artifacts/sheath_blight/A/calibration.json",
-    "stage1_xgboost_migration/artifacts/sheath_blight/A/metadata.json",
-    "stage1_xgboost_migration/artifacts/sheath_blight/A/model.json",
-    "stage1_xgboost_migration/artifacts/sheath_blight/D/calibration.json",
-    "stage1_xgboost_migration/artifacts/sheath_blight/D/metadata.json",
-    "stage1_xgboost_migration/artifacts/sheath_blight/D/model.json",
-    "stage1_xgboost_migration/artifacts/sheath_blight/gate.json",
-    "stage1_xgboost_migration/migration_manifest.json",
-    "stage1_xgboost_migration/portable_manifest.json"
-  ],
-  "local_uncommitted_changes_preserved_and_not_copied": [
-    {
-      "path": "api_handoff_litert_portable/infer/_stage2_preprocessing.py",
-      "reference_committed_sha256": "533f14840cd92fcee38dbc495aa10d4924b160b8834099a01b1b6bb616f2720d",
-      "local_uncommitted_sha256": "8587ed0607a92953bcd4dc702e9fd317ea44f0465b002587afb79a46c1da80f1",
-      "included_uncommitted_version": false
-    },
-    {
-      "path": "api_handoff_litert_portable/infer/_stage2_schema.py",
-      "reference_committed_sha256": "6deb7d7f9385600626bced9904d5b3cc17caa494eda717ff5150f6b0d4cd5ff2",
-      "local_uncommitted_sha256": "fac72043b0aa72ac6652e46753b8b71e1cd18c55148333580e5a1794d059e5a9",
-      "included_uncommitted_version": false
-    },
-    {
-      "path": "api_handoff_litert_portable/infer/stage1_portable.py",
-      "reference_committed_sha256": "94c783cbcf9839afdcf42980e41f8aac6a612f45da0e2fddb8a5c3b1305c3253",
-      "local_uncommitted_sha256": "9ccba9a38b7b8503fd2065bd03c2f0363e2a28c5fbdae068d965308ecfe0f3b3",
-      "included_uncommitted_version": false
-    },
-    {
-      "path": "api_handoff_litert_portable/run_predict.py",
-      "reference_committed_sha256": "beaca0a937a532b9cdf6d7b7b99637fd412d0482fe1f3d96055820cffe04be1f",
-      "local_uncommitted_sha256": "5f8a08629f9adb5b765c5851b3d0804fe10ed6e8872703e4bea9f4be4c9d224e",
-      "included_uncommitted_version": false
-    }
-  ],
-  "patched_directory": "/home/gpu4080/research/cropscience/api_handoff_litert_portable_patched",
-  "patched_code_copied": false,
-  "patched_comparison_differences": [
+  "files": [
     {
       "path": "api_handoff_litert_portable/README.md",
-      "reference_sha256": "963f413fd7400b30090e09de26eab01bf44e463f15ae1fdae5a882ceb0999540",
-      "patched_copy_sha256": "1e281fb3d30ef63556a8feabfeee248fffbd5748f2fbeb3580d42d1c2106a0e3"
+      "sha256": "963f413fd7400b30090e09de26eab01bf44e463f15ae1fdae5a882ceb0999540",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/build_package.py",
+      "sha256": "5d13632096bde8a3207928866f1b64d7c92287db2d37a31db11e9391d47ccc67",
+      "source": "committed HEAD blob; original working file was not changed"
     },
     {
       "path": "api_handoff_litert_portable/docs/API_INPUT_OUTPUT.md",
-      "reference_sha256": "557f0372d8ba17d0f7bd67cdffcced0c397314ce8ad2f67a73c309e91a99883b",
-      "patched_copy_sha256": "58ed5b2e09ab4ae2f52a71f66ab64e62f151b57074547e84567cecc0c6e91eba"
+      "sha256": "557f0372d8ba17d0f7bd67cdffcced0c397314ce8ad2f67a73c309e91a99883b",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/examples/request_single.json",
+      "sha256": "7cd307065287bf7a5908d2343fab8b9500e37763f3d71ee3e1a965653110d285",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/infer/__init__.py",
+      "sha256": "137bae175751aee922b532bcd21ca2bef43d1b721f1a7dd95fee738859fb4f9d",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/infer/_stage2_preprocessing.py",
+      "sha256": "533f14840cd92fcee38dbc495aa10d4924b160b8834099a01b1b6bb616f2720d",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/infer/_stage2_schema.py",
+      "sha256": "6deb7d7f9385600626bced9904d5b3cc17caa494eda717ff5150f6b0d4cd5ff2",
+      "source": "committed HEAD blob; original working file was not changed"
     },
     {
       "path": "api_handoff_litert_portable/infer/batch.py",
-      "reference_sha256": "af991df39153468b6893cf006037069c8a8111b37605e6eb29781a0ec8a505c9",
-      "patched_copy_sha256": "266775088543f4e1d5142aa7775a6f4bb0a94a140a4e0cd2d9b47c6190671fa5"
+      "sha256": "af991df39153468b6893cf006037069c8a8111b37605e6eb29781a0ec8a505c9",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/infer/cohort.py",
+      "sha256": "985bd386f97f65787c768ac0e7f62440b7196e7d53754acb9811446772d60fb8",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/infer/fallback.py",
+      "sha256": "cd7b48a2ea514dc260a91cab7b00be9f0dd1d2706360b53ddca18e08e04cac52",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/infer/inputs.py",
+      "sha256": "87fa12987a1976b8fb763b1d839e7aae73ebca1fdd17feda03e6982d3e2f5d4f",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/infer/paths.py",
+      "sha256": "6ccd7ce844350c9bdbc21754ea413308cf012d29fb009eff6d27e47132e513c0",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/infer/preprocessing.py",
+      "sha256": "7bab508b2c04bdee5d2d7a7529e5a89ced6c3c164a69329bbd84b7884a59fd62",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/infer/providers.py",
+      "sha256": "dfd30a1dbacacea90e6657b7eb8855be66790b6c9c63653303a431c3711de327",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/infer/schemas.py",
+      "sha256": "2e4e78e69324bb38827058b7f0f41ac69c298493aa542290f8b4e46e5c7519ac",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/infer/stage1_features.py",
+      "sha256": "24594f0d251e80c1c07cae20b2be5b4596cd27d3980857fc0bcf8b95114b0cea",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/infer/stage1_portable.py",
+      "sha256": "94c783cbcf9839afdcf42980e41f8aac6a612f45da0e2fddb8a5c3b1305c3253",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/infer/stage2_litert.py",
+      "sha256": "6d258fdfbeb6866a399fdc9757e337458090b1e780598717f6be535a91cc7442",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/pytest.ini",
+      "sha256": "f3c461927e7f54c8a90e00416cfa4ab14560ae60ab2e55dd1b3a19120652a9fb",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/requirements-runtime.txt",
+      "sha256": "c9b2a661794116cdd6e176d8717459211d0dc240b709632453fae5595642b5cd",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/requirements-test.txt",
+      "sha256": "0cd5a1971b1e5855ccb303bb911bf0920365f9882e962021a2234134b784134c",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/run_predict.py",
+      "sha256": "beaca0a937a532b9cdf6d7b7b99637fd412d0482fe1f3d96055820cffe04be1f",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/tests/test_batch.py",
+      "sha256": "8a473e3f1e12f28aaeb35a9bd418bdf4119067f7dab654423c2492f1ba0546b3",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/tests/test_generic_batch.py",
+      "sha256": "b9455a07349fc50bd6f9d3d3f33db601bda8a1005a83ea5aa145c21d2f74d59a",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/tests/test_no_heavy_dependencies.py",
+      "sha256": "bf8caa5226a4431a49e3bc1f8f31340772c3799b6cb5cdfec2c0f2cc7706dd9f",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/tests/test_output_contract.py",
+      "sha256": "bb6e01a64d46590f6ce341464544d273d760fb7c1d9b0c241f54f2795831ffe9",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/tests/test_smoke_cases.py",
+      "sha256": "3ddc62d7009611495b9d37641721ece0c4a1545e5ff6a6875dd9c3918184809c",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "api_handoff_litert_portable/tests/test_stage1_portable.py",
+      "sha256": "68435366471a64f8d263cecabd1a896e164105da9d2bf7ce6a45fa3de42caacd",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "stage1_xgboost_migration/.gitignore",
+      "sha256": "cbf4b457d47c641dae31f7e502c0a65b918d7acdca8cc49aa984752af6fb3083",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "stage1_xgboost_migration/README.md",
+      "sha256": "e97cf141bdb3f6a0ac25116379729f431d782e070a2ab273c520a7eb7fa61bd2",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "stage1_xgboost_migration/common.py",
+      "sha256": "c146b4e36499c6ca671104e2980673cc85d1bf34b631f85f4947e4e857a1abba",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "stage1_xgboost_migration/export_calibration_assets.py",
+      "sha256": "6a6e9fee4661ba5e6833714350ddcbee5a59fa867cfe13bbb27ae23992987962",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "stage1_xgboost_migration/export_portable_models.py",
+      "sha256": "b5033c58bb3d3656c222119785ef61e266bf222a9b118582b63659c1a2e8d09b",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "stage1_xgboost_migration/portable_stage1.py",
+      "sha256": "4f30ef01f900957dd88fc71b277d303f2c46c859ff5e19bd3a0617b49bb24a97",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "stage1_xgboost_migration/reports/alert_parity_report.md",
+      "sha256": "a419e23c77f95a94a6013193d3a26e96c3fc8e272d953ad5da16579e91394240",
+      "source": "committed HEAD blob; original working file was not changed",
+      "original_sha256": "5b513b36972356bb5c437b844321bac897bac66f8988df6424310fbb11499ab6",
+      "adaptation": "Whitespace only: stripped trailing spaces and extra EOF blank line for git diff --check."
+    },
+    {
+      "path": "stage1_xgboost_migration/requirements-modern.txt",
+      "sha256": "df3cb44afcb81b0161ce71233e82a34f2cf806ae79ada80e2d1b8072b2bf0379",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "stage1_xgboost_migration/requirements-source-env.txt",
+      "sha256": "c608b96ee5ca075c16b34bb7a4c435ca217fa33507520ff03c87e94185a3752e",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "stage1_xgboost_migration/validate_alert_parity.py",
+      "sha256": "6ee7d07985cbf600a167fea6e6af63aa1bbcd8c4ae00564685315d99103ff26e",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "stage1_xgboost_migration/validate_modern_xgboost.py",
+      "sha256": "e1287ba436caa67a0ae2e35535407aaa23828eedd385cc4ba21c301b256d3c7c",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "stage1_xgboost_migration/validate_portable_pipeline.py",
+      "sha256": "cf15438b94612f23cdaec9413c6bd8d6e3144ef82f8e17ce6bce2c6eb91fcd8b",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "stage1_xgboost_migration/validate_server_parity.py",
+      "sha256": "58e399d9840743bf39a377c579a0fde271e0804adfec650a855b3a9f209921d7",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/stage2/README.md",
+      "sha256": "bad5ec07cbc0f6022ca4e84176f96b1e82a2fc35eaf5ceaa6035280bcdba8f04",
+      "source": "committed HEAD blob; original working file was not changed",
+      "initial_upload_sha256": "f49bdd86cf22fcb4a18a3b16ecd6ddaaffd16476aea636ff0525054d1379aec0",
+      "cleanup_adaptation": "Documentation-only cleanup; immutable links to omitted historical material."
+    },
+    {
+      "path": "tflite_conversion/stage2/checkpoint.py",
+      "sha256": "e06d52ea96c102ae3a2b967c70efece124c6116b0f9fa338fda5097bb85e599f",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/stage2/export_all.py",
+      "sha256": "647770dc48b9e5fd9df29519d2a6d1c08fcc609171c79e4ab5e16615d269d989",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/stage2/inference_model.py",
+      "sha256": "d89bf4c879d07db76f79e8b57b853c46d1744a62b6f11e1a2a7b3670655a979c",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/stage2/pest_configs.py",
+      "sha256": "ef650051206c9d5a3462299b63a34dd9a277b231f7a1444397668478a753864d",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/stage2/requirements-tflite.txt",
+      "sha256": "530fe99fddf41cb2fc3166ffc58b0d9ed52078705847258af056eb63cc5fe4cc",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/stage2/validate_all.py",
+      "sha256": "56b5f03bd191e747f059dc9f9facedd30325d19b8f074e376b5896422c66e07b",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/stage2/validate_real.py",
+      "sha256": "02719783729737d5d61183bc59ee540c8c7d62484a6eb697413b212113649a0a",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/standalone_stage2/README.md",
+      "sha256": "ac6dac6cf7715c42ccda8575f60bcefd76962c59124443054c3456186e510a2e",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/standalone_stage2/build_package.py",
+      "sha256": "a0d2b9cc6aca97328c743e53f76be4820ace81b62b473b8fcfc94506ef4249a7",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/standalone_stage2/requirements-build.txt",
+      "sha256": "dfe3a2e73871014f5d6d91be13a8b58ea560944617c5c7e2841700840f6365bf",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/standalone_stage2/requirements-runtime.txt",
+      "sha256": "5b8c46c04f13e567d249092ed43bbf837eeaa6dec3ceb5414087696cce8acb4a",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/standalone_stage2/runtime/__init__.py",
+      "sha256": "f624450dc6fa915d1e0c6048939e4fca13d0c04524a76c600896c7ad9574e537",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/standalone_stage2/runtime/cli.py",
+      "sha256": "64d0bd1e5f0e94e507a94151bd9066da8109a3527aca2a2eaa149ed14d437a38",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/standalone_stage2/runtime/interpreter.py",
+      "sha256": "8956c3f7c2240f7612cad3e59d5765aa202aa9fc140a0313b0eeed8a7a3ebcc1",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/standalone_stage2/runtime/preprocessing.py",
+      "sha256": "a30433dbdfd5e4b6c8d58fbeb6ac5f35cded8db7a035d4b9717223a068c9ca99",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/standalone_stage2/runtime/schema.py",
+      "sha256": "6deb7d7f9385600626bced9904d5b3cc17caa494eda717ff5150f6b0d4cd5ff2",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/standalone_stage2/tests/test_metadata.py",
+      "sha256": "315fa8269fc301ea892003b7834ca80b805561c10b9fe16fa155217c597a44a9",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/standalone_stage2/tests/test_no_torch_dependency.py",
+      "sha256": "3368afd32046625271b4a8d202aee67c1436d48fee37063d9496b47f867a63f5",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/standalone_stage2/tests/test_output_parity.py",
+      "sha256": "b0d7b712612944caef0d465f6e61a9c7f710c42f89a183982daa59a6cf1f54d7",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/standalone_stage2/tests/test_preprocessing_parity.py",
+      "sha256": "32ab3b467380c727eabc611890fc3b58422518210ff0947ad94fa03ba4aef8c1",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "tflite_conversion/standalone_stage2/tests/test_runtime_synthetic.py",
+      "sha256": "897b5d119bf20256a22a4a947d451866b98903f33b7007bb0248faf366926544",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "docs/all_pests_stage2_tflite_conversion_report.md",
+      "sha256": "f42a9df5af0e3769cf2552b62b3105b80477be926ef3e5eb7da8fc6b93b0e163",
+      "source": "committed HEAD blob; original working file was not changed",
+      "initial_upload_sha256": "1669ef627217ddc15ce21b48ac1dea6d07f36b163ec50338111902a31b7d1ca7",
+      "cleanup_adaptation": "Documentation-only cleanup; immutable links to omitted historical material."
+    },
+    {
+      "path": "docs/lightweight_api_integration_plan.md",
+      "sha256": "a85ab5565603fb98b9692f8d72cc9c489fa964f3d22978cb78300c04728e457d",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "docs/lightweight_api_integration_report.md",
+      "sha256": "317179c3e6ee1d2ae3481fa8cb53b131883bcb66c83350ad917bf9cfd8186c4a",
+      "source": "committed HEAD blob; original working file was not changed"
+    },
+    {
+      "path": "docs/standalone_stage2_litert_package_report.md",
+      "sha256": "b025cb6c28932193a71fb43d2fc92ca8804159f4c29df72d718ea67a395607bb",
+      "source": "committed HEAD blob; original working file was not changed",
+      "initial_upload_sha256": "8cdb9f9a45a0d4ccdd377c94d2533852983e98effa4b5a73f0b4e7f242bb6032",
+      "cleanup_adaptation": "Documentation-only cleanup; immutable links to omitted historical material."
     }
   ],
-  "source_worktree_status_sha256_before": "43c191b9a42b04f458756390623fced40b45fed079b484cbd3b625e7ccbd41c6"
+  "minimal_reference_review": {
+    "initial_upload_commit": "b6a7cd1687e649dbf108267974db25574b9b9f5f",
+    "original_files": 84,
+    "kept_files": 71,
+    "removed_files": 13,
+    "categories": {
+      "essential_dependency": 22,
+      "reference_documentation_validation": 31,
+      "essential_implementation": 18,
+      "unnecessary": 13
+    },
+    "files": [
+      {
+        "path": ".gitignore",
+        "category": "essential_dependency",
+        "action": "keep",
+        "reason": "Installation/test configuration or source-only boundary."
+      },
+      {
+        "path": "LOCAL_VARIANTS.md",
+        "category": "reference_documentation_validation",
+        "action": "keep",
+        "reason": "Scope, I/O, source provenance, compact request example or historical validation evidence."
+      },
+      {
+        "path": "README.md",
+        "category": "reference_documentation_validation",
+        "action": "keep",
+        "reason": "Scope, I/O, source provenance, compact request example or historical validation evidence."
+      },
+      {
+        "path": "SOURCE_PROVENANCE.json",
+        "category": "reference_documentation_validation",
+        "action": "keep",
+        "reason": "Scope, I/O, source provenance, compact request example or historical validation evidence."
+      },
+      {
+        "path": "api_handoff_litert_portable/README.md",
+        "category": "reference_documentation_validation",
+        "action": "keep",
+        "reason": "Scope, I/O, source provenance, compact request example or historical validation evidence."
+      },
+      {
+        "path": "api_handoff_litert_portable/build_package.py",
+        "category": "essential_implementation",
+        "action": "keep",
+        "reason": "Conversion, tensor construction, runtime, packaging or CLI execution path."
+      },
+      {
+        "path": "api_handoff_litert_portable/docs/API_INPUT_OUTPUT.md",
+        "category": "reference_documentation_validation",
+        "action": "keep",
+        "reason": "Scope, I/O, source provenance, compact request example or historical validation evidence."
+      },
+      {
+        "path": "api_handoff_litert_portable/docs/examples/01_learned_request.json",
+        "category": "unnecessary",
+        "action": "remove",
+        "reason": "Duplicate request; full I/O contract and one request_single example remain."
+      },
+      {
+        "path": "api_handoff_litert_portable/docs/examples/04a_missingrun_request.json",
+        "category": "unnecessary",
+        "action": "remove",
+        "reason": "Duplicate error/fallback request documented inline in API_INPUT_OUTPUT.md."
+      },
+      {
+        "path": "api_handoff_litert_portable/docs/examples/04b_pending_request.json",
+        "category": "unnecessary",
+        "action": "remove",
+        "reason": "Duplicate pending request documented inline in API_INPUT_OUTPUT.md."
+      },
+      {
+        "path": "api_handoff_litert_portable/docs/examples/04c_noalert_request.json",
+        "category": "unnecessary",
+        "action": "remove",
+        "reason": "Duplicate no-alert request documented inline in API_INPUT_OUTPUT.md."
+      },
+      {
+        "path": "api_handoff_litert_portable/docs/examples/04d_nonlearned_request.json",
+        "category": "unnecessary",
+        "action": "remove",
+        "reason": "Duplicate fallback request documented inline in API_INPUT_OUTPUT.md."
+      },
+      {
+        "path": "api_handoff_litert_portable/examples/batch_rows.csv",
+        "category": "unnecessary",
+        "action": "remove",
+        "reason": "Illustrative batch rows only; tests generate their own temporary inputs."
+      },
+      {
+        "path": "api_handoff_litert_portable/examples/request_batch_generic.json",
+        "category": "unnecessary",
+        "action": "remove",
+        "reason": "Duplicate generic-batch request documented inline; no implementation reads this example."
+      },
+      {
+        "path": "api_handoff_litert_portable/examples/request_batch_representative.json",
+        "category": "unnecessary",
+        "action": "remove",
+        "reason": "Duplicate representative-batch request documented inline; no implementation reads this example."
+      },
+      {
+        "path": "api_handoff_litert_portable/examples/request_single.json",
+        "category": "reference_documentation_validation",
+        "action": "keep",
+        "reason": "Scope, I/O, source provenance, compact request example or historical validation evidence."
+      },
+      {
+        "path": "api_handoff_litert_portable/infer/__init__.py",
+        "category": "essential_dependency",
+        "action": "keep",
+        "reason": "Imported by retained implementation/validators or supplies required metadata/schema."
+      },
+      {
+        "path": "api_handoff_litert_portable/infer/_stage2_preprocessing.py",
+        "category": "essential_implementation",
+        "action": "keep",
+        "reason": "Conversion, tensor construction, runtime, packaging or CLI execution path."
+      },
+      {
+        "path": "api_handoff_litert_portable/infer/_stage2_schema.py",
+        "category": "essential_dependency",
+        "action": "keep",
+        "reason": "Imported by retained implementation/validators or supplies required metadata/schema."
+      },
+      {
+        "path": "api_handoff_litert_portable/infer/batch.py",
+        "category": "essential_implementation",
+        "action": "keep",
+        "reason": "Conversion, tensor construction, runtime, packaging or CLI execution path."
+      },
+      {
+        "path": "api_handoff_litert_portable/infer/cohort.py",
+        "category": "essential_implementation",
+        "action": "keep",
+        "reason": "Conversion, tensor construction, runtime, packaging or CLI execution path."
+      },
+      {
+        "path": "api_handoff_litert_portable/infer/fallback.py",
+        "category": "essential_implementation",
+        "action": "keep",
+        "reason": "Conversion, tensor construction, runtime, packaging or CLI execution path."
+      },
+      {
+        "path": "api_handoff_litert_portable/infer/inputs.py",
+        "category": "essential_dependency",
+        "action": "keep",
+        "reason": "Imported by retained implementation/validators or supplies required metadata/schema."
+      },
+      {
+        "path": "api_handoff_litert_portable/infer/paths.py",
+        "category": "essential_dependency",
+        "action": "keep",
+        "reason": "Imported by retained implementation/validators or supplies required metadata/schema."
+      },
+      {
+        "path": "api_handoff_litert_portable/infer/preprocessing.py",
+        "category": "essential_implementation",
+        "action": "keep",
+        "reason": "Conversion, tensor construction, runtime, packaging or CLI execution path."
+      },
+      {
+        "path": "api_handoff_litert_portable/infer/providers.py",
+        "category": "essential_dependency",
+        "action": "keep",
+        "reason": "Imported by retained implementation/validators or supplies required metadata/schema."
+      },
+      {
+        "path": "api_handoff_litert_portable/infer/schemas.py",
+        "category": "essential_dependency",
+        "action": "keep",
+        "reason": "Imported by retained implementation/validators or supplies required metadata/schema."
+      },
+      {
+        "path": "api_handoff_litert_portable/infer/stage1_features.py",
+        "category": "essential_implementation",
+        "action": "keep",
+        "reason": "Conversion, tensor construction, runtime, packaging or CLI execution path."
+      },
+      {
+        "path": "api_handoff_litert_portable/infer/stage1_portable.py",
+        "category": "essential_implementation",
+        "action": "keep",
+        "reason": "Conversion, tensor construction, runtime, packaging or CLI execution path."
+      },
+      {
+        "path": "api_handoff_litert_portable/infer/stage2_litert.py",
+        "category": "essential_implementation",
+        "action": "keep",
+        "reason": "Conversion, tensor construction, runtime, packaging or CLI execution path."
+      },
+      {
+        "path": "api_handoff_litert_portable/pytest.ini",
+        "category": "essential_dependency",
+        "action": "keep",
+        "reason": "Installation/test configuration or source-only boundary."
+      },
+      {
+        "path": "api_handoff_litert_portable/requirements-runtime.txt",
+        "category": "essential_dependency",
+        "action": "keep",
+        "reason": "Installation/test configuration or source-only boundary."
+      },
+      {
+        "path": "api_handoff_litert_portable/requirements-test.txt",
+        "category": "essential_dependency",
+        "action": "keep",
+        "reason": "Installation/test configuration or source-only boundary."
+      },
+      {
+        "path": "api_handoff_litert_portable/run_predict.py",
+        "category": "essential_implementation",
+        "action": "keep",
+        "reason": "Conversion, tensor construction, runtime, packaging or CLI execution path."
+      },
+      {
+        "path": "api_handoff_litert_portable/tests/test_batch.py",
+        "category": "reference_documentation_validation",
+        "action": "keep",
+        "reason": "Retained equivalence, preprocessing, output-contract or dependency regression checks."
+      },
+      {
+        "path": "api_handoff_litert_portable/tests/test_generic_batch.py",
+        "category": "reference_documentation_validation",
+        "action": "keep",
+        "reason": "Retained equivalence, preprocessing, output-contract or dependency regression checks."
+      },
+      {
+        "path": "api_handoff_litert_portable/tests/test_no_heavy_dependencies.py",
+        "category": "reference_documentation_validation",
+        "action": "keep",
+        "reason": "Retained equivalence, preprocessing, output-contract or dependency regression checks."
+      },
+      {
+        "path": "api_handoff_litert_portable/tests/test_output_contract.py",
+        "category": "reference_documentation_validation",
+        "action": "keep",
+        "reason": "Retained equivalence, preprocessing, output-contract or dependency regression checks."
+      },
+      {
+        "path": "api_handoff_litert_portable/tests/test_smoke_cases.py",
+        "category": "reference_documentation_validation",
+        "action": "keep",
+        "reason": "Retained equivalence, preprocessing, output-contract or dependency regression checks."
+      },
+      {
+        "path": "api_handoff_litert_portable/tests/test_stage1_portable.py",
+        "category": "reference_documentation_validation",
+        "action": "keep",
+        "reason": "Retained equivalence, preprocessing, output-contract or dependency regression checks."
+      },
+      {
+        "path": "docs/all_pests_stage2_tflite_conversion_report.md",
+        "category": "reference_documentation_validation",
+        "action": "keep",
+        "reason": "Scope, I/O, source provenance, compact request example or historical validation evidence."
+      },
+      {
+        "path": "docs/bph_stage2_tflite_conversion_report.md",
+        "category": "unnecessary",
+        "action": "remove",
+        "reason": "Initial prototype report superseded by retained all-pest conversion report."
+      },
+      {
+        "path": "docs/lightweight_api_integration_plan.md",
+        "category": "reference_documentation_validation",
+        "action": "keep",
+        "reason": "Scope, I/O, source provenance, compact request example or historical validation evidence."
+      },
+      {
+        "path": "docs/lightweight_api_integration_report.md",
+        "category": "reference_documentation_validation",
+        "action": "keep",
+        "reason": "Scope, I/O, source provenance, compact request example or historical validation evidence."
+      },
+      {
+        "path": "docs/standalone_stage2_litert_package_report.md",
+        "category": "reference_documentation_validation",
+        "action": "keep",
+        "reason": "Scope, I/O, source provenance, compact request example or historical validation evidence."
+      },
+      {
+        "path": "stage1_xgboost_migration/.gitignore",
+        "category": "essential_dependency",
+        "action": "keep",
+        "reason": "Installation/test configuration or source-only boundary."
+      },
+      {
+        "path": "stage1_xgboost_migration/README.md",
+        "category": "reference_documentation_validation",
+        "action": "keep",
+        "reason": "Scope, I/O, source provenance, compact request example or historical validation evidence."
+      },
+      {
+        "path": "stage1_xgboost_migration/common.py",
+        "category": "essential_dependency",
+        "action": "keep",
+        "reason": "Imported by retained implementation/validators or supplies required metadata/schema."
+      },
+      {
+        "path": "stage1_xgboost_migration/export_calibration_assets.py",
+        "category": "essential_implementation",
+        "action": "keep",
+        "reason": "Conversion, tensor construction, runtime, packaging or CLI execution path."
+      },
+      {
+        "path": "stage1_xgboost_migration/export_portable_models.py",
+        "category": "essential_implementation",
+        "action": "keep",
+        "reason": "Conversion, tensor construction, runtime, packaging or CLI execution path."
+      },
+      {
+        "path": "stage1_xgboost_migration/portable_stage1.py",
+        "category": "essential_dependency",
+        "action": "keep",
+        "reason": "Imported by retained implementation/validators or supplies required metadata/schema."
+      },
+      {
+        "path": "stage1_xgboost_migration/render_alert_report.py",
+        "category": "unnecessary",
+        "action": "remove",
+        "reason": "Presentation-only Markdown renderer; validation engines and historical report retained."
+      },
+      {
+        "path": "stage1_xgboost_migration/reports/alert_parity_report.md",
+        "category": "reference_documentation_validation",
+        "action": "keep",
+        "reason": "Scope, I/O, source provenance, compact request example or historical validation evidence."
+      },
+      {
+        "path": "stage1_xgboost_migration/requirements-modern.txt",
+        "category": "essential_dependency",
+        "action": "keep",
+        "reason": "Installation/test configuration or source-only boundary."
+      },
+      {
+        "path": "stage1_xgboost_migration/requirements-source-env.txt",
+        "category": "essential_dependency",
+        "action": "keep",
+        "reason": "Installation/test configuration or source-only boundary."
+      },
+      {
+        "path": "stage1_xgboost_migration/validate_alert_parity.py",
+        "category": "reference_documentation_validation",
+        "action": "keep",
+        "reason": "Retained equivalence, preprocessing, output-contract or dependency regression checks."
+      },
+      {
+        "path": "stage1_xgboost_migration/validate_modern_xgboost.py",
+        "category": "reference_documentation_validation",
+        "action": "keep",
+        "reason": "Retained equivalence, preprocessing, output-contract or dependency regression checks."
+      },
+      {
+        "path": "stage1_xgboost_migration/validate_portable_pipeline.py",
+        "category": "reference_documentation_validation",
+        "action": "keep",
+        "reason": "Retained equivalence, preprocessing, output-contract or dependency regression checks."
+      },
+      {
+        "path": "stage1_xgboost_migration/validate_server_parity.py",
+        "category": "reference_documentation_validation",
+        "action": "keep",
+        "reason": "Retained equivalence, preprocessing, output-contract or dependency regression checks."
+      },
+      {
+        "path": "tflite_conversion/bph_stage2/README.md",
+        "category": "unnecessary",
+        "action": "remove",
+        "reason": "Superseded-prototype pointer only; all-pest wrapper and original commit preserve history."
+      },
+      {
+        "path": "tflite_conversion/stage2/README.md",
+        "category": "reference_documentation_validation",
+        "action": "keep",
+        "reason": "Scope, I/O, source provenance, compact request example or historical validation evidence."
+      },
+      {
+        "path": "tflite_conversion/stage2/benchmark_all.py",
+        "category": "unnecessary",
+        "action": "remove",
+        "reason": "Optional latency benchmarking; not used by conversion, inference or parity validators."
+      },
+      {
+        "path": "tflite_conversion/stage2/checkpoint.py",
+        "category": "essential_dependency",
+        "action": "keep",
+        "reason": "Imported by retained implementation/validators or supplies required metadata/schema."
+      },
+      {
+        "path": "tflite_conversion/stage2/export_all.py",
+        "category": "essential_implementation",
+        "action": "keep",
+        "reason": "Conversion, tensor construction, runtime, packaging or CLI execution path."
+      },
+      {
+        "path": "tflite_conversion/stage2/inference_model.py",
+        "category": "essential_implementation",
+        "action": "keep",
+        "reason": "Conversion, tensor construction, runtime, packaging or CLI execution path."
+      },
+      {
+        "path": "tflite_conversion/stage2/pest_configs.py",
+        "category": "essential_dependency",
+        "action": "keep",
+        "reason": "Imported by retained implementation/validators or supplies required metadata/schema."
+      },
+      {
+        "path": "tflite_conversion/stage2/requirements-tflite.txt",
+        "category": "essential_dependency",
+        "action": "keep",
+        "reason": "Installation/test configuration or source-only boundary."
+      },
+      {
+        "path": "tflite_conversion/stage2/summarize.py",
+        "category": "unnecessary",
+        "action": "remove",
+        "reason": "Optional report merger including benchmark outputs; not used by core code/validators."
+      },
+      {
+        "path": "tflite_conversion/stage2/validate_all.py",
+        "category": "reference_documentation_validation",
+        "action": "keep",
+        "reason": "Retained equivalence, preprocessing, output-contract or dependency regression checks."
+      },
+      {
+        "path": "tflite_conversion/stage2/validate_real.py",
+        "category": "reference_documentation_validation",
+        "action": "keep",
+        "reason": "Retained equivalence, preprocessing, output-contract or dependency regression checks."
+      },
+      {
+        "path": "tflite_conversion/standalone_stage2/README.md",
+        "category": "reference_documentation_validation",
+        "action": "keep",
+        "reason": "Scope, I/O, source provenance, compact request example or historical validation evidence."
+      },
+      {
+        "path": "tflite_conversion/standalone_stage2/build_package.py",
+        "category": "essential_implementation",
+        "action": "keep",
+        "reason": "Conversion, tensor construction, runtime, packaging or CLI execution path."
+      },
+      {
+        "path": "tflite_conversion/standalone_stage2/requirements-build.txt",
+        "category": "essential_dependency",
+        "action": "keep",
+        "reason": "Installation/test configuration or source-only boundary."
+      },
+      {
+        "path": "tflite_conversion/standalone_stage2/requirements-runtime.txt",
+        "category": "essential_dependency",
+        "action": "keep",
+        "reason": "Installation/test configuration or source-only boundary."
+      },
+      {
+        "path": "tflite_conversion/standalone_stage2/runtime/__init__.py",
+        "category": "essential_dependency",
+        "action": "keep",
+        "reason": "Imported by retained implementation/validators or supplies required metadata/schema."
+      },
+      {
+        "path": "tflite_conversion/standalone_stage2/runtime/cli.py",
+        "category": "essential_implementation",
+        "action": "keep",
+        "reason": "Conversion, tensor construction, runtime, packaging or CLI execution path."
+      },
+      {
+        "path": "tflite_conversion/standalone_stage2/runtime/interpreter.py",
+        "category": "essential_implementation",
+        "action": "keep",
+        "reason": "Conversion, tensor construction, runtime, packaging or CLI execution path."
+      },
+      {
+        "path": "tflite_conversion/standalone_stage2/runtime/preprocessing.py",
+        "category": "essential_implementation",
+        "action": "keep",
+        "reason": "Conversion, tensor construction, runtime, packaging or CLI execution path."
+      },
+      {
+        "path": "tflite_conversion/standalone_stage2/runtime/schema.py",
+        "category": "essential_dependency",
+        "action": "keep",
+        "reason": "Imported by retained implementation/validators or supplies required metadata/schema."
+      },
+      {
+        "path": "tflite_conversion/standalone_stage2/tests/test_metadata.py",
+        "category": "reference_documentation_validation",
+        "action": "keep",
+        "reason": "Retained equivalence, preprocessing, output-contract or dependency regression checks."
+      },
+      {
+        "path": "tflite_conversion/standalone_stage2/tests/test_no_torch_dependency.py",
+        "category": "reference_documentation_validation",
+        "action": "keep",
+        "reason": "Retained equivalence, preprocessing, output-contract or dependency regression checks."
+      },
+      {
+        "path": "tflite_conversion/standalone_stage2/tests/test_output_parity.py",
+        "category": "reference_documentation_validation",
+        "action": "keep",
+        "reason": "Retained equivalence, preprocessing, output-contract or dependency regression checks."
+      },
+      {
+        "path": "tflite_conversion/standalone_stage2/tests/test_preprocessing_parity.py",
+        "category": "reference_documentation_validation",
+        "action": "keep",
+        "reason": "Retained equivalence, preprocessing, output-contract or dependency regression checks."
+      },
+      {
+        "path": "tflite_conversion/standalone_stage2/tests/test_runtime_synthetic.py",
+        "category": "reference_documentation_validation",
+        "action": "keep",
+        "reason": "Retained equivalence, preprocessing, output-contract or dependency regression checks."
+      }
+    ],
+    "local_import_edges": [
+      {"source":"api_handoff_litert_portable/infer/_stage2_preprocessing.py","line":36,"target":"api_handoff_litert_portable/infer/_stage2_schema.py","kind":"relative_import"},
+      {"source":"api_handoff_litert_portable/infer/batch.py","line":40,"target":"api_handoff_litert_portable/infer/fallback.py","kind":"relative_import"},
+      {"source":"api_handoff_litert_portable/infer/batch.py","line":41,"target":"api_handoff_litert_portable/infer/inputs.py","kind":"relative_import"},
+      {"source":"api_handoff_litert_portable/infer/batch.py","line":42,"target":"api_handoff_litert_portable/infer/paths.py","kind":"relative_import"},
+      {"source":"api_handoff_litert_portable/infer/batch.py","line":43,"target":"api_handoff_litert_portable/infer/providers.py","kind":"relative_import"},
+      {"source":"api_handoff_litert_portable/infer/batch.py","line":44,"target":"api_handoff_litert_portable/infer/schemas.py","kind":"relative_import"},
+      {"source":"api_handoff_litert_portable/infer/batch.py","line":373,"target":"api_handoff_litert_portable/infer/cohort.py","kind":"relative_import"},
+      {"source":"api_handoff_litert_portable/infer/batch.py","line":374,"target":"api_handoff_litert_portable/infer/providers.py","kind":"relative_import"},
+      {"source":"api_handoff_litert_portable/infer/batch.py","line":375,"target":"api_handoff_litert_portable/infer/stage1_portable.py","kind":"relative_import"},
+      {"source":"api_handoff_litert_portable/infer/batch.py","line":345,"target":"api_handoff_litert_portable/infer/stage2_litert.py","kind":"relative_import"},
+      {"source":"api_handoff_litert_portable/infer/batch.py","line":404,"target":"api_handoff_litert_portable/infer/cohort.py","kind":"relative_import"},
+      {"source":"api_handoff_litert_portable/infer/batch.py","line":564,"target":"api_handoff_litert_portable/infer/cohort.py","kind":"relative_import"},
+      {"source":"api_handoff_litert_portable/infer/batch.py","line":659,"target":"api_handoff_litert_portable/infer/stage2_litert.py","kind":"relative_import"},
+      {"source":"api_handoff_litert_portable/infer/cohort.py","line":44,"target":"api_handoff_litert_portable/infer/preprocessing.py","kind":"relative_import"},
+      {"source":"api_handoff_litert_portable/infer/cohort.py","line":50,"target":"api_handoff_litert_portable/infer/stage1_features.py","kind":"relative_import"},
+      {"source":"api_handoff_litert_portable/infer/cohort.py","line":60,"target":"api_handoff_litert_portable/infer/stage1_portable.py","kind":"relative_import"},
+      {"source":"api_handoff_litert_portable/infer/cohort.py","line":273,"target":"api_handoff_litert_portable/infer/preprocessing.py","kind":"relative_import"},
+      {"source":"api_handoff_litert_portable/infer/cohort.py","line":347,"target":"api_handoff_litert_portable/infer/preprocessing.py","kind":"relative_import"},
+      {"source":"api_handoff_litert_portable/infer/cohort.py","line":503,"target":"api_handoff_litert_portable/infer/stage1_portable.py","kind":"relative_import"},
+      {"source":"api_handoff_litert_portable/infer/preprocessing.py","line":18,"target":"api_handoff_litert_portable/infer/stage1_features.py","kind":"relative_import"},
+      {"source":"api_handoff_litert_portable/infer/schemas.py","line":14,"target":"api_handoff_litert_portable/infer/fallback.py","kind":"relative_import"},
+      {"source":"api_handoff_litert_portable/infer/schemas.py","line":15,"target":"api_handoff_litert_portable/infer/paths.py","kind":"relative_import"},
+      {"source":"api_handoff_litert_portable/infer/stage1_portable.py","line":30,"target":"api_handoff_litert_portable/infer/stage1_features.py","kind":"relative_import"},
+      {"source":"api_handoff_litert_portable/infer/stage2_litert.py","line":15,"target":"api_handoff_litert_portable/infer/_stage2_preprocessing.py","kind":"relative_import"},
+      {"source":"api_handoff_litert_portable/infer/stage2_litert.py","line":16,"target":"api_handoff_litert_portable/infer/_stage2_schema.py","kind":"relative_import"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":29,"target":"api_handoff_litert_portable/infer/fallback.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":29,"target":"api_handoff_litert_portable/infer/fallback.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":29,"target":"api_handoff_litert_portable/infer/fallback.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":29,"target":"api_handoff_litert_portable/infer/fallback.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":29,"target":"api_handoff_litert_portable/infer/fallback.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":32,"target":"api_handoff_litert_portable/infer/inputs.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":32,"target":"api_handoff_litert_portable/infer/inputs.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":32,"target":"api_handoff_litert_portable/infer/inputs.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":32,"target":"api_handoff_litert_portable/infer/inputs.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":32,"target":"api_handoff_litert_portable/infer/inputs.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":32,"target":"api_handoff_litert_portable/infer/inputs.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":32,"target":"api_handoff_litert_portable/infer/inputs.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":36,"target":"api_handoff_litert_portable/infer/paths.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":36,"target":"api_handoff_litert_portable/infer/paths.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":37,"target":"api_handoff_litert_portable/infer/preprocessing.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":37,"target":"api_handoff_litert_portable/infer/preprocessing.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":38,"target":"api_handoff_litert_portable/infer/providers.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":38,"target":"api_handoff_litert_portable/infer/providers.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":38,"target":"api_handoff_litert_portable/infer/providers.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":39,"target":"api_handoff_litert_portable/infer/schemas.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":39,"target":"api_handoff_litert_portable/infer/schemas.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":39,"target":"api_handoff_litert_portable/infer/schemas.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":39,"target":"api_handoff_litert_portable/infer/schemas.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":39,"target":"api_handoff_litert_portable/infer/schemas.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":42,"target":"api_handoff_litert_portable/infer/stage1_features.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":43,"target":"api_handoff_litert_portable/infer/stage1_portable.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":43,"target":"api_handoff_litert_portable/infer/stage1_portable.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":43,"target":"api_handoff_litert_portable/infer/stage1_portable.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":43,"target":"api_handoff_litert_portable/infer/stage1_portable.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":43,"target":"api_handoff_litert_portable/infer/stage1_portable.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":46,"target":"api_handoff_litert_portable/infer/stage2_litert.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":46,"target":"api_handoff_litert_portable/infer/stage2_litert.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":46,"target":"api_handoff_litert_portable/infer/stage2_litert.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":46,"target":"api_handoff_litert_portable/infer/stage2_litert.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":46,"target":"api_handoff_litert_portable/infer/stage2_litert.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":257,"target":"api_handoff_litert_portable/infer/cohort.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":423,"target":"api_handoff_litert_portable/infer/batch.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":118,"target":"api_handoff_litert_portable/infer/stage1_features.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":118,"target":"api_handoff_litert_portable/infer/stage1_features.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/tests/test_batch.py","line":30,"target":"api_handoff_litert_portable/infer/batch.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/tests/test_batch.py","line":30,"target":"api_handoff_litert_portable/infer/batch.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/tests/test_batch.py","line":30,"target":"api_handoff_litert_portable/infer/batch.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/tests/test_batch.py","line":31,"target":"api_handoff_litert_portable/infer/schemas.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":40,"target":"api_handoff_litert_portable/infer/__init__.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":41,"target":"api_handoff_litert_portable/infer/batch.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":41,"target":"api_handoff_litert_portable/infer/batch.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":41,"target":"api_handoff_litert_portable/infer/batch.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":41,"target":"api_handoff_litert_portable/infer/batch.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":47,"target":"api_handoff_litert_portable/infer/paths.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":379,"target":"api_handoff_litert_portable/infer/inputs.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":379,"target":"api_handoff_litert_portable/infer/inputs.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":379,"target":"api_handoff_litert_portable/infer/inputs.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":379,"target":"api_handoff_litert_portable/infer/inputs.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":379,"target":"api_handoff_litert_portable/infer/inputs.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":220,"target":"api_handoff_litert_portable/infer/schemas.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":520,"target":"api_handoff_litert_portable/infer/schemas.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/tests/test_no_heavy_dependencies.py","line":64,"target":"api_handoff_litert_portable/run_predict.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/tests/test_no_heavy_dependencies.py","line":65,"target":"api_handoff_litert_portable/infer/stage1_portable.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/tests/test_no_heavy_dependencies.py","line":66,"target":"api_handoff_litert_portable/infer/stage2_litert.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/tests/test_no_heavy_dependencies.py","line":75,"target":"api_handoff_litert_portable/infer/stage1_portable.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/tests/test_no_heavy_dependencies.py","line":75,"target":"api_handoff_litert_portable/infer/stage1_portable.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/tests/test_no_heavy_dependencies.py","line":76,"target":"api_handoff_litert_portable/infer/stage2_litert.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/tests/test_no_heavy_dependencies.py","line":96,"target":"api_handoff_litert_portable/infer/stage1_portable.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/tests/test_output_contract.py","line":23,"target":"api_handoff_litert_portable/infer/fallback.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/tests/test_output_contract.py","line":23,"target":"api_handoff_litert_portable/infer/fallback.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/tests/test_output_contract.py","line":23,"target":"api_handoff_litert_portable/infer/fallback.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/tests/test_output_contract.py","line":24,"target":"api_handoff_litert_portable/infer/schemas.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/tests/test_output_contract.py","line":24,"target":"api_handoff_litert_portable/infer/schemas.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/tests/test_output_contract.py","line":24,"target":"api_handoff_litert_portable/infer/schemas.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/tests/test_stage1_portable.py","line":26,"target":"api_handoff_litert_portable/infer/stage1_features.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/tests/test_stage1_portable.py","line":26,"target":"api_handoff_litert_portable/infer/stage1_features.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/tests/test_stage1_portable.py","line":26,"target":"api_handoff_litert_portable/infer/stage1_features.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/tests/test_stage1_portable.py","line":26,"target":"api_handoff_litert_portable/infer/stage1_features.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/tests/test_stage1_portable.py","line":26,"target":"api_handoff_litert_portable/infer/stage1_features.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/tests/test_stage1_portable.py","line":30,"target":"api_handoff_litert_portable/infer/stage1_portable.py","kind":"import"},
+      {"source":"api_handoff_litert_portable/tests/test_stage1_portable.py","line":30,"target":"api_handoff_litert_portable/infer/stage1_portable.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/export_calibration_assets.py","line":18,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/export_calibration_assets.py","line":18,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/export_calibration_assets.py","line":18,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/export_calibration_assets.py","line":18,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/export_calibration_assets.py","line":18,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/export_calibration_assets.py","line":18,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/export_calibration_assets.py","line":18,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/export_calibration_assets.py","line":18,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/export_portable_models.py","line":17,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/export_portable_models.py","line":17,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/export_portable_models.py","line":17,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/export_portable_models.py","line":17,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/export_portable_models.py","line":17,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/export_portable_models.py","line":17,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/export_portable_models.py","line":17,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/export_portable_models.py","line":17,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/export_portable_models.py","line":17,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/export_portable_models.py","line":17,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/export_portable_models.py","line":17,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/export_portable_models.py","line":17,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/export_portable_models.py","line":17,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/export_portable_models.py","line":17,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/export_portable_models.py","line":17,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/validate_alert_parity.py","line":29,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/validate_alert_parity.py","line":29,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/validate_alert_parity.py","line":29,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/validate_alert_parity.py","line":29,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/validate_alert_parity.py","line":29,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/validate_alert_parity.py","line":29,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/validate_alert_parity.py","line":29,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/validate_alert_parity.py","line":29,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/validate_alert_parity.py","line":29,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/validate_alert_parity.py","line":29,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/validate_alert_parity.py","line":35,"target":"stage1_xgboost_migration/portable_stage1.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/validate_alert_parity.py","line":115,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/validate_alert_parity.py","line":140,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/validate_alert_parity.py","line":173,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/validate_alert_parity.py","line":466,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/validate_portable_pipeline.py","line":45,"target":"stage1_xgboost_migration/portable_stage1.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/validate_server_parity.py","line":18,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/validate_server_parity.py","line":18,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/validate_server_parity.py","line":18,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/validate_server_parity.py","line":18,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/validate_server_parity.py","line":18,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/validate_server_parity.py","line":18,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/validate_server_parity.py","line":18,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/validate_server_parity.py","line":18,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/validate_server_parity.py","line":18,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/validate_server_parity.py","line":18,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/validate_server_parity.py","line":18,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/validate_server_parity.py","line":18,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/validate_server_parity.py","line":18,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/validate_server_parity.py","line":130,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"stage1_xgboost_migration/validate_server_parity.py","line":177,"target":"stage1_xgboost_migration/common.py","kind":"import"},
+      {"source":"tflite_conversion/stage2/checkpoint.py","line":28,"target":"tflite_conversion/stage2/pest_configs.py","kind":"import"},
+      {"source":"tflite_conversion/stage2/checkpoint.py","line":28,"target":"tflite_conversion/stage2/pest_configs.py","kind":"import"},
+      {"source":"tflite_conversion/stage2/checkpoint.py","line":28,"target":"tflite_conversion/stage2/pest_configs.py","kind":"import"},
+      {"source":"tflite_conversion/stage2/checkpoint.py","line":28,"target":"tflite_conversion/stage2/pest_configs.py","kind":"import"},
+      {"source":"tflite_conversion/stage2/export_all.py","line":29,"target":"tflite_conversion/stage2/checkpoint.py","kind":"import"},
+      {"source":"tflite_conversion/stage2/export_all.py","line":29,"target":"tflite_conversion/stage2/checkpoint.py","kind":"import"},
+      {"source":"tflite_conversion/stage2/export_all.py","line":29,"target":"tflite_conversion/stage2/checkpoint.py","kind":"import"},
+      {"source":"tflite_conversion/stage2/export_all.py","line":30,"target":"tflite_conversion/stage2/inference_model.py","kind":"import"},
+      {"source":"tflite_conversion/stage2/export_all.py","line":31,"target":"tflite_conversion/stage2/pest_configs.py","kind":"import"},
+      {"source":"tflite_conversion/stage2/inference_model.py","line":53,"target":"tflite_conversion/stage2/checkpoint.py","kind":"import"},
+      {"source":"tflite_conversion/stage2/inference_model.py","line":53,"target":"tflite_conversion/stage2/checkpoint.py","kind":"import"},
+      {"source":"tflite_conversion/stage2/inference_model.py","line":54,"target":"tflite_conversion/stage2/pest_configs.py","kind":"import"},
+      {"source":"tflite_conversion/stage2/validate_all.py","line":23,"target":"tflite_conversion/stage2/checkpoint.py","kind":"import"},
+      {"source":"tflite_conversion/stage2/validate_all.py","line":23,"target":"tflite_conversion/stage2/checkpoint.py","kind":"import"},
+      {"source":"tflite_conversion/stage2/validate_all.py","line":24,"target":"tflite_conversion/stage2/inference_model.py","kind":"import"},
+      {"source":"tflite_conversion/stage2/validate_all.py","line":25,"target":"tflite_conversion/stage2/pest_configs.py","kind":"import"},
+      {"source":"tflite_conversion/stage2/validate_real.py","line":44,"target":"tflite_conversion/stage2/checkpoint.py","kind":"import"},
+      {"source":"tflite_conversion/stage2/validate_real.py","line":44,"target":"tflite_conversion/stage2/checkpoint.py","kind":"import"},
+      {"source":"tflite_conversion/stage2/validate_real.py","line":44,"target":"tflite_conversion/stage2/checkpoint.py","kind":"import"},
+      {"source":"tflite_conversion/stage2/validate_real.py","line":45,"target":"tflite_conversion/stage2/inference_model.py","kind":"import"},
+      {"source":"tflite_conversion/stage2/validate_real.py","line":46,"target":"tflite_conversion/stage2/pest_configs.py","kind":"import"},
+      {"source":"tflite_conversion/stage2/validate_real.py","line":46,"target":"tflite_conversion/stage2/pest_configs.py","kind":"import"},
+      {"source":"tflite_conversion/stage2/validate_real.py","line":46,"target":"tflite_conversion/stage2/pest_configs.py","kind":"import"},
+      {"source":"tflite_conversion/stage2/validate_real.py","line":47,"target":"tflite_conversion/stage2/validate_all.py","kind":"import"},
+      {"source":"tflite_conversion/stage2/validate_real.py","line":47,"target":"tflite_conversion/stage2/validate_all.py","kind":"import"},
+      {"source":"tflite_conversion/stage2/validate_real.py","line":47,"target":"tflite_conversion/stage2/validate_all.py","kind":"import"},
+      {"source":"tflite_conversion/stage2/validate_real.py","line":47,"target":"tflite_conversion/stage2/validate_all.py","kind":"import"},
+      {"source":"tflite_conversion/standalone_stage2/build_package.py","line":42,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","kind":"import"},
+      {"source":"tflite_conversion/standalone_stage2/build_package.py","line":42,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","kind":"import"},
+      {"source":"tflite_conversion/standalone_stage2/build_package.py","line":42,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","kind":"import"},
+      {"source":"tflite_conversion/standalone_stage2/build_package.py","line":42,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","kind":"import"},
+      {"source":"tflite_conversion/standalone_stage2/build_package.py","line":42,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","kind":"import"},
+      {"source":"tflite_conversion/standalone_stage2/build_package.py","line":42,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","kind":"import"},
+      {"source":"tflite_conversion/standalone_stage2/build_package.py","line":99,"target":"tflite_conversion/stage2/checkpoint.py","kind":"import"},
+      {"source":"tflite_conversion/standalone_stage2/build_package.py","line":369,"target":"tflite_conversion/stage2/pest_configs.py","kind":"import"},
+      {"source":"tflite_conversion/standalone_stage2/runtime/__init__.py","line":15,"target":"tflite_conversion/standalone_stage2/runtime/interpreter.py","kind":"relative_import"},
+      {"source":"tflite_conversion/standalone_stage2/runtime/__init__.py","line":23,"target":"tflite_conversion/standalone_stage2/runtime/preprocessing.py","kind":"relative_import"},
+      {"source":"tflite_conversion/standalone_stage2/runtime/__init__.py","line":24,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","kind":"relative_import"},
+      {"source":"tflite_conversion/standalone_stage2/runtime/cli.py","line":16,"target":"tflite_conversion/standalone_stage2/runtime/interpreter.py","kind":"relative_import"},
+      {"source":"tflite_conversion/standalone_stage2/runtime/cli.py","line":17,"target":"tflite_conversion/standalone_stage2/runtime/preprocessing.py","kind":"relative_import"},
+      {"source":"tflite_conversion/standalone_stage2/runtime/cli.py","line":18,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","kind":"relative_import"},
+      {"source":"tflite_conversion/standalone_stage2/runtime/interpreter.py","line":17,"target":"tflite_conversion/standalone_stage2/runtime/preprocessing.py","kind":"relative_import"},
+      {"source":"tflite_conversion/standalone_stage2/runtime/interpreter.py","line":18,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","kind":"relative_import"},
+      {"source":"tflite_conversion/standalone_stage2/runtime/preprocessing.py","line":36,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","kind":"relative_import"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_metadata.py","line":28,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","kind":"import"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_metadata.py","line":28,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","kind":"import"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_metadata.py","line":32,"target":"tflite_conversion/stage2/checkpoint.py","kind":"import"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_metadata.py","line":117,"target":"tflite_conversion/stage2/pest_configs.py","kind":"import"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_no_torch_dependency.py","line":85,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","kind":"import"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_no_torch_dependency.py","line":101,"target":"tflite_conversion/standalone_stage2/tests/test_runtime_synthetic.py","kind":"import"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_output_parity.py","line":44,"target":"tflite_conversion/standalone_stage2/tests/test_preprocessing_parity.py","kind":"import"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_output_parity.py","line":44,"target":"tflite_conversion/standalone_stage2/tests/test_preprocessing_parity.py","kind":"import"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_output_parity.py","line":46,"target":"tflite_conversion/standalone_stage2/runtime/interpreter.py","kind":"import"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_output_parity.py","line":46,"target":"tflite_conversion/standalone_stage2/runtime/interpreter.py","kind":"import"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_output_parity.py","line":47,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","kind":"import"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_output_parity.py","line":54,"target":"tflite_conversion/stage2/checkpoint.py","kind":"import"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_output_parity.py","line":64,"target":"tflite_conversion/stage2/validate_all.py","kind":"import"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_output_parity.py","line":64,"target":"tflite_conversion/stage2/validate_all.py","kind":"import"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_output_parity.py","line":117,"target":"tflite_conversion/stage2/pest_configs.py","kind":"import"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_output_parity.py","line":117,"target":"tflite_conversion/stage2/pest_configs.py","kind":"import"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_output_parity.py","line":117,"target":"tflite_conversion/stage2/pest_configs.py","kind":"import"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_preprocessing_parity.py","line":35,"target":"tflite_conversion/standalone_stage2/runtime/preprocessing.py","kind":"import"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_preprocessing_parity.py","line":36,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","kind":"import"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_preprocessing_parity.py","line":36,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","kind":"import"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_preprocessing_parity.py","line":42,"target":"tflite_conversion/stage2/checkpoint.py","kind":"import"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_preprocessing_parity.py","line":42,"target":"tflite_conversion/stage2/checkpoint.py","kind":"import"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_preprocessing_parity.py","line":161,"target":"tflite_conversion/stage2/pest_configs.py","kind":"import"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_preprocessing_parity.py","line":161,"target":"tflite_conversion/stage2/pest_configs.py","kind":"import"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_preprocessing_parity.py","line":161,"target":"tflite_conversion/stage2/pest_configs.py","kind":"import"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_runtime_synthetic.py","line":93,"target":"tflite_conversion/standalone_stage2/runtime/interpreter.py","kind":"import"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_runtime_synthetic.py","line":94,"target":"tflite_conversion/standalone_stage2/runtime/preprocessing.py","kind":"import"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_runtime_synthetic.py","line":95,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","kind":"import"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_runtime_synthetic.py","line":95,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","kind":"import"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_runtime_synthetic.py","line":95,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","kind":"import"}
+    ],
+    "statically_bound_local_call_edges": [
+      {"source":"api_handoff_litert_portable/infer/batch.py","line":272,"target":"api_handoff_litert_portable/infer/inputs.py","callee":"write_atomic"},
+      {"source":"api_handoff_litert_portable/infer/batch.py","line":293,"target":"api_handoff_litert_portable/infer/inputs.py","callee":"write_atomic"},
+      {"source":"api_handoff_litert_portable/infer/batch.py","line":305,"target":"api_handoff_litert_portable/infer/inputs.py","callee":"existing_outputs"},
+      {"source":"api_handoff_litert_portable/infer/batch.py","line":321,"target":"api_handoff_litert_portable/infer/inputs.py","callee":"write_atomic"},
+      {"source":"api_handoff_litert_portable/infer/batch.py","line":394,"target":"api_handoff_litert_portable/infer/cohort.py","callee":"load_obs_for_stage1"},
+      {"source":"api_handoff_litert_portable/infer/batch.py","line":424,"target":"api_handoff_litert_portable/infer/providers.py","callee":"LongObsProvider"},
+      {"source":"api_handoff_litert_portable/infer/batch.py","line":426,"target":"api_handoff_litert_portable/infer/stage1_portable.py","callee":"load_gate"},
+      {"source":"api_handoff_litert_portable/infer/batch.py","line":752,"target":"api_handoff_litert_portable/infer/inputs.py","callee":"write_atomic"},
+      {"source":"api_handoff_litert_portable/infer/batch.py","line":765,"target":"api_handoff_litert_portable/infer/inputs.py","callee":"resolve_obs"},
+      {"source":"api_handoff_litert_portable/infer/batch.py","line":348,"target":"api_handoff_litert_portable/infer/fallback.py","callee":"per_pest_policy"},
+      {"source":"api_handoff_litert_portable/infer/batch.py","line":349,"target":"api_handoff_litert_portable/infer/fallback.py","callee":"compute_climatology"},
+      {"source":"api_handoff_litert_portable/infer/batch.py","line":351,"target":"api_handoff_litert_portable/infer/stage2_litert.py","callee":"Stage2Model"},
+      {"source":"api_handoff_litert_portable/infer/batch.py","line":378,"target":"api_handoff_litert_portable/infer/inputs.py","callee":"resolve_daily"},
+      {"source":"api_handoff_litert_portable/infer/batch.py","line":383,"target":"api_handoff_litert_portable/infer/cohort.py","callee":"load_daily_cohort"},
+      {"source":"api_handoff_litert_portable/infer/batch.py","line":423,"target":"api_handoff_litert_portable/infer/providers.py","callee":"FrameWeatherProvider"},
+      {"source":"api_handoff_litert_portable/infer/batch.py","line":435,"target":"api_handoff_litert_portable/infer/cohort.py","callee":"stage1_cohort"},
+      {"source":"api_handoff_litert_portable/infer/batch.py","line":468,"target":"api_handoff_litert_portable/infer/fallback.py","callee":"load_policy"},
+      {"source":"api_handoff_litert_portable/infer/batch.py","line":350,"target":"api_handoff_litert_portable/infer/fallback.py","callee":"climatology_variant"},
+      {"source":"api_handoff_litert_portable/infer/batch.py","line":558,"target":"api_handoff_litert_portable/infer/providers.py","callee":"LongObsProvider"},
+      {"source":"api_handoff_litert_portable/infer/batch.py","line":567,"target":"api_handoff_litert_portable/infer/cohort.py","callee":"load_daily_cohort"},
+      {"source":"api_handoff_litert_portable/infer/batch.py","line":676,"target":"api_handoff_litert_portable/infer/schemas.py","callee":"flatten_response"},
+      {"source":"api_handoff_litert_portable/infer/batch.py","line":415,"target":"api_handoff_litert_portable/infer/cohort.py","callee":"pad_daily_to_season"},
+      {"source":"api_handoff_litert_portable/infer/batch.py","line":551,"target":"api_handoff_litert_portable/infer/inputs.py","callee":"resolve_daily"},
+      {"source":"api_handoff_litert_portable/infer/batch.py","line":742,"target":"api_handoff_litert_portable/infer/fallback.py","callee":"compute_climatology"},
+      {"source":"api_handoff_litert_portable/infer/batch.py","line":743,"target":"api_handoff_litert_portable/infer/fallback.py","callee":"climatology_variant"},
+      {"source":"api_handoff_litert_portable/infer/batch.py","line":731,"target":"api_handoff_litert_portable/infer/fallback.py","callee":"per_pest_policy"},
+      {"source":"api_handoff_litert_portable/infer/cohort.py","line":349,"target":"api_handoff_litert_portable/infer/preprocessing.py","callee":"daily_year_frame"},
+      {"source":"api_handoff_litert_portable/infer/cohort.py","line":350,"target":"api_handoff_litert_portable/infer/preprocessing.py","callee":"add_rolling_features"},
+      {"source":"api_handoff_litert_portable/infer/cohort.py","line":158,"target":"api_handoff_litert_portable/infer/preprocessing.py","callee":"PreprocessError"},
+      {"source":"api_handoff_litert_portable/infer/cohort.py","line":187,"target":"api_handoff_litert_portable/infer/preprocessing.py","callee":"PreprocessError"},
+      {"source":"api_handoff_litert_portable/infer/cohort.py","line":192,"target":"api_handoff_litert_portable/infer/preprocessing.py","callee":"PreprocessError"},
+      {"source":"api_handoff_litert_portable/infer/cohort.py","line":354,"target":"api_handoff_litert_portable/infer/preprocessing.py","callee":"PreprocessError"},
+      {"source":"api_handoff_litert_portable/infer/cohort.py","line":363,"target":"api_handoff_litert_portable/infer/preprocessing.py","callee":"merge_pheno_ffill"},
+      {"source":"api_handoff_litert_portable/infer/cohort.py","line":394,"target":"api_handoff_litert_portable/infer/stage1_features.py","callee":"build_nowcast_samples"},
+      {"source":"api_handoff_litert_portable/infer/cohort.py","line":401,"target":"api_handoff_litert_portable/infer/stage1_features.py","callee":"build_tabular"},
+      {"source":"api_handoff_litert_portable/infer/cohort.py","line":403,"target":"api_handoff_litert_portable/infer/stage1_features.py","callee":"apply_temperature"},
+      {"source":"api_handoff_litert_portable/infer/cohort.py","line":443,"target":"api_handoff_litert_portable/infer/stage1_portable.py","callee":"PortableBranch"},
+      {"source":"api_handoff_litert_portable/infer/cohort.py","line":446,"target":"api_handoff_litert_portable/infer/stage1_portable.py","callee":"Stage1Error"},
+      {"source":"api_handoff_litert_portable/infer/cohort.py","line":554,"target":"api_handoff_litert_portable/infer/stage1_portable.py","callee":"dispatch_features_for_sy"},
+      {"source":"api_handoff_litert_portable/infer/cohort.py","line":325,"target":"api_handoff_litert_portable/infer/stage1_features.py","callee":"base_x_from_season"},
+      {"source":"api_handoff_litert_portable/infer/cohort.py","line":510,"target":"api_handoff_litert_portable/infer/stage1_portable.py","callee":"resolve_with_history"},
+      {"source":"api_handoff_litert_portable/infer/cohort.py","line":546,"target":"api_handoff_litert_portable/infer/stage1_portable.py","callee":"first_crossing_k"},
+      {"source":"api_handoff_litert_portable/infer/cohort.py","line":548,"target":"api_handoff_litert_portable/infer/stage1_portable.py","callee":"first_crossing_k"},
+      {"source":"api_handoff_litert_portable/infer/cohort.py","line":550,"target":"api_handoff_litert_portable/infer/stage1_portable.py","callee":"first_crossing_k"},
+      {"source":"api_handoff_litert_portable/infer/cohort.py","line":551,"target":"api_handoff_litert_portable/infer/stage1_portable.py","callee":"first_crossing_k"},
+      {"source":"api_handoff_litert_portable/infer/cohort.py","line":391,"target":"api_handoff_litert_portable/infer/stage1_features.py","callee":"append_history"},
+      {"source":"api_handoff_litert_portable/infer/schemas.py","line":68,"target":"api_handoff_litert_portable/infer/fallback.py","callee":"per_pest_policy"},
+      {"source":"api_handoff_litert_portable/infer/schemas.py","line":90,"target":"api_handoff_litert_portable/infer/fallback.py","callee":"select_final"},
+      {"source":"api_handoff_litert_portable/infer/stage1_portable.py","line":97,"target":"api_handoff_litert_portable/infer/stage1_features.py","callee":"build_nowcast_samples"},
+      {"source":"api_handoff_litert_portable/infer/stage1_portable.py","line":101,"target":"api_handoff_litert_portable/infer/stage1_features.py","callee":"build_tabular"},
+      {"source":"api_handoff_litert_portable/infer/stage1_portable.py","line":103,"target":"api_handoff_litert_portable/infer/stage1_features.py","callee":"apply_temperature"},
+      {"source":"api_handoff_litert_portable/infer/stage1_portable.py","line":206,"target":"api_handoff_litert_portable/infer/stage1_features.py","callee":"first_crossing_k"},
+      {"source":"api_handoff_litert_portable/infer/stage1_portable.py","line":208,"target":"api_handoff_litert_portable/infer/stage1_features.py","callee":"first_crossing_k"},
+      {"source":"api_handoff_litert_portable/infer/stage1_portable.py","line":210,"target":"api_handoff_litert_portable/infer/stage1_features.py","callee":"first_crossing_k"},
+      {"source":"api_handoff_litert_portable/infer/stage1_portable.py","line":211,"target":"api_handoff_litert_portable/infer/stage1_features.py","callee":"first_crossing_k"},
+      {"source":"api_handoff_litert_portable/infer/stage1_portable.py","line":91,"target":"api_handoff_litert_portable/infer/stage1_features.py","callee":"append_history"},
+      {"source":"api_handoff_litert_portable/infer/stage2_litert.py","line":122,"target":"api_handoff_litert_portable/infer/_stage2_schema.py","callee":"DispatchRequest"},
+      {"source":"api_handoff_litert_portable/infer/stage2_litert.py","line":127,"target":"api_handoff_litert_portable/infer/_stage2_preprocessing.py","callee":"build_input"},
+      {"source":"api_handoff_litert_portable/infer/stage2_litert.py","line":68,"target":"api_handoff_litert_portable/infer/_stage2_schema.py","callee":"load_metadata"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":91,"target":"api_handoff_litert_portable/infer/inputs.py","callee":"resolve_daily"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":96,"target":"api_handoff_litert_portable/infer/inputs.py","callee":"resolve_obs"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":138,"target":"api_handoff_litert_portable/infer/stage1_portable.py","callee":"PortableBranch"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":152,"target":"api_handoff_litert_portable/infer/fallback.py","callee":"load_policy"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":153,"target":"api_handoff_litert_portable/infer/fallback.py","callee":"per_pest_policy"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":314,"target":"api_handoff_litert_portable/infer/stage2_litert.py","callee":"prediction_interval"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":339,"target":"api_handoff_litert_portable/infer/inputs.py","callee":"write_atomic"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":345,"target":"api_handoff_litert_portable/infer/inputs.py","callee":"write_atomic"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":359,"target":"api_handoff_litert_portable/infer/inputs.py","callee":"write_atomic"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":390,"target":"api_handoff_litert_portable/infer/paths.py","callee":"Paths.from_root"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":418,"target":"api_handoff_litert_portable/infer/paths.py","callee":"Paths"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":104,"target":"api_handoff_litert_portable/infer/stage1_portable.py","callee":"load_gate"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":110,"target":"api_handoff_litert_portable/infer/stage1_portable.py","callee":"resolve_with_history"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":128,"target":"api_handoff_litert_portable/infer/stage1_portable.py","callee":"alert_from_series"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":155,"target":"api_handoff_litert_portable/infer/fallback.py","callee":"compute_climatology"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":323,"target":"api_handoff_litert_portable/infer/schemas.py","callee":"build_response"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":344,"target":"api_handoff_litert_portable/infer/schemas.py","callee":"flatten_response"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":410,"target":"api_handoff_litert_portable/infer/inputs.py","callee":"plan_output_dir"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":449,"target":"api_handoff_litert_portable/infer/batch.py","callee":"run_batch"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":452,"target":"api_handoff_litert_portable/infer/schemas.py","callee":"load_request"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":108,"target":"api_handoff_litert_portable/infer/stage1_portable.py","callee":"Stage1Error"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":114,"target":"api_handoff_litert_portable/infer/stage1_portable.py","callee":"PortableBranch"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":115,"target":"api_handoff_litert_portable/infer/preprocessing.py","callee":"build_season"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":120,"target":"api_handoff_litert_portable/infer/stage1_features.py","callee":"base_x_from_season"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":121,"target":"api_handoff_litert_portable/infer/stage1_features.py","callee":"array_layout"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":156,"target":"api_handoff_litert_portable/infer/fallback.py","callee":"climatology_variant"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":171,"target":"api_handoff_litert_portable/infer/providers.py","callee":"FrameWeatherProvider"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":172,"target":"api_handoff_litert_portable/infer/providers.py","callee":"LongObsProvider"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":223,"target":"api_handoff_litert_portable/infer/schemas.py","callee":"build_response"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":230,"target":"api_handoff_litert_portable/infer/schemas.py","callee":"build_response"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":264,"target":"api_handoff_litert_portable/infer/cohort.py","callee":"as_of_reproduces_full_year"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":279,"target":"api_handoff_litert_portable/infer/stage2_litert.py","callee":"Stage2Model"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":370,"target":"api_handoff_litert_portable/infer/inputs.py","callee":"release_claim"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":175,"target":"api_handoff_litert_portable/infer/schemas.py","callee":"build_response"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":248,"target":"api_handoff_litert_portable/infer/schemas.py","callee":"build_response"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":303,"target":"api_handoff_litert_portable/infer/schemas.py","callee":"build_response"},
+      {"source":"api_handoff_litert_portable/run_predict.py","line":274,"target":"api_handoff_litert_portable/infer/schemas.py","callee":"build_response"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":69,"target":"api_handoff_litert_portable/infer/batch.py","callee":"_inherit_request_fields"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":146,"target":"api_handoff_litert_portable/infer/batch.py","callee":"resolve_input_csv"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":239,"target":"api_handoff_litert_portable/infer/paths.py","callee":"Paths"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":255,"target":"api_handoff_litert_portable/infer/batch.py","callee":"run_batch"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":279,"target":"api_handoff_litert_portable/infer/batch.py","callee":"run_batch"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":299,"target":"api_handoff_litert_portable/infer/batch.py","callee":"run_batch"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":316,"target":"api_handoff_litert_portable/infer/batch.py","callee":"run_batch"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":334,"target":"api_handoff_litert_portable/infer/batch.py","callee":"run_batch"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":350,"target":"api_handoff_litert_portable/infer/batch.py","callee":"run_batch"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":370,"target":"api_handoff_litert_portable/infer/batch.py","callee":"run_batch"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":397,"target":"api_handoff_litert_portable/infer/inputs.py","callee":"plan_output_dir"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":400,"target":"api_handoff_litert_portable/infer/inputs.py","callee":"release_claim"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":406,"target":"api_handoff_litert_portable/infer/inputs.py","callee":"plan_output_dir"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":419,"target":"api_handoff_litert_portable/infer/inputs.py","callee":"plan_output_dir"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":421,"target":"api_handoff_litert_portable/infer/inputs.py","callee":"release_claim"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":447,"target":"api_handoff_litert_portable/infer/__init__.py","callee":"batch.fail_batch"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":459,"target":"api_handoff_litert_portable/infer/batch.py","callee":"run_batch"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":138,"target":"api_handoff_litert_portable/infer/batch.py","callee":"resolve_input_csv"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":157,"target":"api_handoff_litert_portable/infer/batch.py","callee":"resolve_input_csv"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":167,"target":"api_handoff_litert_portable/infer/batch.py","callee":"resolve_input_csv"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":178,"target":"api_handoff_litert_portable/infer/batch.py","callee":"resolve_input_csv"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":184,"target":"api_handoff_litert_portable/infer/batch.py","callee":"resolve_input_csv"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":225,"target":"api_handoff_litert_portable/infer/schemas.py","callee":"build_response"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":390,"target":"api_handoff_litert_portable/infer/inputs.py","callee":"plan_output_dir"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":412,"target":"api_handoff_litert_portable/infer/inputs.py","callee":"release_claim"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":429,"target":"api_handoff_litert_portable/infer/inputs.py","callee":"plan_output_dir"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":435,"target":"api_handoff_litert_portable/infer/inputs.py","callee":"release_claim"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":409,"target":"api_handoff_litert_portable/infer/inputs.py","callee":"plan_output_dir"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":445,"target":"api_handoff_litert_portable/infer/inputs.py","callee":"existing_outputs"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":449,"target":"api_handoff_litert_portable/infer/inputs.py","callee":"existing_outputs"},
+      {"source":"api_handoff_litert_portable/tests/test_no_heavy_dependencies.py","line":98,"target":"api_handoff_litert_portable/infer/stage1_portable.py","callee":"PortableBranch"},
+      {"source":"api_handoff_litert_portable/tests/test_no_heavy_dependencies.py","line":80,"target":"api_handoff_litert_portable/infer/stage1_portable.py","callee":"load_gate"},
+      {"source":"api_handoff_litert_portable/tests/test_no_heavy_dependencies.py","line":84,"target":"api_handoff_litert_portable/infer/stage2_litert.py","callee":"Stage2Model"},
+      {"source":"api_handoff_litert_portable/tests/test_no_heavy_dependencies.py","line":82,"target":"api_handoff_litert_portable/infer/stage1_portable.py","callee":"PortableBranch"},
+      {"source":"api_handoff_litert_portable/tests/test_output_contract.py","line":59,"target":"api_handoff_litert_portable/infer/fallback.py","callee":"select_final"},
+      {"source":"api_handoff_litert_portable/tests/test_output_contract.py","line":69,"target":"api_handoff_litert_portable/infer/fallback.py","callee":"select_final"},
+      {"source":"api_handoff_litert_portable/tests/test_output_contract.py","line":80,"target":"api_handoff_litert_portable/infer/fallback.py","callee":"select_final"},
+      {"source":"api_handoff_litert_portable/tests/test_output_contract.py","line":89,"target":"api_handoff_litert_portable/infer/fallback.py","callee":"select_final"},
+      {"source":"api_handoff_litert_portable/tests/test_output_contract.py","line":107,"target":"api_handoff_litert_portable/infer/schemas.py","callee":"build_response"},
+      {"source":"api_handoff_litert_portable/tests/test_output_contract.py","line":184,"target":"api_handoff_litert_portable/infer/schemas.py","callee":"flatten_response"},
+      {"source":"api_handoff_litert_portable/tests/test_output_contract.py","line":193,"target":"api_handoff_litert_portable/infer/schemas.py","callee":"flatten_response"},
+      {"source":"api_handoff_litert_portable/tests/test_output_contract.py","line":202,"target":"api_handoff_litert_portable/infer/schemas.py","callee":"FLAT_COLS.index"},
+      {"source":"api_handoff_litert_portable/tests/test_stage1_portable.py","line":49,"target":"api_handoff_litert_portable/infer/stage1_features.py","callee":"base_x_from_season"},
+      {"source":"api_handoff_litert_portable/tests/test_stage1_portable.py","line":50,"target":"api_handoff_litert_portable/infer/stage1_features.py","callee":"array_layout"},
+      {"source":"api_handoff_litert_portable/tests/test_stage1_portable.py","line":59,"target":"api_handoff_litert_portable/infer/stage1_features.py","callee":"base_x_from_season"},
+      {"source":"api_handoff_litert_portable/tests/test_stage1_portable.py","line":60,"target":"api_handoff_litert_portable/infer/stage1_features.py","callee":"append_history"},
+      {"source":"api_handoff_litert_portable/tests/test_stage1_portable.py","line":61,"target":"api_handoff_litert_portable/infer/stage1_features.py","callee":"array_layout"},
+      {"source":"api_handoff_litert_portable/tests/test_stage1_portable.py","line":76,"target":"api_handoff_litert_portable/infer/stage1_features.py","callee":"base_x_from_season"},
+      {"source":"api_handoff_litert_portable/tests/test_stage1_portable.py","line":79,"target":"api_handoff_litert_portable/infer/stage1_features.py","callee":"build_nowcast_samples"},
+      {"source":"api_handoff_litert_portable/tests/test_stage1_portable.py","line":80,"target":"api_handoff_litert_portable/infer/stage1_features.py","callee":"build_nowcast_samples"},
+      {"source":"api_handoff_litert_portable/tests/test_stage1_portable.py","line":81,"target":"api_handoff_litert_portable/infer/stage1_features.py","callee":"build_tabular"},
+      {"source":"api_handoff_litert_portable/tests/test_stage1_portable.py","line":82,"target":"api_handoff_litert_portable/infer/stage1_features.py","callee":"build_tabular"},
+      {"source":"api_handoff_litert_portable/tests/test_stage1_portable.py","line":145,"target":"api_handoff_litert_portable/infer/stage1_portable.py","callee":"load_gate"},
+      {"source":"api_handoff_litert_portable/tests/test_stage1_portable.py","line":98,"target":"api_handoff_litert_portable/infer/stage1_portable.py","callee":"PortableBranch"},
+      {"source":"api_handoff_litert_portable/tests/test_stage1_portable.py","line":101,"target":"api_handoff_litert_portable/infer/stage1_features.py","callee":"base_x_from_season"},
+      {"source":"api_handoff_litert_portable/tests/test_stage1_portable.py","line":102,"target":"api_handoff_litert_portable/infer/stage1_features.py","callee":"array_layout"},
+      {"source":"api_handoff_litert_portable/tests/test_stage1_portable.py","line":104,"target":"api_handoff_litert_portable/infer/stage1_features.py","callee":"append_history"},
+      {"source":"api_handoff_litert_portable/tests/test_stage1_portable.py","line":105,"target":"api_handoff_litert_portable/infer/stage1_features.py","callee":"array_layout"},
+      {"source":"api_handoff_litert_portable/tests/test_stage1_portable.py","line":126,"target":"api_handoff_litert_portable/infer/stage1_portable.py","callee":"PortableBranch"},
+      {"source":"stage1_xgboost_migration/export_calibration_assets.py","line":81,"target":"stage1_xgboost_migration/common.py","callee":"env_versions"},
+      {"source":"stage1_xgboost_migration/export_calibration_assets.py","line":166,"target":"stage1_xgboost_migration/common.py","callee":"json_dump"},
+      {"source":"stage1_xgboost_migration/export_calibration_assets.py","line":90,"target":"stage1_xgboost_migration/common.py","callee":"sha256_file"},
+      {"source":"stage1_xgboost_migration/export_calibration_assets.py","line":94,"target":"stage1_xgboost_migration/common.py","callee":"json_dump"},
+      {"source":"stage1_xgboost_migration/export_calibration_assets.py","line":70,"target":"stage1_xgboost_migration/common.py","callee":"sha256_file"},
+      {"source":"stage1_xgboost_migration/export_calibration_assets.py","line":148,"target":"stage1_xgboost_migration/common.py","callee":"json_dump"},
+      {"source":"stage1_xgboost_migration/export_calibration_assets.py","line":140,"target":"stage1_xgboost_migration/common.py","callee":"sha256_file"},
+      {"source":"stage1_xgboost_migration/export_portable_models.py","line":25,"target":"stage1_xgboost_migration/common.py","callee":"ckpt_path"},
+      {"source":"stage1_xgboost_migration/export_portable_models.py","line":33,"target":"stage1_xgboost_migration/common.py","callee":"sha256_file"},
+      {"source":"stage1_xgboost_migration/export_portable_models.py","line":88,"target":"stage1_xgboost_migration/common.py","callee":"sha256_file"},
+      {"source":"stage1_xgboost_migration/export_portable_models.py","line":146,"target":"stage1_xgboost_migration/common.py","callee":"json_dump"},
+      {"source":"stage1_xgboost_migration/export_portable_models.py","line":159,"target":"stage1_xgboost_migration/common.py","callee":"env_versions"},
+      {"source":"stage1_xgboost_migration/export_portable_models.py","line":186,"target":"stage1_xgboost_migration/common.py","callee":"json_dump"},
+      {"source":"stage1_xgboost_migration/export_portable_models.py","line":37,"target":"stage1_xgboost_migration/common.py","callee":"load_checkpoint"},
+      {"source":"stage1_xgboost_migration/export_portable_models.py","line":62,"target":"stage1_xgboost_migration/common.py","callee":"derive_feature_names"},
+      {"source":"stage1_xgboost_migration/export_portable_models.py","line":161,"target":"stage1_xgboost_migration/common.py","callee":"SOURCE_ZIP.exists"},
+      {"source":"stage1_xgboost_migration/export_portable_models.py","line":161,"target":"stage1_xgboost_migration/common.py","callee":"sha256_file"},
+      {"source":"stage1_xgboost_migration/export_portable_models.py","line":118,"target":"stage1_xgboost_migration/common.py","callee":"channel_names"},
+      {"source":"stage1_xgboost_migration/export_portable_models.py","line":119,"target":"stage1_xgboost_migration/common.py","callee":"channel_names"},
+      {"source":"stage1_xgboost_migration/validate_alert_parity.py","line":116,"target":"stage1_xgboost_migration/common.py","callee":"load_checkpoint"},
+      {"source":"stage1_xgboost_migration/validate_alert_parity.py","line":117,"target":"stage1_xgboost_migration/common.py","callee":"load_checkpoint"},
+      {"source":"stage1_xgboost_migration/validate_alert_parity.py","line":141,"target":"stage1_xgboost_migration/common.py","callee":"load_checkpoint"},
+      {"source":"stage1_xgboost_migration/validate_alert_parity.py","line":176,"target":"stage1_xgboost_migration/portable_stage1.py","callee":"load_gate"},
+      {"source":"stage1_xgboost_migration/validate_alert_parity.py","line":320,"target":"stage1_xgboost_migration/common.py","callee":"json_dump"},
+      {"source":"stage1_xgboost_migration/validate_alert_parity.py","line":551,"target":"stage1_xgboost_migration/common.py","callee":"json_dump"},
+      {"source":"stage1_xgboost_migration/validate_alert_parity.py","line":116,"target":"stage1_xgboost_migration/common.py","callee":"ckpt_path"},
+      {"source":"stage1_xgboost_migration/validate_alert_parity.py","line":117,"target":"stage1_xgboost_migration/common.py","callee":"ckpt_path"},
+      {"source":"stage1_xgboost_migration/validate_alert_parity.py","line":141,"target":"stage1_xgboost_migration/common.py","callee":"ckpt_path"},
+      {"source":"stage1_xgboost_migration/validate_alert_parity.py","line":186,"target":"stage1_xgboost_migration/portable_stage1.py","callee":"PortableBranch"},
+      {"source":"stage1_xgboost_migration/validate_alert_parity.py","line":231,"target":"stage1_xgboost_migration/portable_stage1.py","callee":"alert_for_sy"},
+      {"source":"stage1_xgboost_migration/validate_alert_parity.py","line":525,"target":"stage1_xgboost_migration/common.py","callee":"env_versions"},
+      {"source":"stage1_xgboost_migration/validate_alert_parity.py","line":181,"target":"stage1_xgboost_migration/common.py","callee":"ckpt_path"},
+      {"source":"stage1_xgboost_migration/validate_alert_parity.py","line":224,"target":"stage1_xgboost_migration/common.py","callee":"load_checkpoint"},
+      {"source":"stage1_xgboost_migration/validate_alert_parity.py","line":292,"target":"stage1_xgboost_migration/common.py","callee":"ckpt_path"},
+      {"source":"stage1_xgboost_migration/validate_alert_parity.py","line":432,"target":"stage1_xgboost_migration/portable_stage1.py","callee":"first_crossing_k"},
+      {"source":"stage1_xgboost_migration/validate_alert_parity.py","line":447,"target":"stage1_xgboost_migration/common.py","callee":"ckpt_path"},
+      {"source":"stage1_xgboost_migration/validate_alert_parity.py","line":224,"target":"stage1_xgboost_migration/common.py","callee":"ckpt_path"},
+      {"source":"stage1_xgboost_migration/validate_alert_parity.py","line":295,"target":"stage1_xgboost_migration/common.py","callee":"ckpt_path"},
+      {"source":"stage1_xgboost_migration/validate_alert_parity.py","line":484,"target":"stage1_xgboost_migration/common.py","callee":"load_checkpoint"},
+      {"source":"stage1_xgboost_migration/validate_alert_parity.py","line":484,"target":"stage1_xgboost_migration/common.py","callee":"ckpt_path"},
+      {"source":"stage1_xgboost_migration/validate_alert_parity.py","line":486,"target":"stage1_xgboost_migration/common.py","callee":"PESTS.index"},
+      {"source":"stage1_xgboost_migration/validate_portable_pipeline.py","line":87,"target":"stage1_xgboost_migration/portable_stage1.py","callee":"load_gate"},
+      {"source":"stage1_xgboost_migration/validate_portable_pipeline.py","line":88,"target":"stage1_xgboost_migration/portable_stage1.py","callee":"PortableBranch"},
+      {"source":"stage1_xgboost_migration/validate_portable_pipeline.py","line":89,"target":"stage1_xgboost_migration/portable_stage1.py","callee":"PortableBranch"},
+      {"source":"stage1_xgboost_migration/validate_portable_pipeline.py","line":100,"target":"stage1_xgboost_migration/portable_stage1.py","callee":"alert_for_sy"},
+      {"source":"stage1_xgboost_migration/validate_server_parity.py","line":68,"target":"stage1_xgboost_migration/common.py","callee":"ckpt_path"},
+      {"source":"stage1_xgboost_migration/validate_server_parity.py","line":185,"target":"stage1_xgboost_migration/common.py","callee":"load_checkpoint"},
+      {"source":"stage1_xgboost_migration/validate_server_parity.py","line":251,"target":"stage1_xgboost_migration/common.py","callee":"json_dump"},
+      {"source":"stage1_xgboost_migration/validate_server_parity.py","line":74,"target":"stage1_xgboost_migration/common.py","callee":"load_checkpoint"},
+      {"source":"stage1_xgboost_migration/validate_server_parity.py","line":76,"target":"stage1_xgboost_migration/common.py","callee":"derive_feature_names"},
+      {"source":"stage1_xgboost_migration/validate_server_parity.py","line":185,"target":"stage1_xgboost_migration/common.py","callee":"ckpt_path"},
+      {"source":"stage1_xgboost_migration/validate_server_parity.py","line":243,"target":"stage1_xgboost_migration/common.py","callee":"env_versions"},
+      {"source":"stage1_xgboost_migration/validate_server_parity.py","line":110,"target":"stage1_xgboost_migration/common.py","callee":"sha256_file"},
+      {"source":"stage1_xgboost_migration/validate_server_parity.py","line":111,"target":"stage1_xgboost_migration/common.py","callee":"sha256_file"},
+      {"source":"stage1_xgboost_migration/validate_server_parity.py","line":153,"target":"stage1_xgboost_migration/common.py","callee":"load_checkpoint"},
+      {"source":"stage1_xgboost_migration/validate_server_parity.py","line":153,"target":"stage1_xgboost_migration/common.py","callee":"ckpt_path"},
+      {"source":"tflite_conversion/stage2/export_all.py","line":63,"target":"tflite_conversion/stage2/inference_model.py","callee":"load_and_wrap"},
+      {"source":"tflite_conversion/stage2/export_all.py","line":64,"target":"tflite_conversion/stage2/checkpoint.py","callee":"make_synthetic_input"},
+      {"source":"tflite_conversion/stage2/export_all.py","line":68,"target":"tflite_conversion/stage2/checkpoint.py","callee":"original_mu"},
+      {"source":"tflite_conversion/stage2/export_all.py","line":94,"target":"tflite_conversion/stage2/checkpoint.py","callee":"ckpt_path"},
+      {"source":"tflite_conversion/stage2/export_all.py","line":95,"target":"tflite_conversion/stage2/checkpoint.py","callee":"ckpt_path"},
+      {"source":"tflite_conversion/stage2/inference_model.py","line":162,"target":"tflite_conversion/stage2/checkpoint.py","callee":"load_pest"},
+      {"source":"tflite_conversion/stage2/validate_all.py","line":108,"target":"tflite_conversion/stage2/checkpoint.py","callee":"make_synthetic_input"},
+      {"source":"tflite_conversion/stage2/validate_all.py","line":125,"target":"tflite_conversion/stage2/inference_model.py","callee":"load_and_wrap"},
+      {"source":"tflite_conversion/stage2/validate_all.py","line":149,"target":"tflite_conversion/stage2/checkpoint.py","callee":"make_synthetic_input"},
+      {"source":"tflite_conversion/stage2/validate_all.py","line":150,"target":"tflite_conversion/stage2/checkpoint.py","callee":"original_mu"},
+      {"source":"tflite_conversion/stage2/validate_real.py","line":93,"target":"tflite_conversion/stage2/inference_model.py","callee":"load_and_wrap"},
+      {"source":"tflite_conversion/stage2/validate_real.py","line":118,"target":"tflite_conversion/stage2/checkpoint.py","callee":"original_mu"},
+      {"source":"tflite_conversion/stage2/validate_real.py","line":110,"target":"tflite_conversion/stage2/checkpoint.py","callee":"selected_offset"},
+      {"source":"tflite_conversion/stage2/validate_real.py","line":146,"target":"tflite_conversion/stage2/validate_all.py","callee":"tflite_mu"},
+      {"source":"tflite_conversion/stage2/validate_real.py","line":146,"target":"tflite_conversion/stage2/validate_all.py","callee":"_interp"},
+      {"source":"tflite_conversion/standalone_stage2/build_package.py","line":101,"target":"tflite_conversion/stage2/checkpoint.py","callee":"load_pest"},
+      {"source":"tflite_conversion/standalone_stage2/build_package.py","line":256,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","callee":"sha256_file"},
+      {"source":"tflite_conversion/standalone_stage2/build_package.py","line":144,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","callee":"sha256_file"},
+      {"source":"tflite_conversion/standalone_stage2/build_package.py","line":266,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","callee":"sha256_file"},
+      {"source":"tflite_conversion/standalone_stage2/build_package.py","line":269,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","callee":"sha256_file"},
+      {"source":"tflite_conversion/standalone_stage2/build_package.py","line":269,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","callee":"sha256_file"},
+      {"source":"tflite_conversion/standalone_stage2/runtime/cli.py","line":42,"target":"tflite_conversion/standalone_stage2/runtime/interpreter.py","callee":"models_root"},
+      {"source":"tflite_conversion/standalone_stage2/runtime/cli.py","line":56,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","callee":"DispatchRequest.from_json"},
+      {"source":"tflite_conversion/standalone_stage2/runtime/cli.py","line":61,"target":"tflite_conversion/standalone_stage2/runtime/preprocessing.py","callee":"load_daily_csv"},
+      {"source":"tflite_conversion/standalone_stage2/runtime/cli.py","line":62,"target":"tflite_conversion/standalone_stage2/runtime/interpreter.py","callee":"Stage2Model"},
+      {"source":"tflite_conversion/standalone_stage2/runtime/cli.py","line":58,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","callee":"SchemaError"},
+      {"source":"tflite_conversion/standalone_stage2/runtime/interpreter.py","line":215,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","callee":"DispatchRequest"},
+      {"source":"tflite_conversion/standalone_stage2/runtime/interpreter.py","line":39,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","callee":"SchemaError"},
+      {"source":"tflite_conversion/standalone_stage2/runtime/interpreter.py","line":52,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","callee":"load_metadata"},
+      {"source":"tflite_conversion/standalone_stage2/runtime/interpreter.py","line":127,"target":"tflite_conversion/standalone_stage2/runtime/preprocessing.py","callee":"build_input"},
+      {"source":"tflite_conversion/standalone_stage2/runtime/interpreter.py","line":213,"target":"tflite_conversion/standalone_stage2/runtime/preprocessing.py","callee":"load_daily_csv"},
+      {"source":"tflite_conversion/standalone_stage2/runtime/interpreter.py","line":51,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","callee":"SchemaError"},
+      {"source":"tflite_conversion/standalone_stage2/runtime/interpreter.py","line":63,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","callee":"SchemaError"},
+      {"source":"tflite_conversion/standalone_stage2/runtime/interpreter.py","line":76,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","callee":"SchemaError"},
+      {"source":"tflite_conversion/standalone_stage2/runtime/interpreter.py","line":88,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","callee":"SchemaError"},
+      {"source":"tflite_conversion/standalone_stage2/runtime/interpreter.py","line":121,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","callee":"SchemaError"},
+      {"source":"tflite_conversion/standalone_stage2/runtime/interpreter.py","line":82,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","callee":"SchemaError"},
+      {"source":"tflite_conversion/standalone_stage2/runtime/interpreter.py","line":114,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","callee":"SchemaError"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_metadata.py","line":34,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","callee":"load_metadata"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_metadata.py","line":35,"target":"tflite_conversion/stage2/checkpoint.py","callee":"load_pest"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_metadata.py","line":95,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","callee":"sha256_file"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_no_torch_dependency.py","line":103,"target":"tflite_conversion/standalone_stage2/tests/test_runtime_synthetic.py","callee":"run"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_no_torch_dependency.py","line":90,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","callee":"load_metadata"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_output_parity.py","line":57,"target":"tflite_conversion/standalone_stage2/tests/test_preprocessing_parity.py","callee":"api_built"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_output_parity.py","line":58,"target":"tflite_conversion/stage2/checkpoint.py","callee":"original_mu"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_output_parity.py","line":73,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","callee":"load_metadata"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_output_parity.py","line":74,"target":"tflite_conversion/standalone_stage2/tests/test_preprocessing_parity.py","callee":"standalone_request"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_output_parity.py","line":99,"target":"tflite_conversion/standalone_stage2/runtime/interpreter.py","callee":"_prediction_interval"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_output_parity.py","line":86,"target":"tflite_conversion/standalone_stage2/runtime/interpreter.py","callee":"Stage2Model"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_output_parity.py","line":68,"target":"tflite_conversion/stage2/validate_all.py","callee":"tflite_mu"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_output_parity.py","line":68,"target":"tflite_conversion/stage2/validate_all.py","callee":"_interp"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_preprocessing_parity.py","line":45,"target":"tflite_conversion/stage2/checkpoint.py","callee":"load_pest"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_preprocessing_parity.py","line":75,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","callee":"load_metadata"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_preprocessing_parity.py","line":107,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","callee":"DispatchRequest"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_preprocessing_parity.py","line":116,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","callee":"load_metadata"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_preprocessing_parity.py","line":134,"target":"tflite_conversion/standalone_stage2/runtime/preprocessing.py","callee":"build_input"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_preprocessing_parity.py","line":57,"target":"tflite_conversion/stage2/checkpoint.py","callee":"selected_offset"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_runtime_synthetic.py","line":141,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","callee":"load_metadata"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_runtime_synthetic.py","line":158,"target":"tflite_conversion/standalone_stage2/runtime/interpreter.py","callee":"Stage2Model"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_runtime_synthetic.py","line":200,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","callee":"load_metadata"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_runtime_synthetic.py","line":104,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","callee":"load_metadata"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_runtime_synthetic.py","line":106,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","callee":"DispatchRequest"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_runtime_synthetic.py","line":163,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","callee":"DispatchRequest"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_runtime_synthetic.py","line":169,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","callee":"DispatchRequest"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_runtime_synthetic.py","line":177,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","callee":"DispatchRequest"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_runtime_synthetic.py","line":185,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","callee":"DispatchRequest"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_runtime_synthetic.py","line":193,"target":"tflite_conversion/standalone_stage2/runtime/schema.py","callee":"DispatchRequest"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_runtime_synthetic.py","line":115,"target":"tflite_conversion/standalone_stage2/runtime/interpreter.py","callee":"Stage2Model"}
+    ],
+    "external_imports": [
+      {"source":"api_handoff_litert_portable/infer/_stage2_preprocessing.py","line":33,"module":"numpy","kind":"third_party"},
+      {"source":"api_handoff_litert_portable/infer/_stage2_preprocessing.py","line":34,"module":"pandas","kind":"third_party"},
+      {"source":"api_handoff_litert_portable/infer/batch.py","line":38,"module":"pandas","kind":"third_party"},
+      {"source":"api_handoff_litert_portable/infer/cohort.py","line":41,"module":"numpy","kind":"third_party"},
+      {"source":"api_handoff_litert_portable/infer/cohort.py","line":42,"module":"pandas","kind":"third_party"},
+      {"source":"api_handoff_litert_portable/infer/fallback.py","line":16,"module":"yaml","kind":"third_party"},
+      {"source":"api_handoff_litert_portable/infer/preprocessing.py","line":15,"module":"numpy","kind":"third_party"},
+      {"source":"api_handoff_litert_portable/infer/preprocessing.py","line":16,"module":"pandas","kind":"third_party"},
+      {"source":"api_handoff_litert_portable/infer/providers.py","line":19,"module":"pandas","kind":"third_party"},
+      {"source":"api_handoff_litert_portable/infer/stage1_features.py","line":32,"module":"numpy","kind":"third_party"},
+      {"source":"api_handoff_litert_portable/infer/stage1_features.py","line":33,"module":"pandas","kind":"third_party"},
+      {"source":"api_handoff_litert_portable/infer/stage1_portable.py","line":27,"module":"numpy","kind":"third_party"},
+      {"source":"api_handoff_litert_portable/infer/stage1_portable.py","line":28,"module":"xgboost","kind":"third_party"},
+      {"source":"api_handoff_litert_portable/infer/stage2_litert.py","line":12,"module":"numpy","kind":"third_party"},
+      {"source":"api_handoff_litert_portable/infer/stage2_litert.py","line":13,"module":"pandas","kind":"third_party"},
+      {"source":"api_handoff_litert_portable/infer/stage2_litert.py","line":75,"module":"ai_edge_litert.interpreter","kind":"third_party"},
+      {"source":"api_handoff_litert_portable/tests/test_batch.py","line":24,"module":"pandas","kind":"third_party"},
+      {"source":"api_handoff_litert_portable/tests/test_generic_batch.py","line":34,"module":"pytest","kind":"third_party"},
+      {"source":"api_handoff_litert_portable/tests/test_no_heavy_dependencies.py","line":94,"module":"numpy","kind":"third_party"},
+      {"source":"api_handoff_litert_portable/tests/test_smoke_cases.py","line":23,"module":"pandas","kind":"third_party"},
+      {"source":"api_handoff_litert_portable/tests/test_stage1_portable.py","line":19,"module":"numpy","kind":"third_party"},
+      {"source":"api_handoff_litert_portable/tests/test_stage1_portable.py","line":20,"module":"pandas","kind":"third_party"},
+      {"source":"stage1_xgboost_migration/common.py","line":82,"module":"numpy","kind":"third_party"},
+      {"source":"stage1_xgboost_migration/common.py","line":83,"module":"sklearn","kind":"third_party"},
+      {"source":"stage1_xgboost_migration/common.py","line":84,"module":"torch","kind":"third_party"},
+      {"source":"stage1_xgboost_migration/common.py","line":85,"module":"xgboost","kind":"third_party"},
+      {"source":"stage1_xgboost_migration/common.py","line":130,"module":"torch","kind":"third_party"},
+      {"source":"stage1_xgboost_migration/export_calibration_assets.py","line":79,"module":"yaml","kind":"third_party"},
+      {"source":"stage1_xgboost_migration/portable_stage1.py","line":18,"module":"numpy","kind":"third_party"},
+      {"source":"stage1_xgboost_migration/portable_stage1.py","line":19,"module":"xgboost","kind":"third_party"},
+      {"source":"stage1_xgboost_migration/validate_alert_parity.py","line":27,"module":"numpy","kind":"third_party"},
+      {"source":"stage1_xgboost_migration/validate_alert_parity.py","line":48,"module":"infer","kind":"external_legacy_API"},
+      {"source":"stage1_xgboost_migration/validate_modern_xgboost.py","line":22,"module":"numpy","kind":"third_party"},
+      {"source":"stage1_xgboost_migration/validate_modern_xgboost.py","line":23,"module":"xgboost","kind":"third_party"},
+      {"source":"stage1_xgboost_migration/validate_portable_pipeline.py","line":26,"module":"numpy","kind":"third_party"},
+      {"source":"stage1_xgboost_migration/validate_portable_pipeline.py","line":150,"module":"xgboost","kind":"third_party"},
+      {"source":"stage1_xgboost_migration/validate_server_parity.py","line":16,"module":"numpy","kind":"third_party"},
+      {"source":"stage1_xgboost_migration/validate_server_parity.py","line":64,"module":"xgboost","kind":"third_party"},
+      {"source":"stage1_xgboost_migration/validate_server_parity.py","line":179,"module":"infer.stage1","kind":"external_legacy_API"},
+      {"source":"stage1_xgboost_migration/validate_server_parity.py","line":179,"module":"infer.stage1","kind":"external_legacy_API"},
+      {"source":"stage1_xgboost_migration/validate_server_parity.py","line":179,"module":"infer.stage1","kind":"external_legacy_API"},
+      {"source":"stage1_xgboost_migration/validate_server_parity.py","line":179,"module":"infer.stage1","kind":"external_legacy_API"},
+      {"source":"stage1_xgboost_migration/validate_server_parity.py","line":135,"module":"infer.stage1","kind":"external_legacy_API"},
+      {"source":"stage1_xgboost_migration/validate_server_parity.py","line":135,"module":"infer.stage1","kind":"external_legacy_API"},
+      {"source":"stage1_xgboost_migration/validate_server_parity.py","line":135,"module":"infer.stage1","kind":"external_legacy_API"},
+      {"source":"stage1_xgboost_migration/validate_server_parity.py","line":135,"module":"infer.stage1","kind":"external_legacy_API"},
+      {"source":"stage1_xgboost_migration/validate_server_parity.py","line":135,"module":"infer.stage1","kind":"external_legacy_API"},
+      {"source":"tflite_conversion/stage2/checkpoint.py","line":19,"module":"torch","kind":"third_party"},
+      {"source":"tflite_conversion/stage2/checkpoint.py","line":26,"module":"infer.ckpt","kind":"external_legacy_API"},
+      {"source":"tflite_conversion/stage2/checkpoint.py","line":26,"module":"infer.ckpt","kind":"external_legacy_API"},
+      {"source":"tflite_conversion/stage2/checkpoint.py","line":122,"module":"yaml","kind":"third_party"},
+      {"source":"tflite_conversion/stage2/export_all.py","line":27,"module":"torch","kind":"third_party"},
+      {"source":"tflite_conversion/stage2/export_all.py","line":50,"module":"litert_torch.generative.quantize","kind":"third_party"},
+      {"source":"tflite_conversion/stage2/export_all.py","line":51,"module":"litert_torch.quantize","kind":"third_party"},
+      {"source":"tflite_conversion/stage2/export_all.py","line":61,"module":"litert_torch","kind":"third_party"},
+      {"source":"tflite_conversion/stage2/inference_model.py","line":50,"module":"torch","kind":"third_party"},
+      {"source":"tflite_conversion/stage2/inference_model.py","line":51,"module":"torch.nn","kind":"third_party"},
+      {"source":"tflite_conversion/stage2/validate_all.py","line":20,"module":"numpy","kind":"third_party"},
+      {"source":"tflite_conversion/stage2/validate_all.py","line":21,"module":"torch","kind":"third_party"},
+      {"source":"tflite_conversion/stage2/validate_all.py","line":49,"module":"ai_edge_litert.interpreter","kind":"third_party"},
+      {"source":"tflite_conversion/stage2/validate_real.py","line":41,"module":"numpy","kind":"third_party"},
+      {"source":"tflite_conversion/stage2/validate_real.py","line":42,"module":"torch","kind":"third_party"},
+      {"source":"tflite_conversion/stage2/validate_real.py","line":50,"module":"infer.preprocess","kind":"external_legacy_API"},
+      {"source":"tflite_conversion/stage2/validate_real.py","line":62,"module":"pandas","kind":"third_party"},
+      {"source":"tflite_conversion/standalone_stage2/build_package.py","line":31,"module":"numpy","kind":"third_party"},
+      {"source":"tflite_conversion/standalone_stage2/build_package.py","line":71,"module":"yaml","kind":"third_party"},
+      {"source":"tflite_conversion/standalone_stage2/build_package.py","line":82,"module":"yaml","kind":"third_party"},
+      {"source":"tflite_conversion/standalone_stage2/runtime/interpreter.py","line":14,"module":"numpy","kind":"third_party"},
+      {"source":"tflite_conversion/standalone_stage2/runtime/interpreter.py","line":15,"module":"pandas","kind":"third_party"},
+      {"source":"tflite_conversion/standalone_stage2/runtime/interpreter.py","line":59,"module":"ai_edge_litert.interpreter","kind":"third_party"},
+      {"source":"tflite_conversion/standalone_stage2/runtime/preprocessing.py","line":33,"module":"numpy","kind":"third_party"},
+      {"source":"tflite_conversion/standalone_stage2/runtime/preprocessing.py","line":34,"module":"pandas","kind":"third_party"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_metadata.py","line":18,"module":"numpy","kind":"third_party"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_metadata.py","line":100,"module":"ai_edge_litert.interpreter","kind":"third_party"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_output_parity.py","line":30,"module":"numpy","kind":"third_party"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_output_parity.py","line":31,"module":"pandas","kind":"third_party"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_preprocessing_parity.py","line":22,"module":"numpy","kind":"third_party"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_preprocessing_parity.py","line":23,"module":"pandas","kind":"third_party"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_preprocessing_parity.py","line":43,"module":"infer.preprocess","kind":"external_legacy_API"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_runtime_synthetic.py","line":25,"module":"numpy","kind":"third_party"},
+      {"source":"tflite_conversion/standalone_stage2/tests/test_runtime_synthetic.py","line":26,"module":"pandas","kind":"third_party"}
+    ],
+    "dynamic_script_calls": [
+      {
+        "source": "tflite_conversion/standalone_stage2/build_package.py",
+        "target": "tflite_conversion/stage2/export_all.py",
+        "condition": "export-missing-tflite; subprocess; kept"
+      },
+      {
+        "source": "api_handoff_litert_portable/tests/test_smoke_cases.py",
+        "target": "api_handoff_litert_portable/run_predict.py",
+        "condition": "asset-dependent subprocess; kept"
+      },
+      {
+        "source": "tflite_conversion/standalone_stage2/tests/test_no_torch_dependency.py",
+        "target": "dist/stage2_litert/predict.py",
+        "condition": "external build product, generated by retained build_package.py"
+      }
+    ],
+    "verification": "AST parsing; local import/call closure before/after removal; requirements references; no modules imported, no training/conversion/inference executed"
+  }
 }

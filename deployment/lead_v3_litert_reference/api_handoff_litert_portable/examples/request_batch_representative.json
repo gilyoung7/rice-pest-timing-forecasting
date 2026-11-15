@@ -1,8 +1,0 @@
-{
-  "mode": "batch",
-  "pest": "BPH",
-  "year": 2004,
-  "representative_sites_path": "/path/to/representative_site_ids_2002_2024.csv",
-  "include_diagnostics": false,
-  "max_sites": 50
-}

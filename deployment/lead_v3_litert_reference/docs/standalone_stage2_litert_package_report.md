@@ -5,7 +5,7 @@
 **Host:** MacBook, Apple M3 (arm64), macOS 26.5.1, Python 3.12.2
 **Outcome:** ✅ 8/8 pests packaged and running with **no PyTorch, no TensorFlow, no XGBoost, no `.pt`**. Preprocessing is **bit-exact** against the API; output parity holds on all 8 real smoke cases; verified in a genuinely torch-free venv.
 
-Predecessors: [`bph_stage2_tflite_conversion_report.md`](bph_stage2_tflite_conversion_report.md),
+Predecessors: [`bph_stage2_tflite_conversion_report.md`](https://github.com/gilyoung7/rice-pest-timing-forecasting/blob/b6a7cd1687e649dbf108267974db25574b9b9f5f/deployment/lead_v3_litert_reference/docs/bph_stage2_tflite_conversion_report.md),
 [`all_pests_stage2_tflite_conversion_report.md`](all_pests_stage2_tflite_conversion_report.md).
 
 ---
